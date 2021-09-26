@@ -2,17 +2,12 @@
 
 * {
     margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  text-decoration: none;
-  list-style: none;
-}
-
-body {
-    /*font-family: "Lato", sans-serif;
-    margin: 0px;*/
-}
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
  
 section {
     width: 100%;
@@ -80,50 +75,56 @@ header .nav li a:hover{
 }
 
 .container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .container .text-container {
-    max-width: 550px;
-    position: relative;
-    margin-right: 20px;
+  max-width: 550px;
+  position: relative;
+  margin-right: 20px;
 }
-
 .container .text-container h2 {
-    font-size: 2.8em;
-    line-height: 1.4em;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #fff;
+  color: #fff;
+  font-size: 2.8em;
+  line-height: 1.4em;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
-
 .container .text-container p {
-    color: #fff;
-    opacity: .6;
-    font-weight: lighter;
+  color: #fff;
+  opacity: 0.6;
+  font-weight: lighter;
 }
-
 .container .text-container a {
-    display: inline-block;
-    text-align: center;
-    margin-top: 30px;
-    padding: 8px 16px;
-    background: #ab1026;
-    color: #fff;
-    letter-spacing: 1px;
-    font-weight: 500;
-    border-radius: 80px;
-    border: 5px solid rgb(94,91,91);
+  display: inline-block;
+  text-align: center;
+  margin-top: 30px;
+  padding: 8px 16px;
+  background: #ab1026;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 80px;
+  border: 5px solid rgb(94, 91, 91);
 }
 
 .container .image-container {
-    width: 500px;
-    display: flex;
-    justify-content: flex-end;
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+.container .image-container img {
+  position: relative;
+  min-width: 640px;
+  height: 510px;
+  margin-top: 20px;
+}
+.container .image-container img:hover {
+  filter: opacity(0.8);
 }
 
 /* custom styling for all icons */
@@ -216,7 +217,7 @@ i.fab {
 }
 
 #img3::after {
-    content: 'twitter';
+    content: 'twitch';
 }
 
 #img1:hover::after,
