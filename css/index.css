@@ -12,7 +12,10 @@
 section {
     width: 100%;
     min-height: 100vh;
-    background: #111;
+    background-image: url("../images/image0.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 100px;
     position: relative;
     justify-content: space-around;
@@ -22,7 +25,8 @@ section {
 section .circle {
     width: 100%;
     height: 100%;
-    background: #297c08;
+    /*background: #297c08;*/
+    background-color:midnightblue;
     position: absolute;
     clip-path: circle(80% at right -40%);
     top: 0;
@@ -248,12 +252,14 @@ i.fab {
 
 .social li a:hover {
     background: #333;
-    transform: translateY(-15px);
+    transform: translate(-15px);
     border-radius: 100%;
     transition: .4s linear;
 }
 
-/*.glow::before,
+/* Optional glow effect */
+
+.glow::before,
 .glow::after {
     content: "";
     position: absolute;
@@ -265,7 +271,7 @@ i.fab {
     height: calc(100% + 5px);
     width: calc(100% + 5px);
     z-index: -1;
-    animation: change 40s linear infinite;
+    animation: change 80s linear infinite;
 }
 
 @keyframes change {
@@ -276,57 +282,78 @@ i.fab {
         background-position: 400% 0;
     }
     100% {}
-}*/
-
-.brand-rights {
-    background: #297c08;
-    /*background-color: rgba(0,43,32,.8);*/
-    display: flex;
-    justify-content: center;
 }
 
-.brand-rights small {
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
+/* Media Queries*/
 
-/*footer section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: white;
-}
-
-footer p {
-    padding: 10px;
-}
-
-footer a {
-    padding: 0px 10px 0px 10px;
-}*/
-
-/* Media Queries */
-
-@media (max-width: 700px) {
-    
-}
-
-@media (max-device-width: 900px) {
-
-    
-
-    .brand-rights small {
-        font-size: 10px;
-        margin-left: 0px;
+@media (max-width:900px){
+    section {
+        padding: 150px 40px;
+    }
+    header {
+        padding: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background: #297c08;
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
         color: white;
     }
-
-    /*.sidebar p {
-        font-size: 10px;
-        color: black;
-    }*/
-
-    
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .text-container,
+    .container .image-container {
+        max-width: 100%;
+    }
+    .container .image-container img {
+        position: relative;
+        min-width: 350px;
+        height: 400px;
+    }
+    .aLink {
+        bottom: 20px;
+        left: 33vw;
+    }
+    .social {
+        position: absolute;
+        bottom: 70vh;
+        right: 10px;
+    }
 }
