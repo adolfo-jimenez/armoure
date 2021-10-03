@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+section {
+    width: 100%;
+    /*background-image: url("../images/image0.jpg");*/
+    /*background-color: teal;*/
+    background-image: linear-gradient(green, rgb(32, 53, 241));
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+section .logo {
+    text-align: center;
+}
+section .logo img{
+    height: 100px;
+    width: 500px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+section .circle {
+    width: 100%;
+    height: 100%;
+    /*background: #297c08;*/
+    background-color:black;
+    position: absolute;
+    clip-path: circle(80% at right -40%);
+    top: 0;
+    left: 0;
+}
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*display: flex;*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10px;
+}
+
+header img {
+    height: 100px;
+    width: 500px;
+    /*padding-left: 50px;*/
+    filter: drop-shadow(0px 0px 5px white);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header .nav {
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    justify-content: center;
+}
+
+header .nav li a {
+    display: inline-block;
+    color: #fff;
+    margin-left: 40px;
+    font-weight: 450;
+}
+header .nav li a:hover{
+    font-weight: 500;
+    border: 4px solid #161616;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    transition: .1s ease-in-out;
+}
+.links-infobooth {
+    margin-top: 100px;
+    text-align: center;
+}
+.links-infobooth img{
+    height: 15%;
+    width: 15%;
+}
+.links-infobooth h2 {
+    color: white;
+    font-size: 45px;
+}
+.links-infobooth .link-list {
+    margin-top: 50px;
+}
+.links-infobooth .link-list li {
+    font-size: 33px;
+    margin: 25px;
+    padding: 2px;
+    border-style: double;
+    border-color: white;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+.links-infobooth .link-list li:hover{
+    font-weight: 700;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    transition: .1s ease-in-out;
+    background-color: white;
+}
+.links-infobooth .link-list li a:hover{
+    color: darkorange;
+}
+.links-infobooth .link-list li a, .links-infobooth 
+.link-list li a:link, .links-infobooth .link-list li
+ a:visited {
+    color:darkorange;
+    text-decoration: none;
+  }
+
+
+/* custom styling for all icons */
+i.fas,
+i.fab {
+  font-size: 25px;
+}
+.brand-rights {
+    text-align: center;
+    color: white;
+    background-color:black;
+}
+
+/* Optional glow effect */
+
+.glow::before,
+.glow::after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(-45deg, #00ff66,
+    #00ffff, #ff0fff, #ff0099, #09ffff);
+    background-size: 400%;
+    height: calc(100% + 5px);
+    width: calc(100% + 5px);
+    z-index: -1;
+    animation: change 80s linear infinite;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {}
+}
+
+/* Media Queries*/
+
+@media (max-width:1350px){
+    section .circle {
+        width: 100%;
+        height: 100%;
+        /*background: #297c08;*/
+        position: absolute;
+        clip-path: circle(65% at right -40%);
+        top: 0;
+        left: 0;
+    }
+    section {
+        padding: 150px 40px;
+    }
+    header {
+        padding: 40px;
+        display: flex;
+    }
+    header img {
+        height: 105px;
+        width: 500px;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0,0,0,.95);
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+}
+
+/*iPad 1024x768 side view*/
+@media (max-width:1024px){
+    section .circle {
+        width: 100%;
+        height: 100%;
+        /*background: #297c08;*/
+        position: absolute;
+        clip-path: circle(65% at right -40%);
+        top: 0;
+        left: 0;
+    }
+    section {
+        padding: 150px 40px;
+    }
+    header {
+        padding: 40px;
+        display: flex;
+    }
+    header img {
+        height: 105px;
+        width: 500px;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0,0,0,.95);
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+}
+
+/*iPad 768x1024 regular view*/
+@media (max-width:768px){
+    section {
+        padding: 150px 40px;
+    }
+    header {
+        padding: 40px;
+        display: flex;
+    }
+    header img {
+        height: 145px;
+        width: 550px;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0,0,0,.95);
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+}
+
+@media (max-width:425px){
+    section .circle {
+        width: 100%;
+        height: 100%;
+        /*background: #297c08;*/
+        position: absolute;
+        clip-path: circle(72% at right -40%);
+        top: 0;
+        left: 0;
+    }
+    section {
+        padding: 150px 40px;
+    }
+    header {
+        padding: 40px;
+        display: flex;
+    }
+    header img {
+        height: 45px;
+        width: 250px;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0,0,0,.95);
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+}
+
+/* Samsung Galaxy S9+ */
+@media (max-width:375px){
+    section .circle {
+        width: 100%;
+        height: 100%;
+        /*background: #297c08;*/
+        position: absolute;
+        clip-path: circle(72% at right -40%);
+        top: 0;
+        left: 0;
+    }
+    section {
+        padding: 150px 40px;
+    }
+    header {
+        padding: 40px;
+        display: flex;
+    }
+    header img {
+        height: 45px;
+        width: 250px;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0,0,0,.95);
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+}
+
+/* Samsung Galaxy */
+@media (max-width:360px){
+    section .circle {
+        width: 100%;
+        height: 100%;
+        /*background: #297c08;*/
+        position: absolute;
+        clip-path: circle(72% at right -40%);
+        top: 0;
+        left: 0;
+    }
+    section {
+        padding: 150px 40px;
+    }
+    header {
+        padding: 40px;
+        display: flex;
+    }
+    header img {
+        height: 45px;
+        width: 250px;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0,0,0,.95);
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+}
