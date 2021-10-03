@@ -8,7 +8,6 @@
     text-decoration: none;
     list-style: none;
   }
- 
 section {
     width: 100%;
     min-height: 100vh;
@@ -21,7 +20,6 @@ section {
     justify-content: space-around;
     align-items: center;
 }
-
 section .circle {
     width: 100%;
     height: 100%;
@@ -32,7 +30,6 @@ section .circle {
     top: 0;
     left: 0;
 }
-
 header {
     width: 100%;
     position: absolute;
@@ -591,6 +588,207 @@ i.fab {
         height: 450px;
         margin-top: 100px;
         margin-left: 1px;
+    }
+    .aLink {
+        bottom: 20px;
+        left: 33vw;
+    }
+    .social {
+        position: absolute;
+        bottom: 70vh;
+        right: 10px;
+    }
+}
+
+@media (max-width:425px){
+    section .circle {
+        width: 100%;
+        height: 100%;
+        /*background: #297c08;*/
+        position: absolute;
+        clip-path: circle(72% at right -40%);
+        top: 0;
+        left: 0;
+    }
+    section {
+        padding: 150px 40px;
+    }
+    header {
+        padding: 40px;
+    }
+    header img {
+        height: 45px;
+        width: 250px;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0,0,0,.95);
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+    .container {
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .container .text-container,
+    .container .image-container {
+        max-width: 100%;
+    }
+    .container .text-container h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .container .text-container p {
+        font-size: 25px;
+        padding: 10px;
+        opacity: 1.0;
+        background-color: rgba(0,0,0,.3);
+        border-radius: 10px;
+    }
+    .container .image-container img {
+        position: relative;
+        min-width: 150px;
+        height: 250px;
+        margin-top: 100px;
+    }
+    .aLink {
+        bottom: 20px;
+        left: 33vw;
+    }
+    .social {
+        position: absolute;
+        bottom: 70vh;
+        right: 10px;
+    }
+}
+
+/* Samsung Galaxy S9+ */
+@media (max-width:375px){
+    section .circle {
+        width: 100%;
+        height: 100%;
+        /*background: #297c08;*/
+        position: absolute;
+        clip-path: circle(72% at right -40%);
+        top: 0;
+        left: 0;
+    }
+    section {
+        padding: 150px 40px;
+    }
+    header {
+        padding: 40px;
+    }
+    header img {
+        height: 45px;
+        width: 250px;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0,0,0,.95);
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+    .container {
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .container .text-container,
+    .container .image-container {
+        max-width: 100%;
+    }
+    .container .text-container h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .container .text-container p {
+        font-size: 25px;
+        padding: 10px;
+        opacity: 1.0;
+        background-color: rgba(0,0,0,.3);
+        border-radius: 10px;
+    }
+    .container .image-container img {
+        position: relative;
+        min-width: 150px;
+        height: 250px;
+        margin-top: 100px;
     }
     .aLink {
         bottom: 20px;
