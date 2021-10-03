@@ -11,7 +11,8 @@
 section {
     width: 100%;
     min-height: 100vh;
-    background-image: url("../images/image0.jpg");
+    /*background-image: url("../images/image0.jpg");*/
+    background-color: teal ;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,7 +36,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
     align-items: center;
     padding: 40px 10px;
@@ -44,26 +45,20 @@ header {
 header img {
     height: 100px;
     width: 500px;
-    padding-left: 50px;
+    /*padding-left: 50px;*/
     filter: drop-shadow(0px 0px 5px white);
-}
-
-header .logo {
-    min-width: 60px;
-    height: 60px;
-    color: #fff;
+    display: flex;
     position: relative;
-    font-family: 'Faster One', cursive;
-    font-size: 60px;
-    word-spacing: -.2em;
-    letter-spacing: 2.5px;
-    text-shadow: #297c08 1px 2.5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 header .nav {
     display: flex;
     position: relative;
     font-size: 16px;
+    justify-content: center;
 }
 
 header .nav li a {
@@ -80,6 +75,15 @@ header .nav li a:hover{
     border-right: none;
     border-left: none;
     transition: .1s ease-in-out;
+}
+
+.eventPosters {
+    padding: 150px;
+}
+
+.eventPosters img {
+    height: 50%;
+    width: 50%;
 }
 
 .container {
@@ -165,6 +169,7 @@ i.fab {
 
 .fa-instagram {
     color: white;
+    
 }
 
 .fa-twitter {
@@ -266,7 +271,7 @@ i.fab {
 .brand-rights {
     text-align: center;
     color: white;
-    background-color:rgb(5, 5, 102);
+    background-color:teal;
 }
 
 /* Optional glow effect */
@@ -314,6 +319,7 @@ i.fab {
     }
     header {
         padding: 40px;
+        display: flex;
     }
     header img {
         height: 105px;
@@ -419,6 +425,7 @@ i.fab {
     }
     header {
         padding: 40px;
+        display: flex;
     }
     header img {
         height: 105px;
@@ -515,6 +522,7 @@ i.fab {
     }
     header {
         padding: 40px;
+        display: flex;
     }
     header img {
         height: 145px;
@@ -619,6 +627,7 @@ i.fab {
     }
     header {
         padding: 40px;
+        display: flex;
     }
     header img {
         height: 45px;
@@ -720,6 +729,7 @@ i.fab {
     }
     header {
         padding: 40px;
+        display: flex;
     }
     header img {
         height: 45px;
@@ -821,6 +831,7 @@ i.fab {
     }
     header {
         padding: 40px;
+        display: flex;
     }
     header img {
         height: 45px;
