@@ -126,8 +126,6 @@ header .nav li a:hover{
     color:darkorange;
     text-decoration: none;
   }
-
-
 /* custom styling for all icons */
 i.fas,
 i.fab {
@@ -167,6 +165,101 @@ i.fab {
 }
 
 /* Media Queries*/
+
+@media (max-width:2560px){
+    section {
+        padding: 150px 40px;
+    }
+   
+    .links-infobooth {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .links-infobooth img {
+        width: 350px;
+        height: 300px;
+    }
+    .links-infobooth .link-list li{
+        width: 30%;
+        margin: 0px;
+        margin-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width:1440px){
+    section {
+        padding: 150px 40px;
+    }
+    header {
+        padding: 40px;
+        display: flex;
+    }
+    header img {
+        height: 145px;
+        width: 550px;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0,0,0,.95);
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+    .links-infobooth {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .links-infobooth img {
+        width: 350px;
+        height: 300px;
+    }
+    .links-infobooth .link-list li{
+        width: 85%;
+        margin: 0px;
+        margin-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 @media (max-width:1350px){
     section .circle {
@@ -360,6 +453,21 @@ i.fab {
         filter: invert(0);
         right: 40px;
     }
+    .links-infobooth {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .links-infobooth img {
+        width: 350px;
+        height: 300px;
+    }
+    .links-infobooth .link-list li{
+        width: 85%;
+        margin: 0px;
+        margin-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width:425px){
@@ -379,14 +487,11 @@ i.fab {
         padding: 40px;
         display: flex;
     }
-    header img {
-        height: 45px;
-        width: 250px;
+    section .logo img{
+        height: 65px;
+        width: 300px;
         padding-left: 0px;
-        padding-right: 40px;
-    }
-    header .logo {
-        font-size: 20px;
+        padding-right: 10px;
     }
     header .nav {
         display: none;
@@ -426,6 +531,19 @@ i.fab {
         background-size: cover;
         filter: invert(0);
         right: 40px;
+    }
+    .links-infobooth {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .links-infobooth img {
+        width: 250px;
+        height: 200px;
+    }
+    .links-infobooth .link-list li{
+        width: 100%;
+        margin: 0px;
+        margin-top: 35px;
     }
 }
 
@@ -515,14 +633,11 @@ i.fab {
         padding: 40px;
         display: flex;
     }
-    header img {
-        height: 45px;
-        width: 250px;
+    section .logo img {
+        height: 65px;
+        width: 300px;
         padding-left: 0px;
-        padding-right: 40px;
-    }
-    header .logo {
-        font-size: 20px;
+        padding-right: 10px;
     }
     header .nav {
         display: none;
@@ -562,5 +677,18 @@ i.fab {
         background-size: cover;
         filter: invert(0);
         right: 40px;
+    }
+    .links-infobooth {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .links-infobooth img {
+        width: 250px;
+        height: 200px;
+    }
+    .links-infobooth .link-list li{
+        width: 100%;
+        margin: 0px;
+        margin-top: 35px;
     }
 }
