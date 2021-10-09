@@ -209,7 +209,7 @@ i.fab {
         display: none;
         position: absolute;
         top: 0;
-        right: 0;
+        left: 0;
     }
     header .nav.active{
         width: 60%;
@@ -242,7 +242,7 @@ i.fab {
         background: url(/images/window-close_white.png) no-repeat center;
         background-size: cover;
         filter: invert(0);
-        right: 40px;
+        left: 40px;
     }
     .links-infobooth {
         margin-top: 50px;
