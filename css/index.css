@@ -299,6 +299,11 @@ i.fab {
 
 /* Media Queries*/
 
+@media (max-width:1440px) {
+    .container {
+        margin-top: 200px;
+      }
+}
 
 @media (max-width:1350px){
     section .circle {
@@ -472,6 +477,7 @@ i.fab {
     .container {
         flex-direction: column;
         padding-top: 100px;
+        margin-top: 50px;
     }
     .container .text-container,
     .container .image-container {
