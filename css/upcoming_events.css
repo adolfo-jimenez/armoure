@@ -610,43 +610,25 @@ i.fab {
         filter: invert(0);
         right: 40px;
     }
-    .container {
-        flex-direction: column;
-        padding-top: 250px;
+    section .eventPage_logo img {
+        width: 100%;
+        height: 100%;
     }
-    .container .text-container {
+    section .eventPosters img {
+        width: 100%;
+        height: 100%;
+    }
+    section .eventPosters .event-info h1{
+        width: 100%;
+        font-size: 45px;
         text-align: center;
+        justify-content: center;
     }
-    .container .text-container h2 {
-        font-size: 70px;
+    section .eventPosters .event-info p{
+        width: 95%;
+        font-size: 25px;
         text-align: center;
-    }
-    .container .text-container p {
-        font-size: 40px;
-        padding: 30px;
-        opacity: 1.0;
-        background-color: rgba(0,0,0,.3);
-        border-radius: 10px;
-    }
-    .container .text-container,
-    .container .image-container {
-        max-width: 100%;
-    }
-    .container .image-container img {
-        position: relative;
-        min-width: 550px;
-        height: 450px;
-        margin-top: 100px;
-        margin-left: 1px;
-    }
-    .aLink {
-        bottom: 20px;
-        left: 33vw;
-    }
-    .social {
-        position: absolute;
-        bottom: 70vh;
-        right: 10px;
+        justify-content: center;
     }
 }
 
@@ -715,39 +697,25 @@ i.fab {
         filter: invert(0);
         right: 40px;
     }
-    .container {
-        flex-direction: column;
-        padding-top: 100px;
+    section .eventPage_logo img {
+        width: 100%;
+        height: 100%;
     }
-    .container .text-container,
-    .container .image-container {
-        max-width: 100%;
+    section .eventPosters img {
+        width: 100%;
+        height: 100%;
     }
-    .container .text-container h2 {
-        font-size: 40px;
+    section .eventPosters .event-info h1{
+        width: 100%;
+        font-size: 45px;
         text-align: center;
+        justify-content: center;
     }
-    .container .text-container p {
+    section .eventPosters .event-info p{
+        width: 95%;
         font-size: 25px;
-        padding: 10px;
-        opacity: 1.0;
-        background-color: rgba(0,0,0,.3);
-        border-radius: 10px;
-    }
-    .container .image-container img {
-        position: relative;
-        min-width: 150px;
-        height: 250px;
-        margin-top: 100px;
-    }
-    .aLink {
-        bottom: 20px;
-        left: 33vw;
-    }
-    .social {
-        position: absolute;
-        bottom: 70vh;
-        right: 10px;
+        text-align: center;
+        justify-content: center;
     }
 }
 
@@ -818,8 +786,8 @@ i.fab {
         right: 40px;
     }
     section .eventPage_logo img {
-        width: 280px;
-        height: 80px;
+        width: 100%;
+        height: 100%;
     }
     section .eventPosters img {
         width: 100%;
@@ -906,8 +874,8 @@ i.fab {
         left: 40px;
     }
     section .eventPage_logo img {
-        width: 280px;
-        height: 80px;
+        width: 100%;
+        height: 100%;
     }
     section .eventPosters img {
         width: 100%;
