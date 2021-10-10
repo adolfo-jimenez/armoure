@@ -772,7 +772,7 @@ i.fab {
         display: none;
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
     }
     header .nav.active{
         width: 60%;
