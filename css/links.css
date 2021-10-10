@@ -516,18 +516,19 @@ i.fab {
     .toggle {
         width: 35px;
         height: 30px;
-        position: relative;
+        position: absolute;
         background: url(/images/bars.png) no-repeat center;
         background-size: cover;
         filter: invert(1);
         z-index: 100;
+        right: 0;
     }
     .toggle.active {
         position: fixed;
         background: url(/images/window-close_white.png) no-repeat center;
         background-size: cover;
         filter: invert(0);
-        right: 40px;
+        right: 0px;
     }
     .links-infobooth {
         margin-top: 50px;
@@ -597,18 +598,19 @@ i.fab {
     .toggle {
         width: 35px;
         height: 30px;
-        position: relative;
+        position: absolute;
         background: url(/images/bars.png) no-repeat center;
         background-size: cover;
         filter: invert(1);
         z-index: 100;
+        right: 0;
     }
     .toggle.active {
         position: fixed;
         background: url(/images/window-close_white.png) no-repeat center;
         background-size: cover;
         filter: invert(0);
-        right: 40px;
+        right: 0px;
     }
 }
 
@@ -662,18 +664,19 @@ i.fab {
     .toggle {
         width: 35px;
         height: 30px;
-        position: relative;
+        position: absolute;
         background: url(/images/bars.png) no-repeat center;
         background-size: cover;
         filter: invert(1);
         z-index: 100;
+        right: 0;
     }
     .toggle.active {
         position: fixed;
         background: url(/images/window-close_white.png) no-repeat center;
         background-size: cover;
         filter: invert(0);
-        right: 40px;
+        right: 0px;
     }
     .links-infobooth {
         margin-top: 50px;
