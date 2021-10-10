@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <title>Armoure | About</title>
-    <link rel="stylesheet" href="css/links.css">
+    <link rel="stylesheet" href="css/about.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,23 +36,47 @@
             <!--<img src="/armoure_logopack/armoure_logo.png" alt="armoure_logo.png">-->
         </header>
 
-        <div class="bio">
-            <h1>About Page Coming Soon...</h1>
+        <div class="container">
+            <div class="imgBox">
+                <img src="images/image0.jpg">
+                <img src="images/image1.jpg">
+            </div>
+            <div class="imgBox">
+                <img src="images/image3.jpg">
+                <img src="images/image4.jpg">
+            </div>
         </div>
+
+    <div class="bio">
+            <!--<img src="./images/image2.jpg" alt="Bio-image">-->
+            <article>
+            <h1>About Me</h1>
+            <p>Raven the lenore or rapping name my. Rapping though floor thinking crest what to when something be. A i a or that bird token this thing many. Implore flown seraphim and this the here marvelled. Some demons the forgiveness nevermore fact just in. Upon utters a that seraphim a or. Peering on lining theeby is flitting the he heart and, clasp perched his seraphim wheeled and. My tapping quoth and while from. Late there door tapping the i, lies heart with to reply him, silence nothing never my the guessing and. That a whether the desolate and, but this door grew dreary into never, did no caught metell memories oer. It bird nevermore volume whispered, upon this more head my yet the we surcease, from sad nevermore and distant on. The of what lonely stately there. Ashore and melancholy chamber nevermore, grave wore above shore with thee many he i,.</p>
+            </article>
+    </div>
         
     </section>
 
     <div class="brand-rights">
-        <small>&#169; 2021 ArmoureDJ | All Rights Reserved</small>
+        <small>&#169; 2021 ArmoureDJ | All Rights Reserved | Powered by <i class="fab fa-aws"></i></small>
     </div>
-    <script src="./js/index.js"></script>
-    <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.js" integrity="sha512-EpeqVeJBAyb+w5yQev9MTPOU0u9Iv6Y+OgJQt1Zm4/Y+cOcQkFEP8851OvHlaZ621MEdr4fxmJbHYkj7nkA+9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/hover.js"></script>
+    <script type="text/javascript">
+        Array.from(document.querySelectorAll('.imgBox')).forEach((e) => {
+            const imgs = Array.from(e.querySelectorAll('img'));
+            new hoverEffect({
+                parent: e,
+                intensity: 0.3,
+                image1: imgs[0].getAttribute('src'),
+                image2: imgs[1].getAttribute('src'),
+                displacementImage: '/images/1.jpg'
+            });
+        })
+    </script>
 
-    <!-- Load our React component. -->
-    <script src="./js/like_button.js"></script>
+
     <script src="./js/nav.js"></script>
 </body>
 

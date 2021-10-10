@@ -23,8 +23,7 @@ section {
 section .circle {
     width: 100%;
     height: 100%;
-    /*background: #297c08;*/
-    background-color:black;
+    background: black;
     position: absolute;
     clip-path: circle(80% at right -40%);
     top: 0;
@@ -146,6 +145,9 @@ i.fab {
   font-size: 25px;
 }
 
+i.fa-aws {
+    font-size: 12px;
+}
 .fa-soundcloud {
     color: white;
 
@@ -301,7 +303,7 @@ i.fab {
 
 @media (max-width:2560px) {
     .container {
-        margin-top: 250px;
+        margin-top: 200px;
       }
 }
 
