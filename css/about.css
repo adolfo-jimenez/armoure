@@ -38,7 +38,6 @@ body {
 .logo {
     text-align: center;
     padding: 25px;
-    display: ;
 }
 .logoMobile {
     display: none;
@@ -627,6 +626,8 @@ i.fab {
     }
     #aboutInfo {
         display: grid;
+        margin-top: 60px;
+        padding: 0px;
     }
     #aboutInfo img {
         width: 100%;
