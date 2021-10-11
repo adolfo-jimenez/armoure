@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang='en' dir="ltr">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Armoure | About</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&family=Palette+Mosaic&family=Roboto&family=Gluten&family=Faster+One&family=Permanent+Marker&family=Luckiest+Guy&displayfamily=STIX+Two+Text&display=swap" rel="stylesheet">
+    <link rel="icon" href="armoure_logopack/knight.png">
+    <script src="https://kit.fontawesome.com/a18f38211b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--<video autoplay muted loop id="myVideo">
+        <source src="/videos/Pexels Videos 2759477.mp4" type="video/mp4">
+    </video>-->
+
+    <section>
+        <!--<div class="circle"></div>-->
+        <div class="logo">
+            <img src="/armoure_logopack/armoure_logo.png" alt="armoure_logo.png">
+        </div>
+        <header>
+            <!--<a href=""><h1 class="logo">Armoure</h1></a>-->
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upcoming_events.html">Upcoming Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://merch.streamelements.com/armouredj" target="_blank">Merch</a></li>
+                <li><a href="links.html">Links</a></li>
+            </ul>
+            <!--<img src="/armoure_logopack/armoure_logo.png" alt="armoure_logo.png">-->
+        </header>
+
+        <!--<div class="container">
+            <div class="imgBox">
+                <img src="images/image0.jpg">
+                <img src="images/image1.jpg">
+            </div>
+            <div class="imgBox">
+                <img src="images/image3.jpg">
+                <img src="images/image4.jpg">
+            </div>
+        </div>-->
+
+    <div class="bio">
+            <!--<img src="./images/image2.jpg" alt="Bio-image">-->
+            <div class="container">
+                <div class="imgBox">
+                    <img src="/images/image2.jpg">
+                    <img src="/armoure_logopack/knight_and_armoure_logo.png">
+                </div>
+            </div>
+            <article>
+            <h1>About Armoure</h1>
+            <p>Raven the lenore or rapping name my. Rapping though floor thinking crest what to when something be. A i a or that bird token this thing many. Implore flown seraphim and this the here marvelled. Some demons the forgiveness nevermore fact just in. Upon utters a that seraphim a or.Tis and my dreary name word the air caught upon. Nights lies over and aptly hope utters plutonian liftednevermore. Smiling. </p>
+            </article>
+            <!--<div class="container">
+                <div class="imgBox">
+                    <img src="images/image2.jpg">
+                    <img src="images/image5.jpg">
+                </div>
+            </div>-->
+    </div>
+
+    <div class="bio">
+        <!--<img src="./images/image2.jpg" alt="Bio-image">-->
+        <article>
+        <h1>Minecraft Shows</h1>
+        <p>Raven the lenore or rapping name my. Rapping though floor thinking crest what to when something be. A i a or that bird token this thing many. Implore flown seraphim and this the here marvelled. Some demons the forgiveness nevermore fact just in. Upon utters a that seraphim a or.Tis and my dreary name word the air caught upon. Nights lies over and aptly hope utters plutonian liftednevermore. Smiling. </p>
+        </article>
+        <div class="container">
+            <div class="imgBox">
+                <img src="event_images/9-25-21_m.jpg">
+                <img src="event_images/minecraft.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="bio">
+        <!--<img src="./images/image2.jpg" alt="Bio-image">-->
+        <div class="container">
+            <div class="imgBox">
+                <img src="images/image6.jpg">
+                <img src="images/image7.jpg">
+            </div>
+        </div>
+        <article>
+        <h1>Collaborations</h1>
+        <p>Raven the lenore or rapping name my. Rapping though floor thinking crest what to when something be. A i a or that bird token this thing many. Implore flown seraphim and this the here marvelled.</p>
+        </article>
+        <!--<div class="container">
+            <div class="imgBox">
+                <img src="images/image2.jpg">
+                <img src="images/image5.jpg">
+            </div>
+        </div>-->
+</div>
+        
+    </section>
+
+    <div class="brand-rights">
+        <small>&#169; 2021 ArmoureDJ | All Rights Reserved | Powered by <i class="fab fa-aws"></i></small>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.js" integrity="sha512-EpeqVeJBAyb+w5yQev9MTPOU0u9Iv6Y+OgJQt1Zm4/Y+cOcQkFEP8851OvHlaZ621MEdr4fxmJbHYkj7nkA+9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/hover.js"></script>
+    <script type="text/javascript">
+        Array.from(document.querySelectorAll('.imgBox')).forEach((e) => {
+            const imgs = Array.from(e.querySelectorAll('img'));
+            new hoverEffect({
+                parent: e,
+                intensity: 0.3,
+                image1: imgs[0].getAttribute('src'),
+                image2: imgs[1].getAttribute('src'),
+                displacementImage: '/images/1.jpg'
+            });
+        })
+    </script>
+
+
+    <script src="./js/nav.js"></script>
+</body>
+
+
+</html>
