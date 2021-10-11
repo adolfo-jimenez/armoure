@@ -120,6 +120,10 @@ i.fas,
 i.fab {
   font-size: 25px;
 }
+i.fa-aws {
+    font-size: 12px;
+}
+
 .brand-rights {
     text-align: center;
     color: white;
