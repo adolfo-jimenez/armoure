@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: linear-gradient(green, rgb(32, 53, 241));
+    background-image: linear-gradient(rgb(19, 33, 153), green);
 }
 #myVideo {
     position: fixed;
@@ -77,7 +77,10 @@ Header .nav li a:hover{
     transition: .1s ease-in-out;
 }
 #upcomingEvents {
-    padding: 0px;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    /*background-color: yellow;*/
 }
 #upcomingEvents h1  {
     font-size: 95px;
@@ -115,6 +118,80 @@ Header .nav li a:hover{
     padding: 25px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
+}
+#pastEvents article{
+    padding: 25px;
+    display: inline-block;
+    text-align: center;
+}
+#pastEvents {
+    color: white;
+    filter: drop-shadow(0px 0px 3px black);
+    /*background-color: tomato;*/
+    margin: 100px;
+}
+#pastEvents img {
+    width: 400px;
+    height: 400px;
+    filter: drop-shadow(0px 0px 3px red);
+    border-radius: 8px;
+}
+#pastEvents h1 {
+    text-align: center;
+    font-size: 95px;
+    padding-bottom: 65px;
+    filter: drop-shadow(0px 0px 3px black);
+}
+#pastEvents h2{
+    font-size: 25px;
+    filter: drop-shadow(0px 0px 3px black);
+    padding: 15px;
+}
+#pastEvents h5{
+    filter: drop-shadow(0px 0px 3px black);
+    padding-bottom: 15px;
+}
+#pastEvents p{
+    font-size: 15px;
+    filter: drop-shadow(0px 0px 3px black);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+#pastEvents article {
+    width: 33%;
+}
+#news {
+    color: white;
+    filter: drop-shadow(0px 0px 3px black);
+    /*background-color: blueviolet;*/
+    margin: 100px;
+}
+#news article {
+     width: 30%;
+     display: inline-block;
+     padding: 25px;
+     background-color: rgba(255, 255, 255, 0.17);
+     border-radius: 20px;
+     margin: 20px;
+}
+#news h1 {
+    font-size: 95px;
+    text-align: center;
+}
+#news article h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+#news article h5 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+#news article p {
+    font-size: 20px;
+    
+    border-radius: 15px;
+    padding: 6px;
 }
 
 
