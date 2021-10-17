@@ -113,11 +113,13 @@ Header .nav li a:hover{
     color: white;
     font-size: 35px;
     margin-bottom: 15px;
+    padding: 0px;
     filter: drop-shadow(1px 1px 2px black);
 }
 #news article h5 {
     font-size: 18px;
     margin-bottom: 15px;
+    padding: 10px;
     filter: drop-shadow(1px 1px 2px black);
 }
 .newsBlogs article p {
@@ -280,6 +282,7 @@ i.fab {
     }
     #news .newsBlogs article h5{
         font-size:15px;
+        padding: 0px;
     }
     #news .newsBlogs article p{
         font-size: 19px;
@@ -407,6 +410,7 @@ i.fab {
     }
     #news .newsBlogs article h5{
         font-size:15px;
+        padding: 0px;
     }
     #news .newsBlogs article p{
         font-size: 19px;
