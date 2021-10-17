@@ -129,6 +129,10 @@ i.fa-aws {
     color: white;
     background-color:black;
 }
+.brand-rights a:link, .brand-rights a:visited {
+    color:white;
+    text-decoration: none;
+  }
 
 /* Optional glow effect */
 

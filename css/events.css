@@ -161,57 +161,6 @@ Header .nav li a:hover{
 #pastEvents article {
     width: 33%;
 }
-#news {
-    color: white;
-    filter: drop-shadow(0px 0px 3px black);
-    /*background-color: blueviolet;*/
-    margin: 100px;
-    text-align: center;
-}
-#news article {
-     width: 30%;
-     display: inline-block;
-     padding: 25px;
-     background-color: rgba(255, 255, 255, 0.17);
-     border-radius: 20px;
-     margin: 20px;
-}
-#news h1 {
-    font-size: 95px;
-    text-align: center;
-}
-#news article h2 {
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-#news article h5 {
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-#news article p {
-    font-size: 20px;
-    
-    border-radius: 15px;
-    padding: 6px;
-}
-#news #knight {
-    background:none;
-    width: 400px;
-}
-#news #knight img {
-    width: 400px;
-    background:none;
-    filter: drop-shadow(0px 0px 8px white);
-}
-#news img {
-    background:none;
-    width: 400px;
-    justify-content: center;
-    filter: drop-shadow(0px 0px 8px white);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
 
@@ -226,7 +175,11 @@ i.fab {
     color: white;
     background-color:black;
 }
-
+.brand-rights a:link, .brand-rights a:visited {
+    color:white;
+    text-decoration: none;
+  }
+  
 /* Optional glow effect */
 
 .glow::before,
@@ -492,44 +445,6 @@ i.fab {
     #pastEvents article {
         width: 33%;
     }
-    #news {
-        color: white;
-        filter: drop-shadow(0px 0px 3px black);
-        /*background-color: blueviolet;*/
-        margin: 0px;
-        text-align: center;
-    }
-    #news article {
-        width: 100%;
-        display: inline-block;
-        padding: 5px;
-        background-color: rgba(255, 255, 255, 0.17);
-        border-radius: 20px;
-        margin: 0px;
-        margin-top: 25px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #news h1 {
-        font-size: 85px;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    #news article h2 {
-        font-size: 25px;
-        margin-bottom: 5px;
-        margin-top: 25px;
-    }
-    #news article h5 {
-        font-size: 10px;
-        margin-bottom: 15px;
-    }
-    #news article p {
-        font-size: 20px;
-        
-        border-radius: 15px;
-        padding: 6px;
-    }
 }
 
 @media (max-width:1350px){
@@ -707,44 +622,6 @@ i.fab {
     #pastEvents article {
         width: 33%;
     }
-    #news {
-        color: white;
-        filter: drop-shadow(0px 0px 3px black);
-        /*background-color: blueviolet;*/
-        margin: 0px;
-        text-align: center;
-    }
-    #news article {
-        width: 100%;
-        display: inline-block;
-        padding: 5px;
-        background-color: rgba(255, 255, 255, 0.17);
-        border-radius: 20px;
-        margin: 0px;
-        margin-top: 25px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #news h1 {
-        font-size: 85px;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    #news article h2 {
-        font-size: 25px;
-        margin-bottom: 5px;
-        margin-top: 25px;
-    }
-    #news article h5 {
-        font-size: 10px;
-        margin-bottom: 15px;
-    }
-    #news article p {
-        font-size: 20px;
-        
-        border-radius: 15px;
-        padding: 6px;
-    }
 }
 
 
@@ -918,44 +795,6 @@ i.fab {
     #pastEvents article {
         width: 33%;
     }
-    #news {
-        color: white;
-        filter: drop-shadow(0px 0px 3px black);
-        /*background-color: blueviolet;*/
-        margin: 0px;
-        text-align: center;
-    }
-    #news article {
-        width: 100%;
-        display: inline-block;
-        padding: 5px;
-        background-color: rgba(255, 255, 255, 0.17);
-        border-radius: 20px;
-        margin: 0px;
-        margin-top: 25px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #news h1 {
-        font-size: 85px;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    #news article h2 {
-        font-size: 25px;
-        margin-bottom: 5px;
-        margin-top: 25px;
-    }
-    #news article h5 {
-        font-size: 10px;
-        margin-bottom: 15px;
-    }
-    #news article p {
-        font-size: 20px;
-        
-        border-radius: 15px;
-        padding: 6px;
-    }
 }
 
 @media (max-width:425px){
@@ -1124,43 +963,6 @@ i.fab {
     }
     #pastEvents article {
         width: 33%;
-    }
-    #news {
-        color: white;
-        filter: drop-shadow(0px 0px 3px black);
-        /*background-color: blueviolet;*/
-        margin: 0px;
-        text-align: center;
-    }
-    #news article {
-        width: 100%;
-        display: inline-block;
-        padding: 5px;
-        background-color: rgba(255, 255, 255, 0.17);
-        border-radius: 20px;
-        margin: 0px;
-        margin-top: 25px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #news h1 {
-        font-size: 45px;
-        text-align: center;
-    }
-    #news article h2 {
-        font-size: 25px;
-        margin-bottom: 5px;
-        margin-top: 25px;
-    }
-    #news article h5 {
-        font-size: 10px;
-        margin-bottom: 15px;
-    }
-    #news article p {
-        font-size: 20px;
-        
-        border-radius: 15px;
-        padding: 6px;
     }
 }
 
@@ -1331,42 +1133,5 @@ i.fab {
     }
     #pastEvents article {
         width: 33%;
-    }
-    #news {
-        color: white;
-        filter: drop-shadow(0px 0px 3px black);
-        /*background-color: blueviolet;*/
-        margin: 0px;
-        text-align: center;
-    }
-    #news article {
-        width: 100%;
-        display: inline-block;
-        padding: 5px;
-        background-color: rgba(255, 255, 255, 0.17);
-        border-radius: 20px;
-        margin: 0px;
-        margin-top: 25px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #news h1 {
-        font-size: 45px;
-        text-align: center;
-    }
-    #news article h2 {
-        font-size: 25px;
-        margin-bottom: 5px;
-        margin-top: 25px;
-    }
-    #news article h5 {
-        font-size: 10px;
-        margin-bottom: 15px;
-    }
-    #news article p {
-        font-size: 20px;
-        
-        border-radius: 15px;
-        padding: 6px;
     }
 }
