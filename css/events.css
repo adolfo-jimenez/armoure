@@ -77,58 +77,67 @@ Header .nav li a:hover{
     transition: .1s ease-in-out;
 }
 #upcomingEvents {
-    padding-top: 50px;
-    padding-left: 0px;
-    padding-right: 0px;
-    /*background-color: yellow;*/
+    margin-top: 100px;
+    padding-top: 0px;
+    color: white;
+    
+    /*background-color:orange;*/
 }
 #upcomingEvents h1  {
-    font-size: 95px;
-    padding-bottom: 65px;
-    filter: drop-shadow(0px 0px 3px black);
-}
-#upcomingEvents {
+    font-size: 65px;
     text-align: center;
-    color: white;
+    margin-bottom: 20px;
+    filter: drop-shadow(7px 7px 8px black);
 }
-#upcomingEvents img{
-    width: 600px;
-    height: 700px;
+.current_lineup {
+    /*background-color: snow;*/
+    padding: 25px;
     text-align: center;
-    filter: drop-shadow(0px 0px 3px red);
-    border-radius: 25px;
-    margin-right: 45px;
+    
+}
+.current_lineup img{
+    width: 500px;
+    height: 550px;
+    filter: drop-shadow(0px 0px 3px white);
+    border-radius: 5px;
+    margin: 25px;
+}
+.current_lineup img:hover {
+    filter: drop-shadow(0px 0px 33px yellow);
 }
 #upcomingEvents h2  {
     font-size: 45px;
+    text-align: center;
     padding-top: 25px;
-    filter: drop-shadow(0px 0px 3px black);
+    filter: drop-shadow(7px 7px 9px black);
 }
 #upcomingEvents h5  {
-    font-size: 25px;
+    font-size: 20px;
+    text-align: center;
     padding: 15px;
-    filter: drop-shadow(0px 0px 3px black);
+    filter: drop-shadow(0px 0px 6px black);
 }
 #upcomingEvents p {
-    font-size: 20px;
-    width: 60%;
+    font-size: 30px;
+    text-align: center;
     filter: drop-shadow(0px 0px 3px black);
-    margin-left: auto;
-    margin-right: auto;
-    padding: 25px;
-    background-color: rgba(255, 255, 255, 0.1);
+    padding: 75px;
+    /*background-color: rgba(233, 0, 0, 0.7);*/
     border-radius: 15px;
+}
+
+
+
+#pastEvents {
+    color: white;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    filter: drop-shadow(0px 0px 3px black);
 }
 #pastEvents article{
     padding: 25px;
     display: inline-block;
     text-align: center;
-}
-#pastEvents {
-    color: white;
-    filter: drop-shadow(0px 0px 3px black);
-    /*background-color: tomato;*/
-    margin: 100px;
 }
 #pastEvents img {
     width: 400px;
@@ -160,6 +169,7 @@ Header .nav li a:hover{
 }
 #pastEvents article {
     width: 33%;
+    
 }
 
 
@@ -179,7 +189,7 @@ i.fab {
     color:white;
     text-decoration: none;
   }
-  
+
 /* Optional glow effect */
 
 .glow::before,
@@ -211,13 +221,13 @@ i.fab {
 
 @media (max-width:2560px){
     section {
-        padding: 150px 40px;
+        
     }
 }
 
 @media (width:1440px){
     section {
-        padding: 150px 40px;
+        
     }
     header {
         padding: 40px;
@@ -277,7 +287,7 @@ i.fab {
 
 @media (max-width:1440px){
     section {
-        padding: 150px 0px;
+        
     }
     header {
         padding: 40px;
