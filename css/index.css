@@ -88,19 +88,19 @@ header .nav li a:hover{
   position: relative;
 }
 .container .text-container {
-  max-width: 850px;
+  max-width: 650px;
   position: relative;
   margin-right: 20px;
 }
 .container .text-container h2 {
   color: #fff;
-  font-size: 65px;
+  font-size: 45px;
   line-height: 1.4em;
   font-weight: 700;
   margin-bottom: 10px;
 }
 .container .text-container p {
-  font-size: 30px;
+  font-size: 18px;
   color: #fff;
   font-weight: lighter;
   opacity: .8;
