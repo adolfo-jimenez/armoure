@@ -83,6 +83,10 @@ Header .nav li a:hover{
     
     /*background-color:orange;*/
 }
+iframe {
+    width: 300px;
+    height: 200px;
+}
 #upcomingEvents h1  {
     font-size: 65px;
     text-align: center;
@@ -102,6 +106,9 @@ Header .nav li a:hover{
     border-radius: 5px;
     margin: 25px;
 }
+#upcomingEvents {
+    text-align: center;
+}
 .current_lineup img:hover {
     filter: drop-shadow(0px 0px 33px yellow);
 }
@@ -110,6 +117,14 @@ Header .nav li a:hover{
     text-align: center;
     padding-top: 25px;
     filter: drop-shadow(7px 7px 9px black);
+}
+#timeWidget {
+    color: white;
+    font-size: 2px;
+    filter: drop-shadow(7px 7px 9px black);
+}
+#Soledad__United_States_z14e {
+
 }
 #upcomingEvents h5  {
     font-size: 20px;

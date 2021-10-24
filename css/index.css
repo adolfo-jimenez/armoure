@@ -19,6 +19,23 @@ section {
     position: relative;
     justify-content: space-around;
     align-items: center;
+    display: flex;
+}
+.audioEntertainment {
+    /*background-color: cadetblue;*/
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+iframe {
+    width: 600px;
+    height: 75px;
+    padding: 0px;
+    justify-content: center;
+}
+video {
+    /*background-color: coral;*/
+    padding: 0px;
 }
 section .circle {
     width: 100%;
@@ -80,9 +97,9 @@ header .nav li a:hover{
     transition: .1s ease-in-out;
 }
 .container {
-  margin-top: 100px;
-  width: 100%;
-  display: flex;
+  /*background-color: crimson;*/
+  margin-top: auto;
+  margin-bottom: auto;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -120,7 +137,6 @@ header .nav li a:hover{
   border-radius: 80px;
   border: 5px solid rgb(94, 91, 91);
 }
-
 .container .image-container {
   width: 500px;
   display: flex;
