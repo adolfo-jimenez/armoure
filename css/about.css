@@ -220,7 +220,28 @@ i.fab {
 }
 
 @media (max-width:1350px){
-    
+    #aboutInfo img {
+        width: 800px;
+        height: 400px;
+        filter: drop-shadow(0px 0px 5px yellow);
+        border-radius: 15px;
+    }
+    #aboutInfo {
+        color: white;
+        padding: 10px;
+        margin: 0px;
+        align-items: center;
+    }
+    #aboutInfo h1 {
+        font-size: 35px;
+    }
+    #aboutInfo p {
+        font-size: 15px;
+        padding: 25px;
+    }
+    #aboutInfo aside {
+        margin-bottom: 100px;
+    }
 }
 
 /*iPad 1024x768 side view*/
