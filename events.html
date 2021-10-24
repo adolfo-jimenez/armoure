@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/a18f38211b.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="initClock()">
 
     <header>
         <!--<a href=""><h1 class="logo">Armoure</h1></a>-->
@@ -41,9 +41,44 @@
     <section id="upcomingEvents">
         
 
-        <h1>*** Upcoming Events ***</h1>
-        <a id="timeWidget" href="https://time.is/Soledad,_United_States" id="time_is_link" rel="nofollow" style="font-size:20px;color:red">Time in Cali:</a>
-        <span id="Soledad__United_States_z14e" style="font-size:20px;color:green"></span>
+        <!--<h2>*** Upcoming Events ***</h2>-->
+        <!--digital clock start-->
+        <h1>Cali Time</h1>
+    <div class="datetime">
+        <div class="date">
+          <span id="dayname">Day</span>,
+          <span id="month">Month</span>
+          <span id="daynum">00</span>,
+          <span id="year">Year</span>
+        </div>
+        <div class="time">
+          <span id="hour">00</span>:
+          <span id="minutes">00</span>:
+          <span id="seconds">00</span>
+          <span id="period">AM</span>
+        </div>
+      </div>
+
+      <!--<div class="eastCoastTime">
+        <h5>East Coast Time</h5>
+        <div class="datetime">
+            <div class="date">
+              <span id="daynameEast">Day</span>,
+              <span id="monthEast">Month</span>
+              <span id="daynumEast">00</span>,
+              <span id="yearEast">Year</span>
+            </div>
+
+            <div class="time">
+              <span id="hourEast">00</span>:
+              <span id="minutesEast">00</span>:
+              <span id="secondsEast">00</span>
+              <span id="periodEast">AM</span>
+            </div>
+          </div>
+      </div>-->
+      
+      <!--digital clock end-->
         <div class="current_lineup">
             <img src="/event_images/BACK.png">
             <img src="/event_images/10-16-21.png">
@@ -88,10 +123,77 @@
     <script src="./js/like_button.js"></script>
     <script src="./js/nav.js"></script>
 
-    <!-- Time Widget Script-->
-    <script src="//widget.time.is/en.js"></script>
-    <script>
-        time_is_widget.init({Soledad__United_States_z14e:{template:"TIME<br>DATE<br>SUN", time_format:"12hours:minutesAMPM", date_format:"dayname, monthname dnum, year", sun_format:"Sunrise: srhour:srminute Sunset: sshour:ssminute<br>Day length: dlhoursh dlminutesm", coords:"36.4246900,-121.3263200"}});
+
+<script type="text/javascript">
+    function updateClock(){
+      var now = new Date();
+      var dname = now.getDay(),
+          mo = now.getMonth(),
+          dnum = now.getDate(),
+          yr = now.getFullYear(),
+          hou = now.getHours(),
+          min = now.getMinutes(),
+          sec = now.getSeconds(),
+          pe = "AM";
+
+         // East Test 1
+    /*dnameEast = dname;
+          houEast = now.getHours() + 3;
+          dnumEast = dnum,
+          peEast = "AM";*/
+        
+          if(hou >= 12){
+            pe = "PM";
+          }
+          if(hou == 0){
+            hou = 12;
+          }
+          if(hou > 12){
+            hou = hou - 12;
+          }
+          //East Test 1
+          /*if(houEast >= 12){
+           peEast = "PM";
+          }
+          if(houEast > 12){
+            houEast = houEast - 12;
+          }
+          if(houEast > 12){
+            houEast = houEast - 12;
+          }*/
+
+          Number.prototype.pad = function(digits){
+            for(var n = this.toString(); n.length < digits; n = 0 + n);
+            return n;
+          }
+
+          var months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"];
+          var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+          //West Test
+          //var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+
+          //East Test 1
+          //var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period", "hourEast"];
+          //East Test 2
+          var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+          /*var idsEast = ["daynameEast", "monthEast", "daynumEast", "yearEast", "hourEast", "minutesEast", "secondsEast", "periodEast"];*/
+          //west Test 1
+          var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+          //var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe, houEast];
+          /*var valuesEast = [week[dname], months[mo], dnum.pad(2), yr, houEast, min.pad(2), sec.pad(2), pe];*/
+          for(var i = 0; i < ids.length; i++)
+          document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+
+          /*for(var i = 0; i < idsEast.length; i++)
+          document.getElementById(idsEast[i]).firstChild.nodeValue = valuesEast[i];*/
+
+    }
+
+    function initClock(){
+      updateClock();
+      window.setInterval("updateClock()", 1);
+    }
     </script>
 </body>
 
