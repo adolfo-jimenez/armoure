@@ -24,12 +24,13 @@ body {
   }
   
   .datetime{
-      margin-left: auto;
-      margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
     color: #fff;
     background: #10101E;
     font-family: "Segoe UI", sans-serif;
-    width: 340px;
+    width: 740px;
     padding: 15px 10px;
     border: 3px solid #2E94E3;
     border-radius: 5px;
@@ -37,7 +38,12 @@ body {
     transition: 0.5s;
     transition-property: background, box-shadow;
   }
-  
+  #upcomingEvents .datetime h1 {
+      padding-top: 0px;
+      padding-bottom: 5px;
+      color:seashell;
+      font-weight: 800;
+  }
   .datetime:hover{
     background: #2E94E3;
     box-shadow: 0 0 30px #2E94E3;
@@ -131,15 +137,23 @@ Header .nav li a:hover{
     transition: .1s ease-in-out;
 }
 #upcomingEvents {
-    margin-top: 100px;
+    margin-top: 0px;
     padding-top: 0px;
     color: white;
     
     /*background-color:orange;*/
 }
-iframe {
-    width: 300px;
-    height: 200px;
+#upcomingSoundcloud {
+    width: 60%;
+    height: 100px;
+}
+#pastSoundcloud {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 60%;
+    height: 100px;
+    padding: 20px;
 }
 #upcomingEvents h1  {
     font-size: 65px;
@@ -876,7 +890,86 @@ i.fab {
     }
 }
 
-@media (max-width:425px){
+@media (max-width:500px){
+    body {
+        width: 100%;
+        padding: 0px;
+    }
+    .datetime {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        color: #fff;
+        background: #10101E;
+        font-family: "Segoe UI", sans-serif;
+        width: 100%;
+        padding: 0px 0px;
+        border: 3px solid #2E94E3;
+        border-radius: 5px;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+        transition: 0.5s;
+        transition-property: background, box-shadow;
+    }
+    #pastSoundcloud {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+    }
+    #upcomingEvents .datetime h1 {
+        padding-top: 0px;
+        padding-bottom: 5px;
+        color:seashell;
+        font-weight: 800;
+        font-size: 35px;
+    }
+    .date{
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+    .current_lineup {
+        /*background-color: snow;*/
+        padding: 0px;
+        text-align: center;
+        
+    }
+    #upcomingEvents .current_lineup img{
+        width: 400px;
+        height: 400px;
+        filter: drop-shadow(0px 0px 3px white);
+        border-radius: 5px;
+        margin: 10px;
+    }
+    #upcomingEvents .current_lineup img:hover {
+        filter: drop-shadow(0px 0px 10px yellow);
+    }
+    .time{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .time span:not(:last-child){
+        position: relative;
+        margin: 0 6px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 3px;
+      }
+      
+      .time span:last-child{
+        background: #2E94E3;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 7px;
+        padding: 0 5px;
+        border-radius: 3px;
+      }
     section {
         padding: 150px 0px;
     }
@@ -1043,10 +1136,85 @@ i.fab {
     #pastEvents article {
         width: 33%;
     }
-}
-
-/* Samsung Galaxy */
-@media (max-width:360px){
+}@media (max-width:375px){
+    body {
+        width: 100%;
+        padding: 0px;
+    }
+    .datetime {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        color: #fff;
+        background: #10101E;
+        font-family: "Segoe UI", sans-serif;
+        width: 100%;
+        padding: 0px 0px;
+        border: 3px solid #2E94E3;
+        border-radius: 5px;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+        transition: 0.5s;
+        transition-property: background, box-shadow;
+    }
+    #pastSoundcloud {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+    }
+    #upcomingEvents .datetime h1 {
+        padding-top: 0px;
+        padding-bottom: 5px;
+        color:seashell;
+        font-weight: 800;
+        font-size: 35px;
+    }
+    .date{
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+    .current_lineup {
+        /*background-color: snow;*/
+        padding: 0px;
+        text-align: center;
+        
+    }
+    #upcomingEvents .current_lineup img{
+        width: 80%;
+        height: 400px;
+        filter: drop-shadow(0px 0px 3px white);
+        border-radius: 5px;
+        margin: 10px;
+    }
+    #upcomingEvents .current_lineup img:hover {
+        filter: drop-shadow(0px 0px 10px yellow);
+    }
+    .time{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .time span:not(:last-child){
+        position: relative;
+        margin: 0 6px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+    .time span:last-child{
+        background: #2E94E3;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 7px;
+        padding: 0 5px;
+        border-radius: 3px;
+    }
     section {
         padding: 150px 0px;
     }

@@ -317,15 +317,6 @@ i.fa-aws {
     100% {}
 }
 
-@keyframes glow {
-    from {
-      box-shadow: 0 0 10px -10px #aef4af;
-    }
-    to {
-      box-shadow: 0 0 10px 10px #aef4af;
-    }
-  }
-
 /* Media Queries*/
 
 @media (max-width:2560px) {
