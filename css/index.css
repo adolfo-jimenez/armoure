@@ -840,6 +840,7 @@ i.fa-aws {
 
 /* Samsung Galaxy */
 @media (max-width:360px){
+
     section .circle {
         width: 100%;
         height: 100%;
@@ -851,6 +852,7 @@ i.fa-aws {
     }
     section {
         padding: 150px 40px;
+        display: inline-block;
     }
     header {
         padding: 40px;
@@ -905,11 +907,14 @@ i.fa-aws {
     }
     .container {
         flex-direction: column;
-        padding-top: 100px;
+        padding-top: 10px;
+        background-color: red;
     }
     .container .text-container,
     .container .image-container {
         max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .container .text-container h2 {
         font-size: 40px;
