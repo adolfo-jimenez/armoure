@@ -28,11 +28,11 @@ body {
     margin-right: auto;
     margin-bottom: 50px;
     color: #fff;
-    background: #10101E;
+    /*background: #10101E;*/
     font-family: "Segoe UI", sans-serif;
     width: 740px;
     padding: 15px 10px;
-    border: 3px solid #2E94E3;
+    /*border: 3px solid #2E94E3;*/
     border-radius: 5px;
     -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
     transition: 0.5s;
@@ -44,10 +44,10 @@ body {
       color:seashell;
       font-weight: 800;
   }
-  .datetime:hover{
+  /*.datetime:hover{
     background: #2E94E3;
     box-shadow: 0 0 30px #2E94E3;
-  }
+  }*/
   
   .date{
     font-size: 20px;
@@ -72,7 +72,7 @@ body {
   }
   
   .time span:last-child{
-    background: #2E94E3;
+    /*background: #2E94E3;*/
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
