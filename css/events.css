@@ -13,6 +13,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-image: linear-gradient(rgb(19, 33, 153), green);
+    color: white;
 }
 #myVideo {
     position: fixed;
@@ -21,9 +22,16 @@ body {
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
-  }
+}
+
+#pageHeader {
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 25px;
+    filter: drop-shadow(0px 0px 10px black);
+}
   
-  .datetime{
+.datetime{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -37,41 +45,41 @@ body {
     -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
     transition: 0.5s;
     transition-property: background, box-shadow;
-  }
-  #upcomingEvents .datetime h1 {
+}
+.datetime h1 {
       padding-top: 0px;
       padding-bottom: 5px;
       color:seashell;
       font-weight: 800;
-  }
+      text-align: center;
+}
   /*.datetime:hover{
     background: #2E94E3;
     box-shadow: 0 0 30px #2E94E3;
   }*/
-  
-  .date{
+.date{
     font-size: 20px;
     font-weight: 600;
     text-align: center;
     letter-spacing: 3px;
-  }
+}
   
-  .time{
+.time{
     font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .time span:not(:last-child){
+.time span:not(:last-child){
     position: relative;
     margin: 0 6px;
     font-weight: 600;
     text-align: center;
     letter-spacing: 3px;
-  }
+}
   
-  .time span:last-child{
+.time span:last-child{
     /*background: #2E94E3;*/
     font-size: 30px;
     font-weight: 600;
@@ -79,22 +87,7 @@ body {
     margin-top: 10px;
     padding: 0 5px;
     border-radius: 3px;
-  }
-        
-
-/*section {
-    width: 100%;
-    background-image: url("../images/image0.jpg");
-    background-color: teal;
-    background-image: linear-gradient(green, rgb(32, 53, 241));
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 100px;
-    position: relative;
-    justify-content: space-around;
-    align-items: center;
-}*/
+}
 .logo {
     text-align: center;
     padding: 25px;
@@ -136,128 +129,87 @@ Header .nav li a:hover{
     border-left: none;
     transition: .1s ease-in-out;
 }
-#upcomingEvents {
-    margin-top: 0px;
-    padding-top: 0px;
-    color: white;
-    
-    /*background-color:orange;*/
-}
-#upcomingSoundcloud {
-    width: 60%;
-    height: 100px;
-}
-#pastSoundcloud {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 60%;
-    height: 100px;
+#eventFeed {
+    /*background-color: brown;*/
     padding: 20px;
 }
-#upcomingEvents h1  {
-    font-size: 65px;
+article {
+    /*background-color: lightblue;*/
+    /*background-color: rgba(0,0,0,.3);*/
+    /*padding: 10px;*/
+    background-color: rgba(0,0,0,.3);
+    border: 3px double;
+    border-radius: 3px;
+    display: flex;
+    margin-bottom: 100px;
+}
+#eventFeed article .calendarBlock {
+    /*background-color: indigo;*/
+    width: 15%;
+    border: 3px double;
+    border-color: silver;
+    border-radius: 10px;
     text-align: center;
-    margin-bottom: 20px;
-    filter: drop-shadow(7px 7px 8px black);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-.current_lineup {
-    /*background-color: snow;*/
-    padding: 25px;
-    text-align: center;
-    
+#eventFeed article .calendarBlock h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    filter: drop-shadow(2px 2px 5px black);
 }
-.current_lineup img{
-    width: 500px;
-    height: 550px;
-    filter: drop-shadow(0px 0px 3px white);
-    border-radius: 5px;
-    margin: 25px;
+#eventFeed article .calendarBlock h5{
+    font-size: 15px;
+    font-weight: 400;
+    filter: drop-shadow(2px 2px 5px black);
 }
-#upcomingEvents {
-    text-align: center;
+#eventFeed article .calendarBlock h3{
+    font-size: 30px;
+    font-weight: 500;
+    filter: drop-shadow(2px 2px 5px black);
 }
-.current_lineup img:hover {
-    filter: drop-shadow(0px 0px 33px yellow);
+article .eventInfo {
+    /*background-color:saddlebrown;
+    padding: 10px;*/
+    margin-top: 100px;
 }
-#upcomingEvents h2  {
+article .eventInfo .infoText {
+    /*background-color: lightcoral;*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /*display: flex;*/
+}
+article .eventInfo .infoText h2 {
+    /*margin-bottom: auto;
+    margin-top: auto;*/
     font-size: 45px;
     text-align: center;
-    padding-top: 25px;
-    filter: drop-shadow(7px 7px 9px black);
+    padding: 65px;
+    filter: drop-shadow(2px 2px 5px black);
 }
-#timeWidget {
-    color: white;
-    font-size: 2px;
-    filter: drop-shadow(7px 7px 9px black);
-}
-#Soledad__United_States_z14e {
-
-}
-#upcomingEvents h5  {
+article .eventInfo .infoText p {
+    /*margin-bottom: auto;
+    margin-top: auto;*/
     font-size: 20px;
     text-align: center;
-    padding: 15px;
-    filter: drop-shadow(0px 0px 6px black);
+    padding: 5px;
+    filter: drop-shadow(2px 2px 5px black);
 }
-#upcomingEvents p {
-    font-size: 30px;
-    text-align: center;
-    filter: drop-shadow(0px 0px 3px black);
-    padding: 75px;
-    /*background-color: rgba(233, 0, 0, 0.7);*/
-    border-radius: 15px;
-}
-
-
-
-#pastEvents {
-    color: white;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    filter: drop-shadow(0px 0px 3px black);
-}
-#pastEvents article{
+article .poster {
+    /*background-color: darkgreen;*/
     padding: 25px;
-    display: inline-block;
-    text-align: center;
+    width: 30%;
 }
-#pastEvents img {
-    width: 400px;
-    height: 400px;
-    filter: drop-shadow(0px 0px 3px red);
-    border-radius: 8px;
+article .poster img {
+    width: 500px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 5px white);
 }
-#pastEvents h1 {
-    text-align: center;
-    font-size: 95px;
-    padding-bottom: 65px;
-    filter: drop-shadow(0px 0px 3px black);
-}
-#pastEvents h2{
-    font-size: 25px;
-    filter: drop-shadow(0px 0px 3px black);
-    padding: 15px;
-}
-#pastEvents h5{
-    filter: drop-shadow(0px 0px 3px black);
-    padding-bottom: 15px;
-}
-#pastEvents p{
-    font-size: 15px;
-    filter: drop-shadow(0px 0px 3px black);
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-}
-#pastEvents article {
-    width: 33%;
-    
-}
-
-
-
-
 /* custom styling for all icons */
 i.fas,
 i.fab {
@@ -271,7 +223,7 @@ i.fab {
 .brand-rights a:link, .brand-rights a:visited {
     color:white;
     text-decoration: none;
-  }
+}
 
 /* Optional glow effect */
 
@@ -442,102 +394,6 @@ i.fab {
         filter: invert(0);
         right: 0px;
     }
-    #upcomingEvents {
-    padding-top: 50px;
-    padding-left: 0px;
-    padding-right: 0px;
-    /*background-color: yellow;*/
-    }
-    #upcomingEvents h1  {
-        font-size: 55px;
-        padding-top: 200px;
-        padding-bottom: 50px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents {
-        text-align: center;
-        color: white;
-    }
-    #upcomingEvents img{
-        width: 97%;
-        height: 100%;
-        text-align: center;
-        filter: drop-shadow(0px 0px 3px red);
-        border-radius: 25px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    #upcomingEvents h2  {
-        font-size: 45px;
-        padding-top: 25px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents h5  {
-        font-size: 25px;
-        padding: 15px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents p {
-        font-size: 20px;
-        width: 100%;
-        filter: drop-shadow(0px 0px 3px black);
-        margin-left: auto;
-        margin-right: auto;
-        padding: 25px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-    }
-    #pastEvents article{
-        padding: 25px;
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #pastEvents article h2{
-        font-size: 35px;
-    }
-    #pastEvents article p{
-        font-size: 20px;
-        width: 500px;
-    }
-    #pastEvents {
-        color: white;
-        filter: drop-shadow(0px 0px 3px black);
-        /*background-color: tomato;*/
-        margin: 0px;
-    }
-    #pastEvents img {
-        width: 500px;
-        height: 600px;
-        filter: drop-shadow(0px 0px 3px red);
-        border-radius: 8px;
-        padding-top: 100px;
-    }
-    #pastEvents h1 {
-        text-align: center;
-        font-size: 45px;
-        padding-bottom: 65px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #pastEvents h2{
-        font-size: 10px;
-        filter: drop-shadow(0px 0px 3px black);
-        padding: 15px;
-    }
-    #pastEvents h5{
-        filter: drop-shadow(0px 0px 3px black);
-        padding-bottom: 15px;
-    }
-    #pastEvents p{
-        font-size: 15px;
-        filter: drop-shadow(0px 0px 3px black);
-        padding: 15px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-    }
-    #pastEvents article {
-        width: 33%;
-    }
 }
 
 @media (max-width:1350px){
@@ -619,102 +475,6 @@ i.fab {
         filter: invert(0);
         right: 0px;
     }
-    #upcomingEvents {
-    padding-top: 50px;
-    padding-left: 0px;
-    padding-right: 0px;
-    /*background-color: yellow;*/
-    }
-    #upcomingEvents h1  {
-        font-size: 55px;
-        padding-top: 200px;
-        padding-bottom: 50px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents {
-        text-align: center;
-        color: white;
-    }
-    #upcomingEvents img{
-        width: 97%;
-        height: 100%;
-        text-align: center;
-        filter: drop-shadow(0px 0px 3px red);
-        border-radius: 25px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    #upcomingEvents h2  {
-        font-size: 45px;
-        padding-top: 25px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents h5  {
-        font-size: 25px;
-        padding: 15px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents p {
-        font-size: 20px;
-        width: 100%;
-        filter: drop-shadow(0px 0px 3px black);
-        margin-left: auto;
-        margin-right: auto;
-        padding: 25px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-    }
-    #pastEvents article{
-        padding: 25px;
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #pastEvents article h2{
-        font-size: 35px;
-    }
-    #pastEvents article p{
-        font-size: 20px;
-        width: 500px;
-    }
-    #pastEvents {
-        color: white;
-        filter: drop-shadow(0px 0px 3px black);
-        /*background-color: tomato;*/
-        margin: 0px;
-    }
-    #pastEvents img {
-        width: 500px;
-        height: 600px;
-        filter: drop-shadow(0px 0px 3px red);
-        border-radius: 8px;
-        padding-top: 100px;
-    }
-    #pastEvents h1 {
-        text-align: center;
-        font-size: 45px;
-        padding-bottom: 65px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #pastEvents h2{
-        font-size: 10px;
-        filter: drop-shadow(0px 0px 3px black);
-        padding: 15px;
-    }
-    #pastEvents h5{
-        filter: drop-shadow(0px 0px 3px black);
-        padding-bottom: 15px;
-    }
-    #pastEvents p{
-        font-size: 15px;
-        filter: drop-shadow(0px 0px 3px black);
-        padding: 15px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-    }
-    #pastEvents article {
-        width: 33%;
-    }
 }
 
 
@@ -793,101 +553,6 @@ i.fab {
         filter: invert(0);
         right: 0px;
     }
-    #upcomingEvents {
-    padding-top: 50px;
-    padding-left: 0px;
-    padding-right: 0px;
-    /*background-color: yellow;*/
-    }
-    #upcomingEvents h1  {
-        font-size: 55px;
-        padding-top: 200px;
-        padding-bottom: 50px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents {
-        text-align: center;
-        color: white;
-    }
-    #upcomingEvents img{
-        width: 100%;
-        height: 800px;
-        text-align: center;
-        filter: drop-shadow(0px 0px 3px red);
-        border-radius: 25px;
-        margin-right: 45px;
-    }
-    #upcomingEvents h2  {
-        font-size: 45px;
-        padding-top: 25px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents h5  {
-        font-size: 25px;
-        padding: 15px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents p {
-        font-size: 20px;
-        width: 100%;
-        filter: drop-shadow(0px 0px 3px black);
-        margin-left: auto;
-        margin-right: auto;
-        padding: 25px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-    }
-    #pastEvents article{
-        padding: 25px;
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #pastEvents article h2{
-        font-size: 35px;
-    }
-    #pastEvents article p{
-        font-size: 20px;
-        width: 500px;
-    }
-    #pastEvents {
-        color: white;
-        filter: drop-shadow(0px 0px 3px black);
-        /*background-color: tomato;*/
-        margin: 0px;
-    }
-    #pastEvents img {
-        width: 500px;
-        height: 600px;
-        filter: drop-shadow(0px 0px 3px red);
-        border-radius: 8px;
-        padding-top: 100px;
-    }
-    #pastEvents h1 {
-        text-align: center;
-        font-size: 45px;
-        padding-bottom: 65px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #pastEvents h2{
-        font-size: 10px;
-        filter: drop-shadow(0px 0px 3px black);
-        padding: 15px;
-    }
-    #pastEvents h5{
-        filter: drop-shadow(0px 0px 3px black);
-        padding-bottom: 15px;
-    }
-    #pastEvents p{
-        font-size: 15px;
-        filter: drop-shadow(0px 0px 3px black);
-        padding: 15px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-    }
-    #pastEvents article {
-        width: 33%;
-    }
 }
 
 @media (max-width:500px){
@@ -918,34 +583,11 @@ i.fab {
         height: 100px;
         padding: 20px;
     }
-    #upcomingEvents .datetime h1 {
-        padding-top: 0px;
-        padding-bottom: 5px;
-        color:seashell;
-        font-weight: 800;
-        font-size: 35px;
-    }
     .date{
         font-size: 15px;
         font-weight: 600;
         text-align: center;
         letter-spacing: 3px;
-    }
-    .current_lineup {
-        /*background-color: snow;*/
-        padding: 0px;
-        text-align: center;
-        
-    }
-    #upcomingEvents .current_lineup img{
-        width: 400px;
-        height: 400px;
-        filter: drop-shadow(0px 0px 3px white);
-        border-radius: 5px;
-        margin: 10px;
-    }
-    #upcomingEvents .current_lineup img:hover {
-        filter: drop-shadow(0px 0px 10px yellow);
     }
     .time{
         font-size: 30px;
@@ -1043,99 +685,6 @@ i.fab {
         filter: invert(0);
         right: 0px;
     }
-    #upcomingEvents {
-    padding-top: 50px;
-    padding-left: 0px;
-    padding-right: 0px;
-    /*background-color: yellow;*/
-    }
-    #upcomingEvents h1  {
-        font-size: 55px;
-        padding-bottom: 0px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents {
-        text-align: center;
-        color: white;
-    }
-    #upcomingEvents img{
-        width: 100%;
-        height: 400px;
-        text-align: center;
-        filter: drop-shadow(0px 0px 3px red);
-        border-radius: 25px;
-        margin-right: 45px;
-    }
-    #upcomingEvents h2  {
-        font-size: 45px;
-        padding-top: 25px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents h5  {
-        font-size: 25px;
-        padding: 15px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents p {
-        font-size: 20px;
-        width: 100%;
-        filter: drop-shadow(0px 0px 3px black);
-        margin-left: auto;
-        margin-right: auto;
-        padding: 25px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-    }
-    #pastEvents article{
-        padding: 25px;
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #pastEvents article h2{
-        font-size: 25px;
-    }
-    #pastEvents article p{
-        font-size: 15px;
-        width: 300px;
-    }
-    #pastEvents {
-        color: white;
-        filter: drop-shadow(0px 0px 3px black);
-        /*background-color: tomato;*/
-        margin: 0px;
-    }
-    #pastEvents img {
-        width: 100%;
-        height: 300px;
-        filter: drop-shadow(0px 0px 3px red);
-        border-radius: 8px;
-    }
-    #pastEvents h1 {
-        text-align: center;
-        font-size: 45px;
-        padding-bottom: 65px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #pastEvents h2{
-        font-size: 10px;
-        filter: drop-shadow(0px 0px 3px black);
-        padding: 15px;
-    }
-    #pastEvents h5{
-        filter: drop-shadow(0px 0px 3px black);
-        padding-bottom: 15px;
-    }
-    #pastEvents p{
-        font-size: 15px;
-        filter: drop-shadow(0px 0px 3px black);
-        padding: 15px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-    }
-    #pastEvents article {
-        width: 33%;
-    }
 }@media (max-width:375px){
     body {
         width: 100%;
@@ -1156,42 +705,11 @@ i.fab {
         transition: 0.5s;
         transition-property: background, box-shadow;
     }
-    #pastSoundcloud {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        width: 100%;
-        height: 100px;
-        padding: 20px;
-    }
-    #upcomingEvents .datetime h1 {
-        padding-top: 0px;
-        padding-bottom: 5px;
-        color:seashell;
-        font-weight: 800;
-        font-size: 35px;
-    }
     .date{
         font-size: 15px;
         font-weight: 600;
         text-align: center;
         letter-spacing: 3px;
-    }
-    .current_lineup {
-        /*background-color: snow;*/
-        padding: 0px;
-        text-align: center;
-        
-    }
-    #upcomingEvents .current_lineup img{
-        width: 80%;
-        height: 400px;
-        filter: drop-shadow(0px 0px 3px white);
-        border-radius: 5px;
-        margin: 10px;
-    }
-    #upcomingEvents .current_lineup img:hover {
-        filter: drop-shadow(0px 0px 10px yellow);
     }
     .time{
         font-size: 30px;
@@ -1288,97 +806,5 @@ i.fab {
         filter: invert(0);
         right: 0px;
     }
-    #upcomingEvents {
-    padding-top: 50px;
-    padding-left: 0px;
-    padding-right: 0px;
-    /*background-color: yellow;*/
-    }
-    #upcomingEvents h1  {
-        font-size: 55px;
-        padding-bottom: 0px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents {
-        text-align: center;
-        color: white;
-    }
-    #upcomingEvents img{
-        width: 100%;
-        height: 400px;
-        text-align: center;
-        filter: drop-shadow(0px 0px 3px red);
-        border-radius: 25px;
-        margin-right: 45px;
-    }
-    #upcomingEvents h2  {
-        font-size: 45px;
-        padding-top: 25px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents h5  {
-        font-size: 25px;
-        padding: 15px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #upcomingEvents p {
-        font-size: 20px;
-        width: 100%;
-        filter: drop-shadow(0px 0px 3px black);
-        margin-left: auto;
-        margin-right: auto;
-        padding: 25px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-    }
-    #pastEvents article{
-        padding: 25px;
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #pastEvents article h2{
-        font-size: 25px;
-    }
-    #pastEvents article p{
-        font-size: 15px;
-        width: 300px;
-    }
-    #pastEvents {
-        color: white;
-        filter: drop-shadow(0px 0px 3px black);
-        /*background-color: tomato;*/
-        margin: 0px;
-    }
-    #pastEvents img {
-        width: 100%;
-        height: 300px;
-        filter: drop-shadow(0px 0px 3px red);
-        border-radius: 8px;
-    }
-    #pastEvents h1 {
-        text-align: center;
-        font-size: 45px;
-        padding-bottom: 65px;
-        filter: drop-shadow(0px 0px 3px black);
-    }
-    #pastEvents h2{
-        font-size: 10px;
-        filter: drop-shadow(0px 0px 3px black);
-        padding: 15px;
-    }
-    #pastEvents h5{
-        filter: drop-shadow(0px 0px 3px black);
-        padding-bottom: 15px;
-    }
-    #pastEvents p{
-        font-size: 15px;
-        filter: drop-shadow(0px 0px 3px black);
-        padding: 15px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-    }
-    #pastEvents article {
-        width: 33%;
-    }
+   
 }
