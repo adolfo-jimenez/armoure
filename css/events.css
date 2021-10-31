@@ -474,6 +474,13 @@ i.fab {
 }
 
 @media (max-width:1024px){
+    .logoMobile img {
+        width: 700px;
+        height: 140px;
+        margin-left: auto;
+        margin-right: auto;
+        filter: drop-shadow(0px 0px 2px white);
+    }
     article {
         padding: 100px;
     }
@@ -496,6 +503,10 @@ i.fab {
 }
 
 @media (max-width:768px){
+    .logoMobile img {
+        width: 500px;
+        height: 115px;
+    }
     article {
         padding: 0px;
     }
@@ -518,6 +529,13 @@ i.fab {
 }
 
 @media (max-width:425px){
+    .logoMobile img {
+        width: 300px;
+        height: 75px;
+        margin-left: auto;
+        margin-right: auto;
+        filter: drop-shadow(0px 0px 2px white);
+    }
     article {
         padding: 0px;
     }
