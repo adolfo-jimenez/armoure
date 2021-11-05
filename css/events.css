@@ -189,6 +189,7 @@ article .eventInfo {
 article .eventInfo .infoText {
     /*background-color: lightcoral;*/
     width: 80%;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
     /*display: flex;*/
@@ -210,14 +211,15 @@ article .eventInfo .infoText p {
     filter: drop-shadow(2px 2px 5px black);
 }
 article .poster {
-    /*background-color: darkgreen;*/
     padding: 25px;
-    width: 30%;
+    width: 50%;
+    text-align: center;
 }
 article .poster img {
     width: 500px;
     border-radius: 20px;
     filter: drop-shadow(0px 0px 5px white);
+    padding: 25px;
 }
 /* custom styling for all icons */
 i.fas,
