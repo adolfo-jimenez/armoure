@@ -19,16 +19,36 @@ section {
     position: relative;
     justify-content: space-around;
     align-items: center;
+    display: flex;
+}
+.audioEntertainment {
+    /*background-color: cadetblue;*/
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+iframe {
+    width: 600px;
+    height: 75px;
+    padding: 0px;
+    justify-content: center;
+}
+video {
+    /*background-color: coral;*/
+    padding: 0px;
 }
 section .circle {
     width: 100%;
     height: 100%;
-    /*background: #297c08;*/
-    background-color:black;
+    background-image: url(/images/);
     position: absolute;
-    clip-path: circle(80% at right -40%);
+    /*clip-path: circle(80% at right -40%);*/
+    clip-path: circle(70% at right -40%);
     top: 0;
     left: 0;
+    background-size: 1300px;
+    background-position: right;
+    display: none;
 }
 header {
     width: 100%;
@@ -40,14 +60,12 @@ header {
     align-items: center;
     padding: 40px 10px;
 }
-
 header img {
     height: 100px;
     width: 500px;
     padding-left: 50px;
-    filter: drop-shadow(0px 0px 5px white);
+    filter: drop-shadow(2px 2px 5px white);
 }
-
 header .logo {
     min-width: 60px;
     height: 60px;
@@ -59,20 +77,17 @@ header .logo {
     letter-spacing: 2.5px;
     text-shadow: #297c08 1px 2.5px;
 }
-
 header .nav {
     display: flex;
     position: relative;
     font-size: 16px;
 }
-
 header .nav li a {
     display: inline-block;
     color: #fff;
     margin-left: 40px;
     font-weight: 450;
 }
-
 header .nav li a:hover{
     font-weight: 500;
     border: 4px solid #161616;
@@ -81,29 +96,28 @@ header .nav li a:hover{
     border-left: none;
     transition: .1s ease-in-out;
 }
-
 .container {
-  margin-top: 100px;
-  width: 100%;
-  display: flex;
+  /*background-color: crimson;*/
+  margin-top: auto;
+  margin-bottom: auto;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
-
 .container .text-container {
-  max-width: 550px;
+  max-width: 650px;
   position: relative;
   margin-right: 20px;
 }
 .container .text-container h2 {
   color: #fff;
-  font-size: 3.8em;
+  font-size: 45px;
   line-height: 1.4em;
   font-weight: 700;
   margin-bottom: 10px;
 }
 .container .text-container p {
+  font-size: 18px;
   color: #fff;
   font-weight: lighter;
   opacity: .8;
@@ -111,7 +125,7 @@ header .nav li a:hover{
   border-radius: 10px;
   padding: 15px;
 }
-.container .text-container a {
+.container .text-container button {
   display: inline-block;
   text-align: center;
   margin-top: 30px;
@@ -119,11 +133,14 @@ header .nav li a:hover{
   background: #ab1026;
   letter-spacing: 1px;
   color: #fff;
-  font-weight: 500;
+  font-weight: 100;
+  font-size: 25px;
   border-radius: 80px;
   border: 5px solid rgb(94, 91, 91);
 }
-
+.container .text-container button:hover {
+    border: 5px solid rgb(255, 255, 255);
+  }
 .container .image-container {
   width: 500px;
   display: flex;
@@ -146,6 +163,9 @@ i.fab {
   font-size: 25px;
 }
 
+i.fa-aws {
+    font-size: 12px;
+}
 .fa-soundcloud {
     color: white;
 
@@ -269,6 +289,10 @@ i.fab {
     color: white;
     background-color:rgb(5, 5, 102);
 }
+.brand-rights a:link, .brand-rights a:visited {
+    color:white;
+    text-decoration: none;
+  }
 
 /* Optional glow effect */
 
@@ -299,226 +323,60 @@ i.fab {
 
 /* Media Queries*/
 
+@media (max-width:2560px) {
+    .container {
+        margin-top: 200px;
+      }
+}
 
-@media (max-width:1350px){
+@media (max-width:1440px) {
+    .container {
+        margin-top: 200px;
+      }
+}
+
+@media (max-width:1100px){
+    .container {
+        margin-top: 100px;
+      }
+    .audioEntertainment {
+        /*background-color: cadetblue;*/
+        text-align: center;
+        padding: 5px;
+        margin: 0px;
+    }
+    iframe {
+        width: 60px;
+        height: 75px;
+        padding: 0px;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    video {
+        /*background-color: coral;*/
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
     section .circle {
         width: 100%;
         height: 100%;
         /*background: #297c08;*/
         position: absolute;
-        clip-path: circle(65% at right -40%);
+        clip-path: circle(72% at right -40%);
         top: 0;
         left: 0;
     }
     section {
-        padding: 150px 40px;
+        padding: 150px 10px;
+        display: inline-block;
     }
     header {
         padding: 40px;
     }
     header img {
-        height: 105px;
-        width: 500px;
-        padding-left: 0px;
-        padding-right: 40px;
-    }
-    header .logo {
-        font-size: 20px;
-    }
-    header .nav {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    header .nav.active{
-        width: 60%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: fixed;
-        background-color: rgba(0,0,0,.95);
-        opacity: .95;
-        z-index: 5;
-    }
-    header .nav li a {
-        margin: 15px 5px;
-        font-size: 25px;
-        color: white;
-    }
-    .toggle {
-        width: 35px;
-        height: 30px;
-        position: relative;
-        background: url(/images/bars.png) no-repeat center;
-        background-size: cover;
-        filter: invert(1);
-        z-index: 100;
-    }
-    .toggle.active {
-        position: fixed;
-        background: url(/images/window-close_white.png) no-repeat center;
-        background-size: cover;
-        filter: invert(0);
-        right: 40px;
-    }
-    .container {
-        flex-direction: column;
-        padding-top: 100px;
-    }
-    .container .text-container,
-    .container .image-container {
-        max-width: 100%;
-    }
-    .text-container {
-        text-align: center;
-    }
-    .container .text-container h2 {
-        font-size: 40px;
-        text-align: center;
-    }
-    .container .text-container p {
-        font-size: 35px;
-        padding: 20px;
-        opacity: 1.0;
-        background-color: rgba(0,0,0,.3);
-        border-radius: 10px;
-    }
-    .container .image-container img {
-        position: relative;
-        min-width: 550px;
-        height: 450px;
-        margin-top: 100px;
-        margin-left: 1px;
-    }
-    .aLink {
-        bottom: 20px;
-        left: 33vw;
-    }
-    .social {
-        position: absolute;
-        bottom: 70vh;
-        right: 10px;
-    }
-}
-
-/*iPad 1024x768 side view*/
-@media (max-width:1024px){
-    section .circle {
-        width: 100%;
-        height: 100%;
-        /*background: #297c08;*/
-        position: absolute;
-        clip-path: circle(65% at right -40%);
-        top: 0;
-        left: 0;
-    }
-    section {
-        padding: 150px 40px;
-    }
-    header {
-        padding: 40px;
-    }
-    header img {
-        height: 105px;
-        width: 500px;
-        padding-left: 0px;
-        padding-right: 40px;
-    }
-    header .logo {
-        font-size: 20px;
-    }
-    header .nav {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    header .nav.active{
-        width: 60%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: fixed;
-        background-color: rgba(0,0,0,.95);
-        opacity: .95;
-        z-index: 5;
-    }
-    header .nav li a {
-        margin: 15px 5px;
-        font-size: 25px;
-        color: white;
-    }
-    .toggle {
-        width: 35px;
-        height: 30px;
-        position: relative;
-        background: url(/images/bars.png) no-repeat center;
-        background-size: cover;
-        filter: invert(1);
-        z-index: 100;
-    }
-    .toggle.active {
-        position: fixed;
-        background: url(/images/window-close_white.png) no-repeat center;
-        background-size: cover;
-        filter: invert(0);
-        right: 40px;
-    }
-    .container {
-        flex-direction: column;
-        padding-top: 100px;
-    }
-    .container .text-container,
-    .container .image-container {
-        max-width: 100%;
-    }
-    .text-container {
-        text-align: center;
-    }
-    .container .text-container h2 {
-        font-size: 40px;
-        text-align: center;
-    }
-    .container .text-container p {
-        font-size: 35px;
-        padding: 20px;
-        opacity: 1.0;
-        background-color: rgba(0,0,0,.3);
-        border-radius: 10px;
-    }
-    .container .image-container img {
-        position: relative;
-        min-width: 550px;
-        height: 450px;
-        margin-top: 100px;
-        margin-left: 1px;
-    }
-    .aLink {
-        bottom: 20px;
-        left: 33vw;
-    }
-    .social {
-        position: absolute;
-        bottom: 70vh;
-        right: 10px;
-    }
-}
-
-/*iPad 768x1024 regular view*/
-@media (max-width:768px){
-    section {
-        padding: 150px 40px;
-    }
-    header {
-        padding: 40px;
-    }
-    header img {
-        height: 145px;
+        height: 135px;
         width: 550px;
         padding-left: 0px;
         padding-right: 40px;
@@ -567,36 +425,164 @@ i.fab {
     }
     .container {
         flex-direction: column;
-        padding-top: 250px;
-    }
-    .container .text-container {
-        text-align: center;
-    }
-    .container .text-container h2 {
-        font-size: 70px;
-        text-align: center;
-    }
-    .container .text-container p {
-        font-size: 40px;
-        padding: 30px;
-        opacity: 1.0;
-        background-color: rgba(0,0,0,.3);
-        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /*background-color: red;*/
     }
     .container .text-container,
     .container .image-container {
         max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .text-container h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .container .text-container p {
+        font-size: 25px;
+        padding: 10px;
+        opacity: 1.0;
+        background-color: rgba(0,0,0,.3);
+        border-radius: 10px;
     }
     .container .image-container img {
         position: relative;
-        min-width: 550px;
-        height: 450px;
+        min-width: 150px;
+        height: 250px;
         margin-top: 100px;
-        margin-left: 1px;
     }
     .aLink {
         bottom: 20px;
-        left: 33vw;
+        left: 41vw;
+    }
+    .social {
+        position: absolute;
+        bottom: 70vh;
+        right: 10px;
+    }
+}
+
+@media (max-width:768px){
+    .container {
+        margin-top: 35px;
+      }
+    .audioEntertainment {
+        /*background-color: cadetblue;*/
+        text-align: center;
+        padding: 5px;
+        margin: 0px;
+    }
+    iframe {
+        width: 60px;
+        height: 75px;
+        padding: 0px;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    video {
+        /*background-color: coral;*/
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    section .circle {
+        width: 100%;
+        height: 100%;
+        /*background: #297c08;*/
+        position: absolute;
+        clip-path: circle(72% at right -40%);
+        top: 0;
+        left: 0;
+    }
+    section {
+        padding: 150px 10px;
+        display: inline-block;
+    }
+    header {
+        padding: 40px;
+    }
+    header img {
+        height: 80px;
+        width: 400px;
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    header .logo {
+        font-size: 20px;
+    }
+    header .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header .nav.active{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0,0,0,.95);
+        opacity: .95;
+        z-index: 5;
+    }
+    header .nav li a {
+        margin: 15px 5px;
+        font-size: 25px;
+        color: white;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: relative;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 40px;
+    }
+    .container {
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /*background-color: red;*/
+    }
+    .container .text-container,
+    .container .image-container {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .text-container h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .container .text-container p {
+        font-size: 25px;
+        padding: 10px;
+        opacity: 1.0;
+        background-color: rgba(0,0,0,.3);
+        border-radius: 10px;
+    }
+    .container .image-container img {
+        position: relative;
+        min-width: 150px;
+        height: 250px;
+        margin-top: 100px;
+    }
+    .aLink {
+        bottom: 20px;
+        left: 37vw;
     }
     .social {
         position: absolute;
@@ -606,6 +592,29 @@ i.fab {
 }
 
 @media (max-width:425px){
+    .container {
+        margin-top: 10px;
+      }
+    .audioEntertainment {
+        /*background-color: cadetblue;*/
+        text-align: center;
+        padding: 5px;
+        margin: 0px;
+    }
+    iframe {
+        width: 60px;
+        height: 75px;
+        padding: 0px;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    video {
+        /*background-color: coral;*/
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
     section .circle {
         width: 100%;
         height: 100%;
@@ -616,7 +625,8 @@ i.fab {
         left: 0;
     }
     section {
-        padding: 150px 40px;
+        padding: 150px 10px;
+        display: inline-block;
     }
     header {
         padding: 40px;
@@ -671,11 +681,15 @@ i.fab {
     }
     .container {
         flex-direction: column;
-        padding-top: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /*background-color: red;*/
     }
     .container .text-container,
     .container .image-container {
         max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .container .text-container h2 {
         font-size: 40px;
@@ -696,7 +710,7 @@ i.fab {
     }
     .aLink {
         bottom: 20px;
-        left: 33vw;
+        left: 25vw;
     }
     .social {
         position: absolute;
@@ -705,8 +719,30 @@ i.fab {
     }
 }
 
-/* Samsung Galaxy S9+ */
 @media (max-width:375px){
+    .container {
+        margin-top: 10px;
+      }
+    .audioEntertainment {
+        /*background-color: cadetblue;*/
+        text-align: center;
+        padding: 5px;
+        margin: 0px;
+    }
+    iframe {
+        width: 60px;
+        height: 75px;
+        padding: 0px;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    video {
+        /*background-color: coral;*/
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
     section .circle {
         width: 100%;
         height: 100%;
@@ -717,7 +753,8 @@ i.fab {
         left: 0;
     }
     section {
-        padding: 150px 40px;
+        padding: 150px 10px;
+        display: inline-block;
     }
     header {
         padding: 40px;
@@ -772,11 +809,15 @@ i.fab {
     }
     .container {
         flex-direction: column;
-        padding-top: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /*background-color: red;*/
     }
     .container .text-container,
     .container .image-container {
         max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .container .text-container h2 {
         font-size: 40px;
@@ -797,108 +838,7 @@ i.fab {
     }
     .aLink {
         bottom: 20px;
-        left: 33vw;
-    }
-    .social {
-        position: absolute;
-        bottom: 70vh;
-        right: 10px;
-    }
-}
-
-/* Samsung Galaxy */
-@media (max-width:360px){
-    section .circle {
-        width: 100%;
-        height: 100%;
-        /*background: #297c08;*/
-        position: absolute;
-        clip-path: circle(72% at right -40%);
-        top: 0;
-        left: 0;
-    }
-    section {
-        padding: 150px 40px;
-    }
-    header {
-        padding: 40px;
-    }
-    header img {
-        height: 45px;
-        width: 250px;
-        padding-left: 0px;
-        padding-right: 40px;
-    }
-    header .logo {
-        font-size: 20px;
-    }
-    header .nav {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    header .nav.active{
-        width: 60%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: fixed;
-        background-color: rgba(0,0,0,.95);
-        opacity: .95;
-        z-index: 5;
-    }
-    header .nav li a {
-        margin: 15px 5px;
-        font-size: 25px;
-        color: white;
-    }
-    .toggle {
-        width: 35px;
-        height: 30px;
-        position: relative;
-        background: url(/images/bars.png) no-repeat center;
-        background-size: cover;
-        filter: invert(1);
-        z-index: 100;
-    }
-    .toggle.active {
-        position: fixed;
-        background: url(/images/window-close_white.png) no-repeat center;
-        background-size: cover;
-        filter: invert(0);
-        right: 40px;
-    }
-    .container {
-        flex-direction: column;
-        padding-top: 100px;
-    }
-    .container .text-container,
-    .container .image-container {
-        max-width: 100%;
-    }
-    .container .text-container h2 {
-        font-size: 40px;
-        text-align: center;
-    }
-    .container .text-container p {
-        font-size: 25px;
-        padding: 10px;
-        opacity: 1.0;
-        background-color: rgba(0,0,0,.3);
-        border-radius: 10px;
-    }
-    .container .image-container img {
-        position: relative;
-        min-width: 150px;
-        height: 250px;
-        margin-top: 100px;
-    }
-    .aLink {
-        bottom: 20px;
-        left: 33vw;
+        left: 25vw;
     }
     .social {
         position: absolute;
