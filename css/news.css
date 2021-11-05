@@ -87,7 +87,7 @@ Header .nav li a:hover{
     text-align: center;
 }
 #news .newsMain img {
-    width: 800px;
+    width: 650px;
     filter: drop-shadow(0px 0px 8px white);
 }
 #news .newsMain h1 {

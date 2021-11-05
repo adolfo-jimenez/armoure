@@ -30,6 +30,15 @@ body {
     margin-bottom: 25px;
     filter: drop-shadow(0px 0px 10px black);
 }
+
+.timeZones {
+    display: flex;
+    justify-content: center;
+}
+
+.timebox {
+    margin: 25px;
+}
   
 .datetime{
     margin-left: auto;

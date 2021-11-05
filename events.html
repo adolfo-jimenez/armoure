@@ -42,55 +42,55 @@
 
         <!--digital clock start-->
         <!--<h1>Cali Time</h1>-->
-    <div class="datetime">
-        <!--<h1>Upcoming Events</h1>-->
+    <!--<div class="datetime">
         <div class="date">
           <span id="dayname">Day</span>,
           <span id="month">Month</span>
           <span id="daynum">00</span>,
           <span id="year">Year</span>
+          <h5>(your time)</h5>
         </div>
         <div class="time">
           <span id="hour">00</span>:
           <span id="minutes">00</span>:
           <span id="seconds">00</span>
           <span id="period">AM</span>
+        </div>-->
+    </div>
+
+    <div class="timeZones">
+        <div class="timebox">
+            <h1>West Coast</h1>
+            <p id="pacificTime"></p>
+        </div>
+    
+        <div class="timebox">
+            <h1>East Coast</h1>
+            <p id="atlanticTime"></p>
+        </div>
+    
+        <div class="timebox">
+            <h1>United Kingdom</h1>
+            <p id="ukTime"></p>
         </div>
     </div>
 
     <section id="eventFeed">
         <article>
             <div class="poster">
-                <img src="/event_images/10-16-21.png">
+                <a href="https://www.twitch.tv/armouredj" target="_blank"><img src="/event_images/11-7-21_Fresh_Joins_Part_1_Flyer.png"></a>
+                
             </div>
             <div class="eventInfo">
                 <div class="calendarBlock">
-                    <h1>Oct</h1>
-                    <h5>16th & 17th</h5>
+                    <h1>Nov</h1>
+                    <h5>7th</h5>
                     <h3>2021</h3>
                 </div>
                 <div class="infoText">
-                <h2>The Rocket Road Show</h2>
-                <p>That sitting wind a dreaming this with of little. From broken whom ungainly i and i then on sat, name and beast feather thing him if a. In bird but gloating one seeing. What meant expressing the oer that, other implore doubting broken quoth ghastly the at that. She tapping a let such the, is then his i separate nevermore now marvelled made. Implore the sent on that chamber placid he each, bust wide nodded.</p>
+                <h2>Super Sword Sessions: Fresh Joins Showcase Part I</h2>
+                <p>So proud of this line up I put together for you guys! Sunday we have a showcase of recent recruits to my collective. <br><br> Tower Events (Family): k3mmydj, corey_b_dj, rafaelportodj, daazmusik DJmilah, dj_haldy, jlyftedm, nocturnal_sessions.</p>
                 </div>
-            </div>
-        </article>
-        
-        <article>
-            
-            <div class="eventInfo">
-                <div class="calendarBlock">
-                    <h1>Oct</h1>
-                    <h5>16th & 17th</h5>
-                    <h3>2021</h3>
-                </div>
-                <div class="infoText">
-                <h2>The Rocket Road Show</h2>
-                <p>That sitting wind a dreaming this with of little. From broken whom ungainly i and i then on sat, name and beast feather thing him if a. In bird but gloating one seeing. What meant expressing the oer that, other implore doubting broken quoth ghastly the at that. She tapping a let such the, is then his i separate nevermore now marvelled made. Implore the sent on that chamber placid he each, bust wide nodded.</p>
-                </div>
-            </div>
-            <div class="poster">
-                <img src="/event_images/10-16-21.png">
             </div>
         </article>
 
@@ -181,6 +181,26 @@
       updateClock();
       window.setInterval("updateClock()", 1);
     }
+    </script>
+
+    <script>
+        var getPacificTime = function() {
+            document.getElementById("pacificTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'America/Los_Angeles',timeStyle:'medium', hourCycle:'h12', dateStyle:'long'});
+        }
+        getPacificTime();
+        setInterval(getPacificTime,1000);
+
+        var getAtlanticTime = function() {
+            document.getElementById("atlanticTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'America/New_York',timeStyle:'medium', hourCycle:'h12', dateStyle:'long'});
+        }
+        getAtlanticTime();
+        setInterval(getAtlanticTime,1000);
+
+        var getUkTime = function() {
+            document.getElementById("ukTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'Europe/London',timeStyle:'medium', hourCycle:'h12', dateStyle:'long'});
+        }
+        getUkTime();
+        setInterval(getUkTime,1000);
     </script>
 </body>
 
