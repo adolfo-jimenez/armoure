@@ -38,6 +38,7 @@ body {
 
 .timebox {
     margin: 25px;
+    text-align: center;
 }
   
 .datetime{
@@ -219,8 +220,10 @@ article .poster img {
     width: 500px;
     border-radius: 20px;
     filter: drop-shadow(0px 0px 5px white);
-    padding: 25px;
 }
+
+
+
 /* custom styling for all icons */
 i.fas,
 i.fab {

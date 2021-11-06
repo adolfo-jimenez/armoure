@@ -42,15 +42,14 @@
 
         <!--digital clock start-->
         <!--<h1>Cali Time</h1>-->
-    <!--<div class="datetime">
+    <div class="datetime">
         <div class="date">
           <span id="dayname">Day</span>,
           <span id="month">Month</span>
           <span id="daynum">00</span>,
           <span id="year">Year</span>
-          <h5>(your time)</h5>
         </div>
-        <div class="time">
+        <!--<div class="time">
           <span id="hour">00</span>:
           <span id="minutes">00</span>:
           <span id="seconds">00</span>
@@ -203,19 +202,19 @@
 
     <script>
         var getPacificTime = function() {
-            document.getElementById("pacificTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'America/Los_Angeles',timeStyle:'medium', hourCycle:'h12', dateStyle:'long'});
+            document.getElementById("pacificTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'America/Los_Angeles',timeStyle:'medium', hourCycle:'h12'});
         }
         getPacificTime();
         setInterval(getPacificTime,1000);
 
         var getAtlanticTime = function() {
-            document.getElementById("atlanticTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'America/New_York',timeStyle:'medium', hourCycle:'h12', dateStyle:'long'});
+            document.getElementById("atlanticTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'America/New_York',timeStyle:'medium', hourCycle:'h12'});
         }
         getAtlanticTime();
         setInterval(getAtlanticTime,1000);
 
         var getUkTime = function() {
-            document.getElementById("ukTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'Europe/London',timeStyle:'medium', hourCycle:'h12', dateStyle:'long'});
+            document.getElementById("ukTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'Europe/London',timeStyle:'medium', hourCycle:'h12'});
         }
         getUkTime();
         setInterval(getUkTime,1000);
