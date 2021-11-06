@@ -215,6 +215,8 @@ article .poster {
     padding: 25px;
     width: 50%;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 article .poster img {
     width: 500px;
