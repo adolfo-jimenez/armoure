@@ -119,6 +119,10 @@ body {
     width: 500px;
     filter: drop-shadow(0px 0px 5px white);
 }
+.logo img:hover {
+    filter: drop-shadow(6px 6px 7px green);
+    transition: 2s;
+}
 Header {
     width: 100%;
     top: 0;
@@ -363,6 +367,10 @@ i.fab {
         margin-right: auto;
         filter: drop-shadow(0px 0px 2px white);
     }
+    .logoMobile img:hover {
+        filter: drop-shadow(0px 0px 2px green);
+        transition: 2s;
+    }
     header .logo img {
         width: 275px;
         height: 70px;
@@ -505,6 +513,10 @@ i.fab {
         margin-right: auto;
         filter: drop-shadow(0px 0px 2px white);
     }
+    .logoMobile img:hover {
+        filter: drop-shadow(0px 0px 2px green);
+        transition: 2s;
+    }
     article {
         padding: 100px;
     }
@@ -529,6 +541,10 @@ i.fab {
     .logoMobile img {
         width: 500px;
         height: 115px;
+    }
+    .logoMobile img:hover {
+        filter: drop-shadow(0px 0px 2px green);
+        transition: 2s;
     }
     article {
         padding: 0px;
@@ -557,6 +573,10 @@ i.fab {
         margin-left: auto;
         margin-right: auto;
         filter: drop-shadow(0px 0px 2px white);
+    }
+    .logoMobile img:hover {
+        filter: drop-shadow(0px 0px 2px green);
+        transition: 2s;
     }
     article {
         padding: 0px;
