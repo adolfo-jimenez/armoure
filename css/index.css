@@ -66,6 +66,10 @@ header img {
     padding-left: 50px;
     filter: drop-shadow(2px 2px 5px white);
 }
+header img:hover {
+    filter: drop-shadow(6px 6px 7px green);
+    transition: 2s;
+}
 header .logo {
     min-width: 60px;
     height: 60px;
@@ -107,9 +111,11 @@ header .nav li a:hover{
 .container .text-container {
   max-width: 650px;
   position: relative;
-  margin-right: 20px;
+  /*margin-right: 20px;*/
+  text-align: center;
 }
 .container .text-container h2 {
+  text-align: left;
   color: #fff;
   font-size: 45px;
   line-height: 1.4em;
@@ -117,6 +123,7 @@ header .nav li a:hover{
   margin-bottom: 10px;
 }
 .container .text-container p {
+  text-align: left;
   font-size: 18px;
   color: #fff;
   font-weight: lighter;
@@ -126,20 +133,21 @@ header .nav li a:hover{
   padding: 15px;
 }
 .container .text-container button {
-  display: inline-block;
-  text-align: center;
-  margin-top: 30px;
-  padding: 8px 16px;
-  background: #ab1026;
+  margin-top: 20px;
+  /*padding: 8px 16px;*/
+  padding: 5px 14px;
+  /*background: #ab1026;*/
+  background-color:navy;
   letter-spacing: 1px;
   color: #fff;
   font-weight: 100;
-  font-size: 25px;
+  font-size: 16px;
   border-radius: 80px;
   border: 5px solid rgb(94, 91, 91);
 }
 .container .text-container button:hover {
     border: 5px solid rgb(255, 255, 255);
+    transition: .8s;
   }
 .container .image-container {
   width: 500px;
@@ -162,7 +170,6 @@ i.fas,
 i.fab {
   font-size: 25px;
 }
-
 i.fa-aws {
     font-size: 12px;
 }
@@ -170,28 +177,28 @@ i.fa-aws {
     color: white;
 
 }
-
 .fa-mixcloud {
     color: white;
     
 }
-
 .fa-twitch {
     color: white;
 }
-
 .fa-facebook {
     color: white;
 }
-
 .fa-instagram {
     color: white;
 }
-
 .fa-twitter {
     color: white;
 }
-
+i.fa-play {
+    font-size: 14px;
+}
+i.fa-pause {
+    font-size: 14px;
+}
 .aLink {
     position: absolute;
     display: flex;
@@ -200,7 +207,6 @@ i.fa-aws {
     bottom: 20px;
     left: 44vw;
 }
-
 .aLink li a {
     width: 50px;
     height: 50px;

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
-
 * {
     margin: 0;
     padding: 0;
@@ -82,7 +81,6 @@ body {
     font-weight: 600;
     text-align: center;
     letter-spacing: 3px;
-    te
 }
   
 .time{
@@ -499,7 +497,6 @@ i.fab {
         filter: drop-shadow(0px 0px 5px white);
     }
 }
-
 @media (max-width:1024px){
     .logoMobile img {
         width: 700px;
@@ -528,7 +525,6 @@ i.fab {
         margin-bottom: 50px;
     }
 }
-
 @media (max-width:768px){
     .logoMobile img {
         width: 500px;
@@ -554,7 +550,6 @@ i.fab {
         margin-bottom: 50px;
     }
 }
-
 @media (max-width:425px){
     .logoMobile img {
         width: 300px;
@@ -572,7 +567,6 @@ i.fab {
         filter: drop-shadow(0px 0px 5px white);
     }
 }
-
 @media (max-width:375px){
     article .poster {
         /*background-color: #09ffff;*/
@@ -591,7 +585,6 @@ i.fab {
         margin-bottom: 50px;
     }
 }
-
 @media (max-width:320px){
     
     article .poster img {
