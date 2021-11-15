@@ -11,6 +11,9 @@ function playVid() {
 function pauseVid() {
     vid.pause();
 }
+function fadeOut() {
+    
+}
 
 button1.addEventListener('click', function(){
     console.log('click');

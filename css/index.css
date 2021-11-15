@@ -26,6 +26,13 @@ section {
     text-align: center;
     padding: 0px;
     margin: 0px;
+    display: grid;
+    border-radius: 15px;
+}
+.audioEntertainment #myVideo {
+    border-radius: 10px; 
+    overflow: hidden; 
+    height: 100%;
 }
 iframe {
     width: 600px;
@@ -36,6 +43,16 @@ iframe {
 video {
     /*background-color: coral;*/
     padding: 0px;
+}
+.audioEntertainment a {
+    width: 100%;
+}
+.audioEntertainment a:link, a:visited {
+    color: white;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 100;
 }
 section .circle {
     width: 100%;
