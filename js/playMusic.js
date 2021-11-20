@@ -11,10 +11,11 @@ function playVid() {
 function pauseVid() {
     vid.pause();
 }
-function fadeOut() {
+function fadeInJavaFun() {
     
 }
 
+//Play Button
 button1.addEventListener('click', function(){
     console.log('click');
     //audio1.play();
@@ -27,6 +28,7 @@ button1.addEventListener('click', function(){
     })
 })
 
+//Pause Button
 button2.addEventListener('click', function(){
     console.log('click');
     pauseVid();
