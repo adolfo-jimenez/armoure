@@ -322,6 +322,10 @@ i.fa-pause {
     color:white;
     text-decoration: none;
   }
+  .container a:link, .container a:visited {
+    color:white;
+    text-decoration: none;
+  }
 
 /* Optional glow effect */
 
