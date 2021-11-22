@@ -32,7 +32,7 @@ body {
     filter: drop-shadow(7px 7px 8px black);
 }
 .eventPageBrief p {
-    width: 50%;
+    width: 20%;
     padding: 20px;
     background-color: rgba(0,0,0,.3);
     border-radius: 10px;
@@ -284,9 +284,6 @@ i.fab {
 /* Media Queries*/
 
 @media (max-width:2560px){
-    section {
-        
-    }
 }
 
 
@@ -301,10 +298,10 @@ i.fab {
         margin-right: auto;
         margin-bottom: 50px;
         color: #fff;
-        background: #10101E;
+        /*background: #10101E;*/
         font-family: "Segoe UI", sans-serif;
-        width: 80%;
-        padding: 30px;
+        width: 100%;
+        padding: 10px;
         /*border: 3px solid #2E94E3;*/
         border-radius: 5px;
         -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
@@ -506,6 +503,15 @@ i.fab {
     }
 }
 @media (max-width:1024px){
+    .datetime .date {
+        font-size: 50px;
+    }
+    .timebox {
+        font-size: 12px;
+    }
+    .eventPageBrief p {
+        width: 50%;
+    }
     .logoMobile img {
         width: 700px;
         height: 140px;
@@ -538,6 +544,15 @@ i.fab {
     }
 }
 @media (max-width:768px){
+    .datetime .date {
+        font-size: 30px;
+    }
+    .timebox {
+        font-size: 13px;
+    }
+    .eventPageBrief p {
+        width: 50%;
+    }
     .logoMobile img {
         width: 500px;
         height: 115px;
@@ -567,6 +582,15 @@ i.fab {
     }
 }
 @media (max-width:425px){
+    .datetime .date {
+        font-size: 30px;
+    }
+    .timebox {
+        font-size: 13px;
+    }
+    .eventPageBrief p {
+        width: 90%;
+    }
     .logoMobile img {
         width: 300px;
         height: 75px;
@@ -588,6 +612,12 @@ i.fab {
     }
 }
 @media (max-width:375px){
+    .datetime .date {
+        font-size: 30px;
+    }
+    .timebox {
+        font-size: 13px;
+    }
     article .poster {
         /*background-color: #09ffff;*/
         width: 100%;
@@ -603,6 +633,9 @@ i.fab {
     article .eventInfo .infoText {
         width: 100%;
         margin-bottom: 50px;
+    }
+    .eventPageBrief p {
+        width: 90%;
     }
 }
 @media (max-width:320px){
