@@ -10,6 +10,7 @@
 body {
     justify-content: center;
     align-items: center;
+    justify-self: auto;
     min-height: 100vh;
     background-image: linear-gradient(rgb(19, 33, 153), green);
     color: white;
@@ -179,6 +180,31 @@ article {
     margin-top: auto;
     margin-bottom: auto;
 }
+#eventFeed  article .twoDayEvent {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+#test1 {
+    font-size: 40px;
+    padding: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+}
+#eventFeed  article .twoDayEvent .calendarBlock {
+    /*background-color: indigo;*/
+    width: 15%;
+    border: 3px double;
+    border-color: silver;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 #eventFeed article .calendarBlock h1{
     font-size: 40px;
     font-weight: 700;
@@ -225,6 +251,8 @@ article .eventInfo .infoText p {
     filter: drop-shadow(2px 2px 5px black);
 }
 article .poster {
+    display: flex;
+    justify-content: center;
     padding: 25px;
     width: 50%;
     text-align: center;
@@ -236,7 +264,183 @@ article .poster img {
     border-radius: 20px;
     filter: drop-shadow(0px 0px 5px white);
 }
+.slider {
+    width: 800px;
+    height: 630px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slide {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slide input {
+    display: none;
+}
+.st {
+    width: 20%;
+    transition: 1.5s;
+}
+.st img {
+    width: 800px;
+    height: 600px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.nav-m {
+    position: absolute;
+    width: 800px;
+    margin-top: 70px;
+    justify-content: center;
+    display: flex;
+}
+.m-btn {
+    border: 2px solid #09ffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn:not(:last-child) {
+    margin-right: 30px;
+}
+.m-btn:hover {
+    background-color: #09ffff;
+}
+#radio1:checked ~.first {
+    margin-left: 0;
+}
+#radio2:checked ~.first {
+    margin-left: -20%;
+}
+#radio3:checked ~.first {
+    margin-left: -40%;
+}
+#radio4:checked ~.first {
+    margin-left: -60%;
+}
 
+.nav-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.nav-auto div:not(:last-child) {
+    margin-right: 30px;
+    justify-content: center;
+}
+
+#radio1:checked ~ .nav-auto .a-b1 {
+    background-color: saddlebrown;
+}
+#radio2:checked ~ .nav-auto .a-b2 {
+    background-color: saddlebrown;
+}
+#radio3:checked ~ .nav-auto .a-b3 {
+    background-color: saddlebrown;
+}
+#radio4:checked ~ .nav-auto .a-b4 {
+    background-color: saddlebrown;
+}
+
+* {box-sizing:border-box}
+
+.twoDayEventSlides {
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 50%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  border-radius: 10px;
+  background-color: chocolate;
+  margin-top: 25px;
+  filter: drop-shadow(0px 0px 5px white);
+}
+.mySlides img:hover {
+    filter: drop-shadow(0px 0px 5px gold);
+    transition: 2s;
+  }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color:chartreuse;
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s  ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.test2 {
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 
 /* custom styling for all icons */
@@ -253,6 +457,7 @@ i.fab {
     color:white;
     text-decoration: none;
 }
+
 
 /* Optional glow effect */
 
@@ -503,6 +708,10 @@ i.fab {
     }
 }
 @media (max-width:1024px){
+    #eventFeed article .calendarBlock {
+        /*background-color: indigo;*/
+        width: 15%;
+    }
     .datetime .date {
         font-size: 50px;
     }
@@ -544,6 +753,9 @@ i.fab {
     }
 }
 @media (max-width:768px){
+    #eventFeed article .calendarBlock {
+        width: 15%;
+    }
     .datetime .date {
         font-size: 30px;
     }
@@ -580,6 +792,75 @@ i.fab {
         width: 100%;
         margin-bottom: 50px;
     }
+    .twoDayEventSlides {
+    }
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 55%;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    .mySlides img:hover {
+      filter: drop-shadow(0px 0px 5px gold);
+      transition: 2s;
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 10px;
+      color:chartreuse;
+      font-weight: bold;
+      font-size: 35px;
+      transition: 0.6s  ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    
+    /* The dots/bullets/indicators */
+    .test2 {
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1s;
+    }
 }
 @media (max-width:425px){
     .datetime .date {
@@ -609,6 +890,76 @@ i.fab {
         width: 375px;
         border-radius: 20px;
         filter: drop-shadow(0px 0px 5px white);
+    }
+
+    .twoDayEventSlides {
+    }
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 95%;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    .mySlides img:hover {
+      filter: drop-shadow(0px 0px 5px gold);
+      transition: 2s;
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 10px;
+      color:chartreuse;
+      font-weight: bold;
+      font-size: 35px;
+      transition: 0.6s  ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    
+    /* The dots/bullets/indicators */
+    .test2 {
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1s;
     }
 }
 @media (max-width:375px){
@@ -646,5 +997,171 @@ i.fab {
         filter: drop-shadow(0px 0px 5px white);
         margin-left: auto;
         margin-right: auto;
+    }
+
+
+    * {box-sizing:border-box}
+
+.twoDayEventSlides {
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 95%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color:chartreuse;
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s  ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.test2 {
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+    .slider {
+        width: 800px;
+        height: 630px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .slide {
+        width: 500%;
+        height: 500px;
+        display: flex;
+    }
+    .slide input {
+        display: none;
+    }
+    .st {
+        width: 20%;
+        transition: 1.5s;
+    }
+    .st img {
+        width: 800px;
+        height: 600px;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+    .nav-m {
+        position: absolute;
+        width: 100px;
+        margin-top: 70px;
+    }
+    .m-btn {
+        border: 2px solid #09ffff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+        background-color: thistle;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .m-btn:not(:last-child) {
+        margin-right: 30px;
+    }
+    .m-btn:hover {
+        background-color: #09ffff;
+    }
+    #radio1:checked ~.first {
+        margin-left: 0;
+    }
+    #radio2:checked ~.first {
+        margin-left: -20%;
+    }
+    #radio3:checked ~.first {
+        margin-left: -40%;
+    }
+    #radio4:checked ~.first {
+        margin-left: -60%;
+    }
+    
+    .nav-auto {
+        position: absolute;
+        width: 800px;
+        margin-top: 460px;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-auto div {
+        border: 2px solid red;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    .nav-auto div:not(:last-child) {
+        margin-right: 30px;
+        justify-content: center;
+    }
+    
+    #radio1:checked ~ .nav-auto .a-b1 {
+        background-color: saddlebrown;
+    }
+    #radio2:checked ~ .nav-auto .a-b2 {
+        background-color: saddlebrown;
     }
 }
