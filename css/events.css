@@ -180,31 +180,6 @@ article {
     margin-top: auto;
     margin-bottom: auto;
 }
-#eventFeed  article .twoDayEvent {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-}
-#test1 {
-    font-size: 40px;
-    padding: 0px;
-    margin-top: auto;
-    margin-bottom: auto;
-    align-items: center;
-}
-#eventFeed  article .twoDayEvent .calendarBlock {
-    /*background-color: indigo;*/
-    width: 15%;
-    border: 3px double;
-    border-color: silver;
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-}
 #eventFeed article .calendarBlock h1{
     font-size: 40px;
     font-weight: 700;
@@ -222,13 +197,13 @@ article {
     filter: drop-shadow(2px 2px 5px black);
 }
 article .eventInfo {
-    /*background-color:saddlebrown;
-    padding: 10px;*/
+    /*padding: 10px;*/
     margin-top: 100px;
+    width: 60%;
 }
 article .eventInfo .infoText {
     /*background-color: lightcoral;*/
-    width: 80%;
+    width: 98%;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -355,6 +330,7 @@ article .poster img {
 * {box-sizing:border-box}
 
 .twoDayEventSlides {
+    width: 45%;
 }
 
 /* Slideshow container */
@@ -453,7 +429,7 @@ i.fab {
     color: white;
     background-color:black;
 }
-.brand-rights a:link, .brand-rights a:visited {
+a:link, a:visited {
     color:white;
     text-decoration: none;
 }
@@ -488,7 +464,129 @@ i.fab {
 
 /* Media Queries*/
 
-@media (max-width:2560px){
+@media (max-width:1440px){
+    .twoDayEventSlides {
+        width: 100%;
+    }
+    .eventInfo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .brand-rights {
+        width: 100%;
+    }
+    .eventsPageIntro {
+        width: 100%;
+    }
+    #eventFeed article .calendarBlock {
+        width: 25%;
+    }
+    .datetime .date {
+        font-size: 30px;
+    }
+    .timebox {
+        font-size: 13px;
+    }
+    .eventPageBrief p {
+        width: 50%;
+    }
+    .logoMobile img {
+        width: 500px;
+        height: 115px;
+    }
+    .logoMobile img:hover {
+        filter: drop-shadow(0px 0px 2px green);
+        transition: 2s;
+    }
+    article {
+        padding: 0px;
+    }
+    article .poster {
+        /*background-color: #09ffff;*/
+        width: 100%;
+        text-align: center;
+    }
+    article .poster img {
+        width: 400px;
+        margin-top: 50px;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
+    
+    }
+    article .eventInfo .infoText {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .twoDayEventSlides {
+    }
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 55%;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    .mySlides img:hover {
+      filter: drop-shadow(0px 0px 5px gold);
+      transition: 2s;
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 10px;
+      color:chartreuse;
+      font-weight: bold;
+      font-size: 35px;
+      transition: 0.6s  ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    
+    /* The dots/bullets/indicators */
+    .test2 {
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1s;
+    }
 }
 
 
@@ -708,32 +806,61 @@ i.fab {
     }
 }
 @media (max-width:1024px){
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+        right: 0;
+        margin-right: 70px;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 0px;
+        margin-right: 80px;
+    }
+    .twoDayEventSlides {
+        width: 100%;
+    }
+    .eventInfo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .brand-rights {
+        width: 100%;
+    }
+    .eventsPageIntro {
+        width: 100%;
+    }
     #eventFeed article .calendarBlock {
-        /*background-color: indigo;*/
-        width: 15%;
+        width: 25%;
     }
     .datetime .date {
-        font-size: 50px;
+        font-size: 30px;
     }
     .timebox {
-        font-size: 12px;
+        font-size: 13px;
     }
     .eventPageBrief p {
         width: 50%;
     }
     .logoMobile img {
-        width: 700px;
-        height: 140px;
-        margin-left: auto;
-        margin-right: auto;
-        filter: drop-shadow(0px 0px 2px white);
+        width: 500px;
+        height: 115px;
     }
     .logoMobile img:hover {
         filter: drop-shadow(0px 0px 2px green);
         transition: 2s;
     }
     article {
-        padding: 100px;
+        padding: 0px;
     }
     article .poster {
         /*background-color: #09ffff;*/
@@ -751,10 +878,112 @@ i.fab {
         width: 100%;
         margin-bottom: 50px;
     }
+    .twoDayEventSlides {
+    }
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 55%;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    .mySlides img:hover {
+      filter: drop-shadow(0px 0px 5px gold);
+      transition: 2s;
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 10px;
+      color:chartreuse;
+      font-weight: bold;
+      font-size: 35px;
+      transition: 0.6s  ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    
+    /* The dots/bullets/indicators */
+    .test2 {
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1s;
+    }
 }
 @media (max-width:768px){
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+        right: 0;
+        margin-right: 70px;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 0px;
+        margin-right: 80px;
+    }
+    .twoDayEventSlides {
+        width: 100%;
+    }
+    .eventInfo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .brand-rights {
+        width: 100%;
+    }
+    .eventsPageIntro {
+        width: 100%;
+    }
     #eventFeed article .calendarBlock {
-        width: 15%;
+        width: 25%;
     }
     .datetime .date {
         font-size: 30px;
@@ -863,133 +1092,80 @@ i.fab {
     }
 }
 @media (max-width:425px){
-    .datetime .date {
-        font-size: 30px;
-    }
-    .timebox {
-        font-size: 13px;
-    }
-    .eventPageBrief p {
-        width: 90%;
-    }
-    .logoMobile img {
-        width: 300px;
-        height: 75px;
-        margin-left: auto;
-        margin-right: auto;
-        filter: drop-shadow(0px 0px 2px white);
-    }
-    .logoMobile img:hover {
-        filter: drop-shadow(0px 0px 2px green);
-        transition: 2s;
+    #eventFeed {
+        /*background-color: brown;*/
+        padding: 10px;
     }
     article {
-        padding: 0px;
-    }
-    article .poster img {
-        width: 375px;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-    }
-
-    .twoDayEventSlides {
-    }
-    
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 95%;
-    }
-    
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-    .mySlides img:hover {
-      filter: drop-shadow(0px 0px 5px gold);
-      transition: 2s;
-    }
-    /* Next & previous buttons */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      margin-top: -22px;
-      padding: 10px;
-      color:chartreuse;
-      font-weight: bold;
-      font-size: 35px;
-      transition: 0.6s  ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-    
-    
-    /* The dots/bullets/indicators */
-    .test2 {
-    }
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-    
-    .active, .dot:hover {
-      background-color: #717171;
-    }
-    
-    /* Fading animation */
-    .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1s;
-    }
-}
-@media (max-width:375px){
-    .datetime .date {
-        font-size: 30px;
-    }
-    .timebox {
-        font-size: 13px;
-    }
-    article .poster {
-        /*background-color: #09ffff;*/
-        width: 100%;
-        text-align: center;
-    }
-    article .poster img {
-        width: 300px;
-        margin-top: 50px;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-    
-    }
-    article .eventInfo .infoText {
-        width: 100%;
+        /*background-color: lightblue;*/
+        /*background-color: rgba(0,0,0,.3);*/
+        /*padding: 10px;*/
+        background-color: rgba(0,0,0,.3);
+        border: 3px ridge;
+        border-radius: 3px;
+        display: inline-block;
         margin-bottom: 50px;
     }
-    .eventPageBrief p {
+    #eventFeed article .calendarBlock {
+        /*background-color: indigo;*/
+        width: 45%;
+        border: 3px double;
+        border-color: silver;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #eventFeed article .calendarBlock h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    #eventFeed article .calendarBlock h5{
+        font-size: 15px;
+        font-weight: 400;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    #eventFeed article .calendarBlock h3{
+        font-size: 30px;
+        font-weight: 500;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    article .eventInfo {
+        /*padding: 10px;*/
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
         width: 90%;
     }
-}
-@media (max-width:320px){
+    article .eventInfo .infoText {
+        /*background-color: lightcoral;*/
+        width: 98%;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        /*display: flex;*/
+    }
+    article .eventInfo .infoText h2 {
+        /*margin-bottom: auto;
+        margin-top: auto;*/
+        font-size: 45px;
+        text-align: center;
+        padding: 45px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    article .eventInfo .infoText p {
+        /*margin-bottom: auto;
+        margin-top: auto;*/
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
     
     article .poster img {
         width: 270px;
@@ -1003,6 +1179,7 @@ i.fab {
     * {box-sizing:border-box}
 
 .twoDayEventSlides {
+    width: 100%;
 }
 
 /* Slideshow container */
@@ -1068,100 +1245,350 @@ i.fab {
   animation-name: fade;
   animation-duration: 1s;
 }
-
-
-
-
-
-
-
-
-
-
-    .slider {
-        width: 800px;
-        height: 630px;
-        border-radius: 10px;
-        overflow: hidden;
+}
+@media (max-width:375px){
+    .logoMobile {
     }
-    .slide {
-        width: 500%;
-        height: 500px;
+    .logoMobile img {
         display: flex;
+        padding: 10px;
     }
-    .slide input {
-        display: none;
-    }
-    .st {
-        width: 20%;
-        transition: 1.5s;
-    }
-    .st img {
-        width: 800px;
-        height: 600px;
-        margin-bottom: auto;
-        margin-top: auto;
-    }
-    .nav-m {
+    .toggle {
+        width: 35px;
+        height: 30px;
         position: absolute;
-        width: 100px;
-        margin-top: 70px;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+        right: 0;
+        margin-right: -50px;
     }
-    .m-btn {
-        border: 2px solid #09ffff;
-        padding: 5px;
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 0px;
+        margin-right: 33px;
+    }
+    #eventFeed {
+        /*background-color: brown;*/
+        padding: 10px;
+    }
+    article {
+        /*background-color: lightblue;*/
+        /*background-color: rgba(0,0,0,.3);*/
+        /*padding: 10px;*/
+        background-color: rgba(0,0,0,.3);
+        border: 3px ridge;
+        border-radius: 3px;
+        display: inline-block;
+        margin-bottom: 50px;
+        width: 120%;
+    }
+    header {
+        
+    }
+    .brand-rights {
+        width: 120%;
+    }
+    .eventsPageIntro {
+        width: 120%;
+    }
+    #eventFeed article .calendarBlock {
+        /*background-color: indigo;*/
+        width: 45%;
+        border: 3px double;
+        border-color: silver;
         border-radius: 10px;
-        cursor: pointer;
-        transition: 1s;
-        background-color: thistle;
-        padding: 5px;
+        text-align: center;
+        padding: 10px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #eventFeed article .calendarBlock h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    #eventFeed article .calendarBlock h5{
+        font-size: 15px;
+        font-weight: 400;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    #eventFeed article .calendarBlock h3{
+        font-size: 30px;
+        font-weight: 500;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    article .eventInfo {
+        /*padding: 10px;*/
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    article .eventInfo .infoText {
+        /*background-color: lightcoral;*/
+        width: 98%;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        /*display: flex;*/
+    }
+    article .eventInfo .infoText h2 {
+        /*margin-bottom: auto;
+        margin-top: auto;*/
+        font-size: 45px;
         text-align: center;
-        display: flex;
-        justify-content: center;
+        padding: 45px;
+        filter: drop-shadow(2px 2px 5px black);
     }
-    .m-btn:not(:last-child) {
-        margin-right: 30px;
-    }
-    .m-btn:hover {
-        background-color: #09ffff;
-    }
-    #radio1:checked ~.first {
-        margin-left: 0;
-    }
-    #radio2:checked ~.first {
-        margin-left: -20%;
-    }
-    #radio3:checked ~.first {
-        margin-left: -40%;
-    }
-    #radio4:checked ~.first {
-        margin-left: -60%;
+    article .eventInfo .infoText p {
+        /*margin-bottom: auto;
+        margin-top: auto;*/
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        filter: drop-shadow(2px 2px 5px black);
     }
     
-    .nav-auto {
-        position: absolute;
-        width: 800px;
-        margin-top: 460px;
-        display: flex;
-        justify-content: center;
+    article .poster img {
+        width: 270px;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
+        margin-left: auto;
+        margin-right: auto;
     }
-    .nav-auto div {
-        border: 2px solid red;
-        padding: 5px;
+
+
+    * {box-sizing:border-box}
+
+.twoDayEventSlides {
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 95%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color:chartreuse;
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s  ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.test2 {
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+}
+@media (max-width:320px){
+
+    #eventFeed {
+        /*background-color: brown;*/
+        padding: 10px;
+    }
+    article {
+        /*background-color: lightblue;*/
+        /*background-color: rgba(0,0,0,.3);*/
+        /*padding: 10px;*/
+        background-color: rgba(0,0,0,.3);
+        border: 3px ridge;
+        border-radius: 3px;
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+    #eventFeed article .calendarBlock {
+        /*background-color: indigo;*/
+        width: 45%;
+        border: 3px double;
+        border-color: silver;
         border-radius: 10px;
-        transition: 1s;
+        text-align: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
     }
-    .nav-auto div:not(:last-child) {
-        margin-right: 30px;
-        justify-content: center;
+    #eventFeed article .calendarBlock h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    #eventFeed article .calendarBlock h5{
+        font-size: 15px;
+        font-weight: 400;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    #eventFeed article .calendarBlock h3{
+        font-size: 30px;
+        font-weight: 500;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    article .eventInfo {
+        /*padding: 10px;*/
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    article .eventInfo .infoText {
+        /*background-color: lightcoral;*/
+        width: 98%;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        /*display: flex;*/
+    }
+    article .eventInfo .infoText h2 {
+        /*margin-bottom: auto;
+        margin-top: auto;*/
+        font-size: 45px;
+        text-align: center;
+        padding: 45px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    article .eventInfo .infoText p {
+        /*margin-bottom: auto;
+        margin-top: auto;*/
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        filter: drop-shadow(2px 2px 5px black);
     }
     
-    #radio1:checked ~ .nav-auto .a-b1 {
-        background-color: saddlebrown;
+    article .poster img {
+        width: 270px;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
+        margin-left: auto;
+        margin-right: auto;
     }
-    #radio2:checked ~ .nav-auto .a-b2 {
-        background-color: saddlebrown;
-    }
+
+
+    * {box-sizing:border-box}
+
+.twoDayEventSlides {
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 95%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color:chartreuse;
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s  ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.test2 {
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
 }

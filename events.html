@@ -38,46 +38,49 @@
         <img src="/armoure_logopack/armoure_logo.png" alt="armoure_logo.png">
     </div>
 
-    <div class="eventPageBrief">
-        <h1>Events</h1>
-        <p>All events will be posted on this page.</p>
-    </div>
-        <!--digital clock start-->
-        <!--<h1>Cali Time</h1>-->
-    <div class="datetime">
-        <div class="date">
-          <span id="dayname">Day</span>,
-          <span id="month">Month</span>
-          <span id="daynum">00</span>,
-          <span id="year">Year</span>
+    <div class="eventsPageIntro">
+        <div class="eventPageBrief">
+            <h1>Events</h1>
+            <!--<p>All events will be posted on this page.</p>-->
         </div>
-        <!--<div class="time">
-          <span id="hour">00</span>:
-          <span id="minutes">00</span>:
-          <span id="seconds">00</span>
-          <span id="period">AM</span>
-        </div>-->
-    </div>
-
-    <div class="timeZones">
-        <div class="timebox">
-            <h1>West Coast</h1>
-            <h5>(PST)</h5>
-            <p id="pacificTime"></p>
+            <!--digital clock start-->
+            <!--<h1>Cali Time</h1>-->
+        <div class="datetime">
+            <div class="date">
+              <span id="dayname">Day</span>,
+              <span id="month">Month</span>
+              <span id="daynum">00</span>,
+              <span id="year">Year</span>
+            </div>
+            <!--<div class="time">
+              <span id="hour">00</span>:
+              <span id="minutes">00</span>:
+              <span id="seconds">00</span>
+              <span id="period">AM</span>
+            </div>-->
         </div>
     
-        <div class="timebox">
-            <h1>East Coast</h1>
-            <h5>(EST)</h5>
-            <p id="atlanticTime"></p>
-        </div>
-    
-        <div class="timebox">
-            <h1>Central Europe</h1>
-            <h5>(CET)</h5>
-            <p id="ukTime"></p>
+        <div class="timeZones">
+            <div class="timebox">
+                <h1>West Coast</h1>
+                <h5>(PST)</h5>
+                <p id="pacificTime"></p>
+            </div>
+        
+            <div class="timebox">
+                <h1>East Coast</h1>
+                <h5>(EST)</h5>
+                <p id="atlanticTime"></p>
+            </div>
+        
+            <div class="timebox">
+                <h1>London Time</h1>
+                <h5>(GMT)</h5>
+                <p id="ukTime"></p>
+            </div>
         </div>
     </div>
+    
 
     <section id="eventFeed">
         <!--<article>
@@ -181,7 +184,11 @@
             
                 <div class="infoText">
                     <h2>Super Sword Sessions</h2>
-                    <p>Introducing the Super Sword Sessions! A shared platform for DJ’s to collaborate and vibe.</p>
+                    <p>Introducing the Super Sword Sessions! A shared platform for DJ’s to collaborate and vibe. In this edition, we see the debut of new talent along with some familiar faces. In this edition, we see the debut of new talent along with some familiar faces as well. Prog and Deep Techno inspired mixes are at the forefront of this Super Sword Session. Melodic and Trance themed mixes are also going to be a part of this event.
+                        <br>
+                        <br>
+                        Join us live on Twitch from the <a href="https://www.twitch.tv/armouredj" target="_blank"><i><b>Official Armoure Twitch Channel</b></i></a>.
+                    </p>
                 </div>
 
                 <!--<div class="nav-auto">
@@ -322,7 +329,7 @@
         setInterval(getAtlanticTime,1000);
 
         var getUkTime = function() {
-            document.getElementById("ukTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'Europe/Berlin',timeStyle:'medium', hourCycle:'h12'});
+            document.getElementById("ukTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'Europe/London',timeStyle:'medium', hourCycle:'h12'});
         }
         getUkTime();
         setInterval(getUkTime,1000);
