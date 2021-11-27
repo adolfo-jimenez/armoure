@@ -1092,6 +1092,12 @@ a:link, a:visited {
     }
 }
 @media (max-width:425px){
+    .logoMobile img {
+        display: flex;
+        padding: 10px;
+        width: 450px;
+        margin-left: 0px;
+    }
     #eventFeed {
         /*background-color: brown;*/
         padding: 10px;
@@ -1252,6 +1258,8 @@ a:link, a:visited {
     .logoMobile img {
         display: flex;
         padding: 10px;
+        width: 450px;
+        margin-left: 30px;
     }
     .toggle {
         width: 35px;
@@ -1437,7 +1445,12 @@ a:link, a:visited {
 }
 }
 @media (max-width:320px){
-
+    .logoMobile img {
+        display: flex;
+        padding: 10px;
+        width: 350px;
+        margin-left: 20px;
+    }
     #eventFeed {
         /*background-color: brown;*/
         padding: 10px;
@@ -1591,4 +1604,6 @@ a:link, a:visited {
   animation-name: fade;
   animation-duration: 1s;
 }
+
+
 }
