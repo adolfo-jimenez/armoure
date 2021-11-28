@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
-    <title>Armoure | Events</title>
+    <title>Armoure | Live Events</title>
     <link rel="stylesheet" href="css/events.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
         <div class="toggle" onclick="toggleMenu()"></div>
         <ul class="nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
+            <li><a href="events.html"> Events</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="https://merch.streamelements.com/armouredj" target="_blank">Merch</a></li>
@@ -38,64 +38,108 @@
         <img src="/armoure_logopack/armoure_logo.png" alt="armoure_logo.png">
     </div>
 
-    <h1 id="pageHeader">Events</h1>
-
-        <!--digital clock start-->
-        <!--<h1>Cali Time</h1>-->
-    <!--<div class="datetime">
-        <div class="date">
-          <span id="dayname">Day</span>,
-          <span id="month">Month</span>
-          <span id="daynum">00</span>,
-          <span id="year">Year</span>
-          <h5>(your time)</h5>
+    <div class="eventsPageIntro">
+        <div class="eventPageBrief">
+            <h1> Live Events</h1>
+            <!--<p>All events will be posted on this page.</p>-->
         </div>
-        <div class="time">
-          <span id="hour">00</span>:
-          <span id="minutes">00</span>:
-          <span id="seconds">00</span>
-          <span id="period">AM</span>
-        </div>-->
-    </div>
-
-    <div class="timeZones">
-        <div class="timebox">
-            <h1>West Coast</h1>
-            <p id="pacificTime"></p>
+            <!--digital clock start-->
+            <!--<h1>Cali Time</h1>-->
+        <div class="datetime">
+            <div class="date">
+              <span id="dayname">Day</span>,
+              <span id="month">Month</span>
+              <span id="daynum">00</span>,
+              <span id="year">Year</span>
+            </div>
+            <!--<div class="time">
+              <span id="hour">00</span>:
+              <span id="minutes">00</span>:
+              <span id="seconds">00</span>
+              <span id="period">AM</span>
+            </div>-->
         </div>
     
-        <div class="timebox">
-            <h1>East Coast</h1>
-            <p id="atlanticTime"></p>
-        </div>
-    
-        <div class="timebox">
-            <h1>United Kingdom</h1>
-            <p id="ukTime"></p>
+        <div class="timeZones">
+            <div class="timebox">
+                <h1>West Coast</h1>
+                <h5>(PST)</h5>
+                <p id="pacificTime"></p>
+            </div>
+        
+            <div class="timebox">
+                <h1>East Coast</h1>
+                <h5>(EST)</h5>
+                <p id="atlanticTime"></p>
+            </div>
+        
+            <div class="timebox">
+                <h1>London Time</h1>
+                <h5>(GMT)</h5>
+                <p id="ukTime"></p>
+            </div>
         </div>
     </div>
+    
 
     <section id="eventFeed">
+
         <article>
-            <div class="poster">
-                <a href="https://www.twitch.tv/armouredj" target="_blank"><img src="/event_images/11-7-21_Fresh_Joins_Part_1_Flyer.png"></a>
+            <div class="twoDayEventSlides">
+                            <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <img src="/event_images/12-4-21.png" style="width:100%">
+                    </div>
                 
+                    <div class="mySlides fade">
+                    <img src="/event_images/12-5-21.png" style="width:100%">
+                    </div>
+            
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <!--<div class="test2" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>-->
             </div>
+
             <div class="eventInfo">
+                
                 <div class="calendarBlock">
-                    <h1>Nov</h1>
-                    <h5>7th</h5>
+                    <h1>Dec</h1>
+                    <h5>4th & 5th</h5>
                     <h3>2021</h3>
                 </div>
+            
                 <div class="infoText">
-                <h2>Super Sword Sessions: Fresh Joins Showcase Part I</h2>
-                <p>So proud of this line up I put together for you guys! Sunday we have a showcase of recent recruits to my collective. <br><br> Tower Events (Family): k3mmydj, corey_b_dj, rafaelportodj, daazmusik DJmilah, dj_haldy, jlyftedm, nocturnal_sessions.</p>
+                    <h2>Super Sword Sessions</h2>
+                    <p>Introducing the Super Sword Sessions! A shared platform for DJ’s to collaborate and vibe. In this edition, we see the debut of new talent along with some familiar faces. In this edition, we see the debut of new talent along with some familiar faces as well. Prog and Deep Techno inspired mixes are at the forefront of this Super Sword Session. Melodic and Trance themed mixes are also going to be a part of this event.
+                        <br>
+                        <br>
+                        Join us live on Twitch from the <a href="https://www.twitch.tv/armouredj" target="_blank"><i><b>Official Armoure Twitch Channel</b></i></a>.
+                    </p>
                 </div>
+
+                <!--<div class="nav-auto">
+                    <div class="a-b1"></div>
+                    <div class="a-b2"></div>
+                </div>-->
             </div>
+
         </article>
 
-    </section>
         
+    </section>
 
     <div class="brand-rights">
         <small>&#169; 2021 ArmoureDJ | All Rights Reserved | <a href="https://aws.amazon.com/what-is-cloud-computing/" target="_blank">Powered by <i class="fab fa-aws"></i></a></small>
@@ -110,6 +154,16 @@
     <script src="./js/like_button.js"></script>
     <script src="./js/nav.js"></script>
 
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById?('radio' + counter).checked=true;
+            counter++;
+            if(course > 2) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
 
 <script type="text/javascript">
     function updateClock(){
@@ -185,23 +239,51 @@
 
     <script>
         var getPacificTime = function() {
-            document.getElementById("pacificTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'America/Los_Angeles',timeStyle:'medium', hourCycle:'h12', dateStyle:'long'});
+            document.getElementById("pacificTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'America/Los_Angeles',timeStyle:'medium', hourCycle:'h12'});
         }
         getPacificTime();
         setInterval(getPacificTime,1000);
 
         var getAtlanticTime = function() {
-            document.getElementById("atlanticTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'America/New_York',timeStyle:'medium', hourCycle:'h12', dateStyle:'long'});
+            document.getElementById("atlanticTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'America/New_York',timeStyle:'medium', hourCycle:'h12'});
         }
         getAtlanticTime();
         setInterval(getAtlanticTime,1000);
 
         var getUkTime = function() {
-            document.getElementById("ukTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'Europe/London',timeStyle:'medium', hourCycle:'h12', dateStyle:'long'});
+            document.getElementById("ukTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'Europe/London',timeStyle:'medium', hourCycle:'h12'});
         }
         getUkTime();
         setInterval(getUkTime,1000);
     </script>
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </body>
 
 

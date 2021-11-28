@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
-
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +10,7 @@
 body {
     justify-content: center;
     align-items: center;
+    justify-self: auto;
     min-height: 100vh;
     background-image: linear-gradient(rgb(19, 33, 153), green);
     color: white;
@@ -23,27 +23,38 @@ body {
     min-height: 100%;
     z-index: -1;
 }
-
-#pageHeader {
-    text-align: center;
-    font-size: 55px;
-    margin-bottom: 25px;
-    filter: drop-shadow(0px 0px 10px black);
+.eventPageBrief {
+    padding: 0px;
 }
-
+.eventPageBrief h1 {
+    text-align: center;
+    font-size: 70px;
+    margin: 20px;
+    filter: drop-shadow(7px 7px 8px black);
+}
+.eventPageBrief p {
+    width: 20%;
+    padding: 20px;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: center;
+}
 .timeZones {
     display: flex;
     justify-content: center;
 }
-
 .timebox {
     margin: 25px;
+    text-align: center;
 }
-  
 .datetime{
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 25px;
     color: #fff;
     /*background: #10101E;*/
     font-family: "Segoe UI", sans-serif;
@@ -67,7 +78,7 @@ body {
     box-shadow: 0 0 30px #2E94E3;
   }*/
 .date{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     text-align: center;
     letter-spacing: 3px;
@@ -109,6 +120,10 @@ body {
     width: 500px;
     filter: drop-shadow(0px 0px 5px white);
 }
+.logo img:hover {
+    filter: drop-shadow(6px 6px 7px green);
+    transition: 2s;
+}
 Header {
     width: 100%;
     top: 0;
@@ -147,7 +162,7 @@ article {
     /*background-color: rgba(0,0,0,.3);*/
     /*padding: 10px;*/
     background-color: rgba(0,0,0,.3);
-    border: 3px double;
+    border: 3px ridge;
     border-radius: 3px;
     display: flex;
     margin-bottom: 100px;
@@ -182,13 +197,14 @@ article {
     filter: drop-shadow(2px 2px 5px black);
 }
 article .eventInfo {
-    /*background-color:saddlebrown;
-    padding: 10px;*/
+    /*padding: 10px;*/
     margin-top: 100px;
+    width: 60%;
 }
 article .eventInfo .infoText {
     /*background-color: lightcoral;*/
-    width: 80%;
+    width: 98%;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
     /*display: flex;*/
@@ -210,15 +226,199 @@ article .eventInfo .infoText p {
     filter: drop-shadow(2px 2px 5px black);
 }
 article .poster {
-    /*background-color: darkgreen;*/
+    display: flex;
+    justify-content: center;
     padding: 25px;
-    width: 30%;
+    width: 50%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 article .poster img {
     width: 500px;
     border-radius: 20px;
     filter: drop-shadow(0px 0px 5px white);
 }
+.slider {
+    width: 800px;
+    height: 630px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slide {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slide input {
+    display: none;
+}
+.st {
+    width: 20%;
+    transition: 1.5s;
+}
+.st img {
+    width: 800px;
+    height: 600px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.nav-m {
+    position: absolute;
+    width: 800px;
+    margin-top: 70px;
+    justify-content: center;
+    display: flex;
+}
+.m-btn {
+    border: 2px solid #09ffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn:not(:last-child) {
+    margin-right: 30px;
+}
+.m-btn:hover {
+    background-color: #09ffff;
+}
+#radio1:checked ~.first {
+    margin-left: 0;
+}
+#radio2:checked ~.first {
+    margin-left: -20%;
+}
+#radio3:checked ~.first {
+    margin-left: -40%;
+}
+#radio4:checked ~.first {
+    margin-left: -60%;
+}
+
+.nav-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.nav-auto div:not(:last-child) {
+    margin-right: 30px;
+    justify-content: center;
+}
+
+#radio1:checked ~ .nav-auto .a-b1 {
+    background-color: saddlebrown;
+}
+#radio2:checked ~ .nav-auto .a-b2 {
+    background-color: saddlebrown;
+}
+#radio3:checked ~ .nav-auto .a-b3 {
+    background-color: saddlebrown;
+}
+#radio4:checked ~ .nav-auto .a-b4 {
+    background-color: saddlebrown;
+}
+
+* {box-sizing:border-box}
+
+.twoDayEventSlides {
+    width: 45%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 50%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  border-radius: 10px;
+  background-color: chocolate;
+  margin-top: 25px;
+  filter: drop-shadow(0px 0px 5px white);
+}
+.mySlides img:hover {
+    filter: drop-shadow(0px 0px 5px gold);
+    transition: 2s;
+  }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color:chartreuse;
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s  ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.test2 {
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
 /* custom styling for all icons */
 i.fas,
 i.fab {
@@ -229,10 +429,11 @@ i.fab {
     color: white;
     background-color:black;
 }
-.brand-rights a:link, .brand-rights a:visited {
+a:link, a:visited {
     color:white;
     text-decoration: none;
 }
+
 
 /* Optional glow effect */
 
@@ -263,9 +464,128 @@ i.fab {
 
 /* Media Queries*/
 
-@media (max-width:2560px){
-    section {
-        
+@media (max-width:1440px){
+    .twoDayEventSlides {
+        width: 100%;
+    }
+    .eventInfo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .brand-rights {
+        width: 100%;
+    }
+    .eventsPageIntro {
+        width: 100%;
+    }
+    #eventFeed article .calendarBlock {
+        width: 25%;
+    }
+    .datetime .date {
+        font-size: 30px;
+    }
+    .timebox {
+        font-size: 13px;
+    }
+    .eventPageBrief p {
+        width: 50%;
+    }
+    .logoMobile img {
+        width: 500px;
+        height: 115px;
+    }
+    .logoMobile img:hover {
+        filter: drop-shadow(0px 0px 2px green);
+        transition: 2s;
+    }
+    article {
+        padding: 0px;
+    }
+    article .poster {
+        /*background-color: #09ffff;*/
+        width: 100%;
+        text-align: center;
+    }
+    article .poster img {
+        width: 400px;
+        margin-top: 50px;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
+    
+    }
+    article .eventInfo .infoText {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .twoDayEventSlides {
+    }
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 55%;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    .mySlides img:hover {
+      filter: drop-shadow(0px 0px 5px gold);
+      transition: 2s;
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 10px;
+      color:chartreuse;
+      font-weight: bold;
+      font-size: 35px;
+      transition: 0.6s  ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    
+    /* The dots/bullets/indicators */
+    .test2 {
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1s;
     }
 }
 
@@ -281,10 +601,10 @@ i.fab {
         margin-right: auto;
         margin-bottom: 50px;
         color: #fff;
-        background: #10101E;
+        /*background: #10101E;*/
         font-family: "Segoe UI", sans-serif;
-        width: 80%;
-        padding: 30px;
+        width: 100%;
+        padding: 10px;
         /*border: 3px solid #2E94E3;*/
         border-radius: 5px;
         -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
@@ -346,6 +666,10 @@ i.fab {
         margin-left: auto;
         margin-right: auto;
         filter: drop-shadow(0px 0px 2px white);
+    }
+    .logoMobile img:hover {
+        filter: drop-shadow(0px 0px 2px green);
+        transition: 2s;
     }
     header .logo img {
         width: 275px;
@@ -481,41 +805,60 @@ i.fab {
         filter: drop-shadow(0px 0px 5px white);
     }
 }
-
 @media (max-width:1024px){
-    .logoMobile img {
-        width: 700px;
-        height: 140px;
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+        right: 0;
+        margin-right: 70px;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 0px;
+        margin-right: 80px;
+    }
+    .twoDayEventSlides {
+        width: 100%;
+    }
+    .eventInfo {
         margin-left: auto;
         margin-right: auto;
-        filter: drop-shadow(0px 0px 2px white);
-    }
-    article {
-        padding: 100px;
-    }
-    article .poster {
-        /*background-color: #09ffff;*/
         width: 100%;
-        text-align: center;
     }
-    article .poster img {
-        width: 400px;
-        margin-top: 50px;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-    
-    }
-    article .eventInfo .infoText {
+    .brand-rights {
         width: 100%;
-        margin-bottom: 50px;
     }
-}
-
-@media (max-width:768px){
+    .eventsPageIntro {
+        width: 100%;
+    }
+    #eventFeed article .calendarBlock {
+        width: 25%;
+    }
+    .datetime .date {
+        font-size: 30px;
+    }
+    .timebox {
+        font-size: 13px;
+    }
+    .eventPageBrief p {
+        width: 50%;
+    }
     .logoMobile img {
         width: 500px;
         height: 115px;
     }
+    .logoMobile img:hover {
+        filter: drop-shadow(0px 0px 2px green);
+        transition: 2s;
+    }
     article {
         padding: 0px;
     }
@@ -535,34 +878,140 @@ i.fab {
         width: 100%;
         margin-bottom: 50px;
     }
+    .twoDayEventSlides {
+    }
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 55%;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    .mySlides img:hover {
+      filter: drop-shadow(0px 0px 5px gold);
+      transition: 2s;
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 10px;
+      color:chartreuse;
+      font-weight: bold;
+      font-size: 35px;
+      transition: 0.6s  ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    
+    /* The dots/bullets/indicators */
+    .test2 {
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1s;
+    }
 }
-
-@media (max-width:425px){
-    .logoMobile img {
-        width: 300px;
-        height: 75px;
+@media (max-width:768px){
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+        right: 0;
+        margin-right: 70px;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 0px;
+        margin-right: 80px;
+    }
+    .twoDayEventSlides {
+        width: 100%;
+    }
+    .eventInfo {
         margin-left: auto;
         margin-right: auto;
-        filter: drop-shadow(0px 0px 2px white);
+        width: 100%;
+    }
+    .brand-rights {
+        width: 100%;
+    }
+    .eventsPageIntro {
+        width: 100%;
+    }
+    #eventFeed article .calendarBlock {
+        width: 25%;
+    }
+    .datetime .date {
+        font-size: 30px;
+    }
+    .timebox {
+        font-size: 13px;
+    }
+    .eventPageBrief p {
+        width: 50%;
+    }
+    .logoMobile img {
+        width: 500px;
+        height: 115px;
+    }
+    .logoMobile img:hover {
+        filter: drop-shadow(0px 0px 2px green);
+        transition: 2s;
     }
     article {
         padding: 0px;
     }
-    article .poster img {
-        width: 375px;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-    }
-}
-
-@media (max-width:375px){
     article .poster {
         /*background-color: #09ffff;*/
         width: 100%;
         text-align: center;
     }
     article .poster img {
-        width: 300px;
+        width: 400px;
         margin-top: 50px;
         border-radius: 20px;
         filter: drop-shadow(0px 0px 5px white);
@@ -572,9 +1021,157 @@ i.fab {
         width: 100%;
         margin-bottom: 50px;
     }
+    .twoDayEventSlides {
+    }
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 55%;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    .mySlides img:hover {
+      filter: drop-shadow(0px 0px 5px gold);
+      transition: 2s;
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 10px;
+      color:chartreuse;
+      font-weight: bold;
+      font-size: 35px;
+      transition: 0.6s  ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    
+    /* The dots/bullets/indicators */
+    .test2 {
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1s;
+    }
 }
-
-@media (max-width:320px){
+@media (max-width:425px){
+    .logoMobile img {
+        display: flex;
+        padding: 10px;
+        width: 450px;
+        margin-left: 0px;
+    }
+    #eventFeed {
+        /*background-color: brown;*/
+        padding: 10px;
+    }
+    article {
+        /*background-color: lightblue;*/
+        /*background-color: rgba(0,0,0,.3);*/
+        /*padding: 10px;*/
+        background-color: rgba(0,0,0,.3);
+        border: 3px ridge;
+        border-radius: 3px;
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+    #eventFeed article .calendarBlock {
+        /*background-color: indigo;*/
+        width: 45%;
+        border: 3px double;
+        border-color: silver;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #eventFeed article .calendarBlock h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    #eventFeed article .calendarBlock h5{
+        font-size: 15px;
+        font-weight: 400;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    #eventFeed article .calendarBlock h3{
+        font-size: 30px;
+        font-weight: 500;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    article .eventInfo {
+        /*padding: 10px;*/
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    article .eventInfo .infoText {
+        /*background-color: lightcoral;*/
+        width: 98%;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        /*display: flex;*/
+    }
+    article .eventInfo .infoText h2 {
+        /*margin-bottom: auto;
+        margin-top: auto;*/
+        font-size: 45px;
+        text-align: center;
+        padding: 45px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    article .eventInfo .infoText p {
+        /*margin-bottom: auto;
+        margin-top: auto;*/
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
     
     article .poster img {
         width: 270px;
@@ -583,4 +1180,430 @@ i.fab {
         margin-left: auto;
         margin-right: auto;
     }
+
+
+    * {box-sizing:border-box}
+
+.twoDayEventSlides {
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 95%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color:chartreuse;
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s  ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.test2 {
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+}
+@media (max-width:375px){
+    .logoMobile {
+    }
+    .logoMobile img {
+        display: flex;
+        padding: 10px;
+        width: 450px;
+        margin-left: 30px;
+    }
+    .toggle {
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        background: url(/images/bars.png) no-repeat center;
+        background-size: cover;
+        filter: invert(1);
+        z-index: 100;
+        right: 0;
+        margin-right: -50px;
+    }
+    .toggle.active {
+        position: fixed;
+        background: url(/images/window-close_white.png) no-repeat center;
+        background-size: cover;
+        filter: invert(0);
+        right: 0px;
+        margin-right: 33px;
+    }
+    #eventFeed {
+        /*background-color: brown;*/
+        padding: 10px;
+    }
+    article {
+        /*background-color: lightblue;*/
+        /*background-color: rgba(0,0,0,.3);*/
+        /*padding: 10px;*/
+        background-color: rgba(0,0,0,.3);
+        border: 3px ridge;
+        border-radius: 3px;
+        display: inline-block;
+        margin-bottom: 50px;
+        width: 120%;
+    }
+    header {
+        
+    }
+    .brand-rights {
+        width: 120%;
+    }
+    .eventsPageIntro {
+        width: 120%;
+    }
+    #eventFeed article .calendarBlock {
+        /*background-color: indigo;*/
+        width: 45%;
+        border: 3px double;
+        border-color: silver;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #eventFeed article .calendarBlock h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    #eventFeed article .calendarBlock h5{
+        font-size: 15px;
+        font-weight: 400;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    #eventFeed article .calendarBlock h3{
+        font-size: 30px;
+        font-weight: 500;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    article .eventInfo {
+        /*padding: 10px;*/
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    article .eventInfo .infoText {
+        /*background-color: lightcoral;*/
+        width: 98%;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        /*display: flex;*/
+    }
+    article .eventInfo .infoText h2 {
+        /*margin-bottom: auto;
+        margin-top: auto;*/
+        font-size: 45px;
+        text-align: center;
+        padding: 45px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    article .eventInfo .infoText p {
+        /*margin-bottom: auto;
+        margin-top: auto;*/
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    
+    article .poster img {
+        width: 270px;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    * {box-sizing:border-box}
+
+.twoDayEventSlides {
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 95%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color:chartreuse;
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s  ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.test2 {
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+}
+@media (max-width:320px){
+    .logoMobile img {
+        display: flex;
+        padding: 10px;
+        width: 350px;
+        margin-left: 20px;
+    }
+    #eventFeed {
+        /*background-color: brown;*/
+        padding: 10px;
+    }
+    article {
+        /*background-color: lightblue;*/
+        /*background-color: rgba(0,0,0,.3);*/
+        /*padding: 10px;*/
+        background-color: rgba(0,0,0,.3);
+        border: 3px ridge;
+        border-radius: 3px;
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+    #eventFeed article .calendarBlock {
+        /*background-color: indigo;*/
+        width: 45%;
+        border: 3px double;
+        border-color: silver;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #eventFeed article .calendarBlock h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    #eventFeed article .calendarBlock h5{
+        font-size: 15px;
+        font-weight: 400;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    #eventFeed article .calendarBlock h3{
+        font-size: 30px;
+        font-weight: 500;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    article .eventInfo {
+        /*padding: 10px;*/
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    article .eventInfo .infoText {
+        /*background-color: lightcoral;*/
+        width: 98%;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        /*display: flex;*/
+    }
+    article .eventInfo .infoText h2 {
+        /*margin-bottom: auto;
+        margin-top: auto;*/
+        font-size: 45px;
+        text-align: center;
+        padding: 45px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    article .eventInfo .infoText p {
+        /*margin-bottom: auto;
+        margin-top: auto;*/
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    
+    article .poster img {
+        width: 270px;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    * {box-sizing:border-box}
+
+.twoDayEventSlides {
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 95%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color:chartreuse;
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s  ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.test2 {
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+
 }
