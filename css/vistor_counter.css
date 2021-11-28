@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+.widget1 {
+    background-image: url(../images/lxrcbsv-vVHXeu0YNbk-unsplash.jpg);
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.elfsight-app-04b54349-5307-4468-a2c2-1c2d27bc8627 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.brand-rights {
+    text-align: center;
+    color: white;
+    background-color:rgb(0, 0, 0);
+}
+.brand-rights a:link, .brand-rights a:visited {
+    color:white;
+    text-decoration: none;
+  }
