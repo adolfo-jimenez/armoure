@@ -22,6 +22,11 @@ body {
     min-height: 100%;
     z-index: -1;
   }
+iframe {
+    width: 80%;
+    height: 175px;
+    padding: 0px;
+}
 /*section {
     width: 100%;
     background-image: url("../images/image0.jpg");
@@ -105,6 +110,7 @@ Header .nav li a:hover{
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 #news article {
      width: 100%;
