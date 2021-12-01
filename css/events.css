@@ -564,6 +564,7 @@ a:link, a:visited {
         width: 1175px;
         height: 225px;
         filter: drop-shadow(4px 4px 7px white);
+        margin: 50px;
     }
     .logo img:hover {
         filter: drop-shadow(6px 6px 7px green);
