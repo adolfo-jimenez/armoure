@@ -126,7 +126,7 @@ i.fab {
 .brand-rights a:link, .brand-rights a:visited {
     color:white;
     text-decoration: none;
-  }
+}
 
 /* Optional glow effect */
 
@@ -156,6 +156,111 @@ i.fab {
 }
 
 /* Media Queries*/
+
+@media (min-width:3600px) and (max-width:5560px) {
+    .logo {
+        text-align: center;
+        padding: 25px;
+    }
+    .logoMobile {
+        display: none;
+    }
+    .logo img{
+        width: 1175px;
+        height: 225px;
+        filter: drop-shadow(4px 4px 7px white);
+    }
+    .logo img:hover {
+        filter: drop-shadow(6px 6px 7px rgb(32, 53, 241));
+        transition: 2s;
+    }
+    Header {
+        width: 100%;
+        top: 0;
+        right: 0;
+        /*display: flex;*/
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 10px;
+    }
+    Header .nav {
+        display: flex;
+        position: relative;
+        font-size: 40px;
+        justify-content: center;
+    }
+    Header .nav li a {
+        display: inline-block;
+        color: #fff;
+        margin-left: 40px;
+        font-weight: 450;
+    }
+    Header .nav li a:hover{
+        font-weight: 500;
+        border: 4px solid #161616;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        transition: .1s ease-in-out;
+    }
+    #aboutInfo {
+        display: flex;
+    }
+    #aboutInfo img {
+        width: 1900px;
+        height: 1900px;
+        filter: drop-shadow(5px 5px 20px yellow);
+        border-radius: 100px;
+        margin: 200px;
+    }
+    #aboutInfo article {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 60px;
+    }
+    #aboutInfo main {
+        color: white;
+        padding: 30px;
+    }
+    #aboutInfo h1 {
+        text-align: center;
+        font-size: 59px;
+        padding: 15px;
+        filter: drop-shadow(0px 0px 2px black);
+    }
+    #aboutInfo p {
+        filter: drop-shadow(0px 0px 1px black);
+        font-size: 45px;
+    }
+    aside {
+        color: white;
+        padding: 0px;
+        text-align: center;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 45px;
+    }
+    
+    small {
+        font-size: 30px;
+    }
+    
+    
+    /* custom styling for all icons */
+    i.fas,
+    i.fab {
+      font-size: 30px;
+    }
+    .brand-rights {
+        text-align: center;
+        color: white;
+        background-color:black;
+    }
+    .brand-rights a:link, .brand-rights a:visited {
+        color:white;
+        text-decoration: none;
+    }
+}
 
 @media (max-width:2560px){
     section {
