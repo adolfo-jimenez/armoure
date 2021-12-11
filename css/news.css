@@ -85,14 +85,15 @@ Header .nav li a:hover{
     color: white;
     filter: drop-shadow(0px 0px 3px black);
     /*background-color: blueviolet;*/
-    padding: 50px;
+    padding: 0px;
 }
 
 #news .newsMain {
     text-align: center;
 }
 #news .newsMain img {
-    width: 650px;
+    height: 100px;
+    width: 500px;
     filter: drop-shadow(0px 0px 8px white);
 }
 #news .newsMain img:hover {
@@ -100,8 +101,9 @@ Header .nav li a:hover{
     transition: 5s;
 }
 #news .newsMain h1 {
-    font-size: 70px;
+    font-size: 60px;
     filter: drop-shadow(3px 3px 3px black);
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 .newsBlogs {
@@ -465,7 +467,8 @@ i.fab {
         filter: drop-shadow(0px 0px 5px black);
     }
     #news .newsMain img {
-        width: 93%;
+        height: 100px;
+        width: 500px;
         filter: drop-shadow(0px 0px 5px white);
     }
     #news #knight {

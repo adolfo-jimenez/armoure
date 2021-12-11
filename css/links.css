@@ -33,16 +33,6 @@ section .logo img:hover {
     filter: drop-shadow(6px 6px 7px rgb(32, 53, 241));
     transition: 2s;
 }
-section .circle {
-    width: 100%;
-    height: 100%;
-    /*background: #297c08;*/
-    background-color:black;
-    position: absolute;
-    clip-path: circle(80% at right -40%);
-    top: 0;
-    left: 0;
-}
 header {
     width: 100%;
     position: absolute;
@@ -79,7 +69,7 @@ header .nav li a:hover{
     display: flex;
     padding: 0px;
     width: 100;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 .linksImg img {
     width: 30%;
@@ -89,7 +79,7 @@ header .nav li a:hover{
     filter: drop-shadow(0px 0px 10px black);
 }
 .links-infobooth {
-    margin-top: 100px;
+    margin-top: 0px;
     text-align: center;
 }
 .links-infobooth img{
@@ -320,7 +310,7 @@ i.fa-aws {
 
 @media (max-width:2560px){
     section {
-        padding: 150px 40px;
+        padding: 90px 40px;
     }
    
     .links-infobooth {
@@ -724,7 +714,7 @@ i.fa-aws {
         left: 0;
     }
     section {
-        padding: 150px 40px;
+        padding: 90px 40px;
     }
     header {
         padding: 40px;
@@ -735,6 +725,11 @@ i.fa-aws {
         width: 250px;
         padding-left: 0px;
         padding-right: 40px;
+    }
+    section .logo img {
+        width: 300px;
+        height: 75px;
+        filter: drop-shadow(0px 0px 2px white);
     }
     header .logo {
         font-size: 20px;

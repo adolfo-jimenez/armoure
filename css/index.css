@@ -107,6 +107,7 @@ header .nav {
     display: flex;
     position: relative;
     font-size: 16px;
+    margin-right: 50px;
 }
 header .nav li a {
     display: inline-block;
