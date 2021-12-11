@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-self: auto;
     min-height: 100vh;
-    background-image: linear-gradient(rgb(19, 33, 153), green);
+    background-image: url(/images/julius-drost-pYAvBZvplOM-unsplash.jpg);
     color: white;
 }
 #myVideo {
@@ -35,12 +35,13 @@ body {
 .eventPageBrief p {
     width: 20%;
     padding: 20px;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(255, 255, 255, 0.0);
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
     text-align: center;
+    filter: drop-shadow(7px 7px 8px black);
 }
 .timeZones {
     display: flex;
@@ -161,7 +162,7 @@ article {
     /*background-color: lightblue;*/
     /*background-color: rgba(0,0,0,.3);*/
     /*padding: 10px;*/
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(255, 255, 255, 0.3);
     border: 3px ridge;
     border-radius: 3px;
     display: flex;
