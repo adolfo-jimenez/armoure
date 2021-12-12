@@ -107,7 +107,6 @@ header .nav {
     display: flex;
     position: relative;
     font-size: 16px;
-    margin-right: 50px;
 }
 header .nav li a {
     display: inline-block;
@@ -948,7 +947,6 @@ small {
         position: absolute;
         top: 0;
         right: 0;
-        margin-right: 0px;
     }
     header .nav.active{
         width: 60%;
@@ -1077,7 +1075,6 @@ small {
         position: absolute;
         top: 0;
         right: 0;
-        margin-right: 0px;
     }
     header .nav.active{
         width: 60%;
@@ -1206,7 +1203,6 @@ small {
         position: absolute;
         top: 0;
         right: 0;
-        margin-right: 0px;
     }
     header .nav.active{
         width: 60%;
@@ -1335,7 +1331,6 @@ small {
         position: absolute;
         top: 0;
         right: 0;
-        margin-right: 0px;
     }
     header .nav.active{
         width: 60%;
