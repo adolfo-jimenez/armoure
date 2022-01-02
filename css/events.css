@@ -149,11 +149,6 @@ Header .nav li a {
 }
 Header .nav li a:hover{
     font-weight: 500;
-    border: 4px solid #161616;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    transition: .1s ease-in-out;
 }
 #eventFeed {
     /*background-color: brown;*/
@@ -598,11 +593,6 @@ a:link, a:visited {
     }
     Header .nav li a:hover{
         font-weight: 500;
-        border: 4px solid #161616;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        transition: .1s ease-in-out;
     }
     #eventFeed {
         /*background-color: brown;*/
