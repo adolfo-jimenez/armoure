@@ -40,8 +40,8 @@ section {
 	animation-duration: 1s;
 }
 iframe {
-    width: 600px;
-    height: 75px;
+    width: 800px;
+    height: 450px;
     padding: 0px;
     justify-content: center;
 }
@@ -49,15 +49,18 @@ video {
     /*background-color: coral;*/
     padding: 0px;
 }
+.audioEntertainment p {
+    color: white;
+}
 .audioEntertainment a {
     width: 100%;
+    font-weight: 700;
 }
 .audioEntertainment a:link, a:visited {
     color: white;
     width: 15%;
     margin-left: auto;
     margin-right: auto;
-    font-weight: 100;
 }
 section .circle {
     width: 100%;
@@ -116,11 +119,6 @@ header .nav li a {
 }
 header .nav li a:hover{
     font-weight: 500;
-    border: 4px solid #161616;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    transition: .1s ease-in-out;
 }
 .container {
   /*background-color: crimson;*/
@@ -423,11 +421,6 @@ i.fa-pause {
     }
     header .nav li a:hover{
         font-weight: 500;
-        border: 4px solid #161616;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        transition: .1s ease-in-out;
     }
     .container {
         /*background-color: crimson;*/
@@ -507,10 +500,7 @@ i.fa-pause {
         animation-duration: 1s;
     }
     iframe {
-        width: 600px;
-        height: 75px;
-        padding: 0px;
-        justify-content: center;
+        width: 100%;
     }
     video {
         /*background-color: coral;*/
@@ -686,11 +676,6 @@ small {
     }
     header .nav li a:hover{
         font-weight: 500;
-        border: 4px solid #161616;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        transition: .1s ease-in-out;
     }
     .container {
         /*background-color: crimson;*/
@@ -770,10 +755,7 @@ small {
         animation-duration: 1s;
     }
     iframe {
-        width: 600px;
-        height: 75px;
-        padding: 0px;
-        justify-content: center;
+        width: 100%;
     }
     video {
         /*background-color: coral;*/
@@ -904,12 +886,7 @@ small {
         margin: 0px;
     }
     iframe {
-        width: 60px;
-        height: 75px;
-        padding: 0px;
-        justify-content: center;
         width: 100%;
-        height: 100%;
     }
     video {
         /*background-color: coral;*/
@@ -1032,12 +1009,7 @@ small {
         margin: 0px;
     }
     iframe {
-        width: 60px;
-        height: 75px;
-        padding: 0px;
-        justify-content: center;
         width: 100%;
-        height: 100%;
     }
     video {
         /*background-color: coral;*/
@@ -1160,12 +1132,7 @@ small {
         margin: 0px;
     }
     iframe {
-        width: 60px;
-        height: 75px;
-        padding: 0px;
-        justify-content: center;
         width: 100%;
-        height: 100%;
     }
     video {
         /*background-color: coral;*/
@@ -1288,12 +1255,7 @@ small {
         margin: 0px;
     }
     iframe {
-        width: 60px;
-        height: 75px;
-        padding: 0px;
-        justify-content: center;
         width: 100%;
-        height: 100%;
     }
     video {
         /*background-color: coral;*/
