@@ -10,9 +10,9 @@
   }
 section {
     width: 100%;
-    /*background-image: url("../images/image0.jpg");*/
+    background-image: url("../images/alfons-morales-9yMSPi6u6XI-unsplash.jpg");
     /*background-color: teal;*/
-    background-image: linear-gradient(green, rgb(32, 53, 241));
+    /*background-image: linear-gradient(green, rgb(32, 53, 241));*/
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,6 +59,7 @@ header .nav li a {
 }
 header .nav li a:hover{
     font-weight: 500;
+    transition: .1s ease-in-out;
 }
 .linksImg {
     display: flex;
@@ -81,10 +82,11 @@ header .nav li a:hover{
     height: 25%;
     width: 25%;
     border-radius: 50% !important;
-    filter: drop-shadow(0px 0px 30px black);
+    filter: drop-shadow(0px 0px 8px white);
 }
 .links-infobooth h2 {
     color: white;
+    filter: drop-shadow(1px 1px 5px black);
     font-size: 45px;
 }
 .links-infobooth .link-list {
@@ -100,6 +102,7 @@ header .nav li a:hover{
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
+    background-color:rgb(0, 0, 3)
 }
 .links-infobooth .link-list li:hover{
     font-weight: 700;
@@ -107,7 +110,6 @@ header .nav li a:hover{
     border-right: none;
     border-left: none;
     transition: .1s ease-in-out;
-    background-color: white;
 }
 .links-infobooth .link-list li a:hover{
     color: darkorange;
@@ -215,6 +217,11 @@ i.fa-aws {
     }
     header .nav li a:hover{
         font-weight: 500;
+        border: 4px solid #161616;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        transition: .1s ease-in-out;
     }
     .linksImg {
         display: flex;
@@ -241,7 +248,6 @@ i.fa-aws {
         filter: drop-shadow(0px 0px 30px black);
     }
     .links-infobooth h2 {
-        color: white;
         font-size: 59px;
     }
     .links-infobooth .link-list {

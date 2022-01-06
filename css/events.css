@@ -158,7 +158,7 @@ article {
     /*background-color: lightblue;*/
     /*background-color: rgba(0,0,0,.3);*/
     /*padding: 10px;*/
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
     border: 3px ridge;
     border-radius: 3px;
     display: flex;
@@ -211,7 +211,7 @@ article .eventInfo .infoText h2 {
     margin-top: auto;*/
     font-size: 45px;
     text-align: center;
-    padding: 65px;
+    padding: 0px;
     filter: drop-shadow(2px 2px 5px black);
 }
 article .eventInfo .infoText p {
@@ -232,6 +232,11 @@ article .poster {
     margin-bottom: auto;
 }
 article .poster img {
+    width: 500px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+article .poster a img {
     width: 500px;
     border-radius: 20px;
     filter: drop-shadow(0px 0px 5px white);
@@ -430,37 +435,19 @@ a:link, a:visited {
     color:white;
     text-decoration: none;
 }
+#eventLink a{
+    font-weight: 800;
+}
+#eventLink a:hover {
+    color: blue;
+    font-weight: 900;
+}
 #twitchLink a:hover {
     color: blue;
     font-weight: 400;
 }
 
-/* Optional glow effect */
 
-.glow::before,
-.glow::after {
-    content: "";
-    position: absolute;
-    left: -2px;
-    top: -2px;
-    background: linear-gradient(-45deg, #00ff66,
-    #00ffff, #ff0fff, #ff0099, #09ffff);
-    background-size: 400%;
-    height: calc(100% + 5px);
-    width: calc(100% + 5px);
-    z-index: -1;
-    animation: change 80s linear infinite;
-}
-
-@keyframes change {
-    0% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 400% 0;
-    }
-    100% {}
-}
 
 /* Media Queries*/
 
@@ -1002,6 +989,11 @@ a:link, a:visited {
 
 
 @media (max-width:1100px){
+    article .poster a img {
+        width: 99%;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
+    }
     body {
         width: 100%;
         padding: 0px;
@@ -1284,6 +1276,11 @@ a:link, a:visited {
         filter: drop-shadow(0px 0px 5px white);
     
     }
+    article .poster a img {
+        width: 500px;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
+    }
     article .eventInfo .infoText {
         width: 100%;
         margin-bottom: 50px;
@@ -1428,6 +1425,11 @@ a:link, a:visited {
         border-radius: 20px;
         filter: drop-shadow(0px 0px 5px white);
     
+    }
+    article .poster a img {
+        width: 500px;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
     }
     article .eventInfo .infoText {
         width: 100%;
@@ -1592,7 +1594,11 @@ a:link, a:visited {
         margin-left: auto;
         margin-right: auto;
     }
-
+    article .poster a img {
+        width: 99%;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
+    }
 
     * {box-sizing:border-box}
 
