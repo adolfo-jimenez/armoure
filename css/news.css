@@ -112,6 +112,9 @@ Header .nav li a:hover{
     border: 3px ridge;
     border-radius: 3px;
 }
+.newsBlogs p {
+    text-align: left;
+}
 #news article {
      width: 100%;
      padding: 35px;
@@ -159,6 +162,14 @@ Header .nav li a:hover{
 i.fas,
 i.fab {
   font-size: 12px;
+}
+a:link, a:visited {
+    color:white;
+    text-decoration: none;
+}
+article a:hover {
+    color: blue;
+    font-weight: 400;
 }
 .brand-rights {
     text-align: center;
