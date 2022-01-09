@@ -10,9 +10,9 @@
   }
 section {
     width: 100%;
-    /*background-image: url("../images/image0.jpg");*/
+    background-image: url("../images/alfons-morales-9yMSPi6u6XI-unsplash.jpg");
     /*background-color: teal;*/
-    background-image: linear-gradient(green, rgb(32, 53, 241));
+    /*background-image: linear-gradient(green, rgb(32, 53, 241));*/
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,16 +32,6 @@ section .logo img{
 section .logo img:hover {
     filter: drop-shadow(6px 6px 7px rgb(32, 53, 241));
     transition: 2s;
-}
-section .circle {
-    width: 100%;
-    height: 100%;
-    /*background: #297c08;*/
-    background-color:black;
-    position: absolute;
-    clip-path: circle(80% at right -40%);
-    top: 0;
-    left: 0;
 }
 header {
     width: 100%;
@@ -75,7 +65,7 @@ header .nav li a:hover{
     display: flex;
     padding: 0px;
     width: 100;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 .linksImg img {
     width: 30%;
@@ -85,17 +75,18 @@ header .nav li a:hover{
     filter: drop-shadow(0px 0px 10px black);
 }
 .links-infobooth {
-    margin-top: 100px;
+    margin-top: 0px;
     text-align: center;
 }
 .links-infobooth img{
     height: 25%;
     width: 25%;
     border-radius: 50% !important;
-    filter: drop-shadow(0px 0px 30px black);
+    filter: drop-shadow(0px 0px 8px white);
 }
 .links-infobooth h2 {
     color: white;
+    filter: drop-shadow(1px 1px 5px black);
     font-size: 45px;
 }
 .links-infobooth .link-list {
@@ -111,6 +102,7 @@ header .nav li a:hover{
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
+    background-color:rgb(0, 0, 3)
 }
 .links-infobooth .link-list li:hover{
     font-weight: 700;
@@ -118,7 +110,6 @@ header .nav li a:hover{
     border-right: none;
     border-left: none;
     transition: .1s ease-in-out;
-    background-color: white;
 }
 .links-infobooth .link-list li a:hover{
     color: darkorange;
@@ -257,7 +248,6 @@ i.fa-aws {
         filter: drop-shadow(0px 0px 30px black);
     }
     .links-infobooth h2 {
-        color: white;
         font-size: 59px;
     }
     .links-infobooth .link-list {
@@ -316,7 +306,7 @@ i.fa-aws {
 
 @media (max-width:2560px){
     section {
-        padding: 150px 40px;
+        padding: 90px 40px;
     }
    
     .links-infobooth {
@@ -720,7 +710,7 @@ i.fa-aws {
         left: 0;
     }
     section {
-        padding: 150px 40px;
+        padding: 90px 40px;
     }
     header {
         padding: 40px;
@@ -731,6 +721,11 @@ i.fa-aws {
         width: 250px;
         padding-left: 0px;
         padding-right: 40px;
+    }
+    section .logo img {
+        width: 300px;
+        height: 75px;
+        filter: drop-shadow(0px 0px 2px white);
     }
     header .logo {
         font-size: 20px;

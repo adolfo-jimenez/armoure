@@ -13,7 +13,8 @@ body {
     justify-self: auto;
     min-height: 100vh;
     /*background-image: linear-gradient(rgb(19, 33, 153), green);*/
-    background-image: url(/images/julius-drost-pYAvBZvplOM-unsplash.jpg);
+    background-image: url(/images/zak-7wBFsHWQDlk-unsplash.jpg);
+    background-size: 100% 100%;
     color: white;
 }
 #myVideo {
@@ -29,7 +30,7 @@ body {
 }
 .eventPageBrief h1 {
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     margin: 20px;
     filter: drop-shadow(7px 7px 8px black);
 }
@@ -155,14 +156,73 @@ Header .nav li a:hover{
     padding: 20px;
 }
 article {
-    /*background-color: lightblue;*/
-    /*background-color: rgba(0,0,0,.3);*/
-    /*padding: 10px;*/
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     border: 3px ridge;
     border-radius: 3px;
-    display: flex;
+    display: inline-block;
     margin-bottom: 100px;
+}
+section .soundcloudPlaylists {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 3px ridge;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+.superSwordInfo {
+
+}
+.superSwordSC {
+    display: flex;
+    padding: 0px;
+}
+.superSwordSC img {
+    width: 30%;
+    height: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 40px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+.superSwordInfoText {
+    padding: 30px;
+    text-align: center;
+}
+.superSwordInfoText h1 {
+    font-size: 60px;
+}
+.superSwordInfoText p {
+    font-size: 20px;
+}
+.soundcloudEmbedded {
+    padding: 60px;
+}
+
+.medeivalMondaysInfo {
+    
+}
+.medeivalMondaysSC {
+    display: flex;
+    padding: 0px;
+}
+.medeivalMondaysSC img {
+    width: 30%;
+    height: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 40px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+.medeivalMondaysInfoText {
+    padding: 30px;
+    text-align: center;
+}
+.medeivalMondaysInfoText h1 {
+    font-size: 60px;
+}
+.medeivalMondaysInfoText p {
+    font-size: 20px;
 }
 #eventFeed article .calendarBlock {
     /*background-color: indigo;*/
@@ -194,45 +254,37 @@ article {
     filter: drop-shadow(2px 2px 5px black);
 }
 article .eventInfo {
-    /*padding: 10px;*/
     margin-top: 20px;
-    width: 60%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 article .eventInfo .infoText {
-    /*background-color: lightcoral;*/
     width: 98%;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    /*display: flex;*/
 }
 article .eventInfo .infoText h2 {
-    /*margin-bottom: auto;
-    margin-top: auto;*/
     font-size: 45px;
     text-align: center;
     padding: 0px;
     filter: drop-shadow(2px 2px 5px black);
 }
 article .eventInfo .infoText p {
-    /*margin-bottom: auto;
-    margin-top: auto;*/
     font-size: 20px;
     text-align: center;
     padding: 5px;
     filter: drop-shadow(2px 2px 5px black);
 }
 article .poster {
-    display: flex;
     justify-content: center;
-    padding: 25px;
-    width: 50%;
+    padding: 30px;
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
 }
 article .poster img {
-    width: 500px;
     border-radius: 20px;
     filter: drop-shadow(0px 0px 5px white);
 }
@@ -424,7 +476,85 @@ article .poster a img {
 /* custom styling for all icons */
 i.fas,
 i.fab {
-  font-size: 12px;
+  font-size: 25px;
+}
+i.fa-aws {
+    font-size: 12px;
+}
+.fa-soundcloud {
+    color: white;
+
+}
+.fa-mixcloud {
+    color: white;
+    
+}
+.fa-twitch {
+    color: white;
+}
+.aLink {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -130px;
+    left: 44vw;
+}
+.aLink li a {
+    width: 50px;
+    height: 50px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: 0.2s linear;
+  }
+
+.aLink img {
+    height: 20px;
+    width: 20px;
+}
+
+.aLink li a:hover {
+    background: #ab1026;
+    transform: translateY(-15px);
+}
+
+.aLink li a img {
+    width: 45px;
+    height: 40px;
+    filter: invert(1);
+    transform: scale(.6);
+}
+
+#img1::after,
+#img2::after,
+#img3::after{
+    content: 'soundcloud';
+    color: #fff;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    padding: 1em 3em;
+    white-space: nowrap;
+    transform: scale(0);
+    transition: transform ease-in-out .6s;
+}
+
+#img2::after {
+    content: 'mixcloud';
+}
+
+#img3::after {
+    content: 'twitch';
+}
+
+#img1:hover::after,
+#img2:hover::after,
+#img3:hover::after{
+    transform: scale(1);
 }
 .brand-rights {
     text-align: center;
@@ -460,16 +590,6 @@ a:link, a:visited {
         font-size: 70px;
         margin: 20px;
         filter: drop-shadow(7px 7px 8px black);
-    }
-    .eventPageBrief p {
-        width: 20%;
-        padding: 20px;
-        background-color: rgba(0,0,0,.3);
-        border-radius: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 20px;
-        text-align: center;
     }
     .timeZones {
         display: flex;
@@ -586,10 +706,6 @@ a:link, a:visited {
         padding: 20px;
     }
     article {
-        /*background-color: lightblue;*/
-        /*background-color: rgba(0,0,0,.3);*/
-        /*padding: 10px;*/
-        background-color: rgba(0,0,0,.3);
         border: 3px ridge;
         border-radius: 3px;
         display: flex;
@@ -625,29 +741,22 @@ a:link, a:visited {
         filter: drop-shadow(2px 2px 5px black);
     }
     article .eventInfo {
-        /*padding: 10px;*/
         margin-top: 100px;
         width: 60%;
     }
     article .eventInfo .infoText {
-        /*background-color: lightcoral;*/
         width: 98%;
         padding: 20px;
         margin-left: auto;
         margin-right: auto;
-        /*display: flex;*/
     }
     article .eventInfo .infoText h2 {
-        /*margin-bottom: auto;
-        margin-top: auto;*/
         font-size: 59px;
         text-align: center;
         padding: 65px;
         filter: drop-shadow(2px 2px 5px black);
     }
     article .eventInfo .infoText p {
-        /*margin-bottom: auto;
-        margin-top: auto;*/
         font-size: 45px;
         text-align: center;
         padding: 5px;
@@ -1130,10 +1239,6 @@ a:link, a:visited {
         padding: 0px;
     }
     article {
-        /*background-color: lightblue;*/
-        /*background-color: rgba(0,0,0,.3);*/
-        /*padding: 10px;*/
-        background-color: rgba(0,0,0,.3);
         border: 1px double;
         border-radius: 3px;
         display: block;
@@ -1354,6 +1459,75 @@ a:link, a:visited {
       animation-name: fade;
       animation-duration: 1s;
     }
+    section .soundcloudPlaylists {
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 3px ridge;
+        border-radius: 3px;
+        margin-bottom: 50px;
+    }
+    .superSwordInfo {
+        margin-bottom: 100px;
+    }
+    .superSwordSC {
+        display: inline-block;
+        padding: 0px;
+    }
+    .superSwordSC img {
+        display: flex;
+        width: 50%;
+        height: 50%;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
+    }
+    .superSwordInfoText {
+        padding: 10px;
+        text-align: center;
+    }
+    .superSwordInfoText h1 {
+        font-size: 45px;
+    }
+    .superSwordInfoText p {
+        font-size: 20px;
+    }
+    .soundcloudEmbedded {
+        padding: 10px;
+    }
+    
+    .medeivalMondaysInfo {
+        margin-top: 100px;
+    }
+    .medeivalMondaysSC {
+        display: inline-block;
+        padding: 0px;
+    }
+    .medeivalMondaysSC img {
+        display: flex;
+        width: 50%;
+        height: 50%;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
+    }
+    .medeivalMondaysInfoText {
+        padding: 10px;
+        text-align: center;
+    }
+    .medeivalMondaysInfoText h1 {
+        font-size: 45px;
+    }
+    .medeivalMondaysInfoText p {
+        font-size: 20px;
+    }
+    .aLink {
+        bottom: -1220px;
+    }
 }
 @media (max-width:768px){
     .toggle {
@@ -1365,7 +1539,7 @@ a:link, a:visited {
         filter: invert(1);
         z-index: 100;
         right: 0;
-        margin-right: 70px;
+        margin-right: 35px;
     }
     .toggle.active {
         position: fixed;
@@ -1504,6 +1678,75 @@ a:link, a:visited {
       animation-name: fade;
       animation-duration: 1s;
     }
+    section .soundcloudPlaylists {
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 3px ridge;
+        border-radius: 3px;
+        margin-bottom: 50px;
+    }
+    .superSwordInfo {
+        margin-bottom: 100px;
+    }
+    .superSwordSC {
+        display: inline-block;
+        padding: 0px;
+    }
+    .superSwordSC img {
+        display: flex;
+        width: 90%;
+        height: 90%;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
+    }
+    .superSwordInfoText {
+        padding: 10px;
+        text-align: center;
+    }
+    .superSwordInfoText h1 {
+        font-size: 45px;
+    }
+    .superSwordInfoText p {
+        font-size: 20px;
+    }
+    .soundcloudEmbedded {
+        padding: 10px;
+    }
+    
+    .medeivalMondaysInfo {
+        margin-top: 100px;
+    }
+    .medeivalMondaysSC {
+        display: inline-block;
+        padding: 0px;
+    }
+    .medeivalMondaysSC img {
+        display: flex;
+        width: 90%;
+        height: 90%;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
+    }
+    .medeivalMondaysInfoText {
+        padding: 10px;
+        text-align: center;
+    }
+    .medeivalMondaysInfoText h1 {
+        font-size: 45px;
+    }
+    .medeivalMondaysInfoText p {
+        font-size: 20px;
+    }
+    .aLink {
+        bottom: -1450px;
+    }
 }
 @media (max-width:425px){
     .logoMobile img {
@@ -1517,10 +1760,6 @@ a:link, a:visited {
         padding: 10px;
     }
     article {
-        /*background-color: lightblue;*/
-        /*background-color: rgba(0,0,0,.3);*/
-        /*padding: 10px;*/
-        background-color: rgba(0,0,0,.3);
         border: 3px ridge;
         border-radius: 3px;
         display: inline-block;
@@ -1669,6 +1908,111 @@ a:link, a:visited {
   animation-name: fade;
   animation-duration: 1s;
 }
+
+section .soundcloudPlaylists {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 3px ridge;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+.superSwordInfo {
+    margin-bottom: 100px;
+}
+.superSwordSC {
+    display: inline-block;
+    padding: 0px;
+}
+.superSwordSC img {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+.superSwordInfoText {
+    padding: 10px;
+    text-align: center;
+}
+.superSwordInfoText h1 {
+    font-size: 45px;
+}
+.superSwordInfoText p {
+    font-size: 20px;
+}
+.soundcloudEmbedded {
+    padding: 10px;
+}
+
+.medeivalMondaysInfo {
+    margin-top: 100px;
+}
+.medeivalMondaysSC {
+    display: inline-block;
+    padding: 0px;
+}
+.medeivalMondaysSC img {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+.medeivalMondaysInfoText {
+    padding: 10px;
+    text-align: center;
+}
+.medeivalMondaysInfoText h1 {
+    font-size: 45px;
+}
+.medeivalMondaysInfoText p {
+    font-size: 20px;
+}
+
+.aLink {
+    bottom: -1090px;
+    left: 144px;
+}
+.aLink li a {
+    width: 30px;
+    height: 30px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: 0.2s linear;
+  }
+
+.aLink img {
+    height: 20px;
+    width: 20px;
+}
+
+.aLink li a:hover {
+    background: #ab1026;
+    transform: translateY(-15px);
+}
+
+.aLink li a img {
+    width: 45px;
+    height: 40px;
+    filter: invert(1);
+    transform: scale(.6);
+}
+i.fas,
+i.fab {
+  font-size: 13px;
+}
+
 }
 @media (max-width:375px){
     .logoMobile {
@@ -1676,7 +2020,7 @@ a:link, a:visited {
     .logoMobile img {
         display: flex;
         padding: 10px;
-        width: 450px;
+        width: 90%;
         margin-left: 30px;
     }
     .toggle {
@@ -1688,7 +2032,7 @@ a:link, a:visited {
         filter: invert(1);
         z-index: 100;
         right: 0;
-        margin-right: -50px;
+        margin-right: 35px;
     }
     .toggle.active {
         position: fixed;
@@ -1703,24 +2047,20 @@ a:link, a:visited {
         padding: 10px;
     }
     article {
-        /*background-color: lightblue;*/
-        /*background-color: rgba(0,0,0,.3);*/
-        /*padding: 10px;*/
-        background-color: rgba(0,0,0,.3);
         border: 3px ridge;
         border-radius: 3px;
         display: inline-block;
         margin-bottom: 50px;
-        width: 120%;
+        width: 100%;
     }
     header {
         
     }
     .brand-rights {
-        width: 120%;
+        width: 100%;
     }
     .eventsPageIntro {
-        width: 120%;
+        width: 100%;
     }
     #eventFeed article .calendarBlock {
         /*background-color: indigo;*/
@@ -1752,31 +2092,24 @@ a:link, a:visited {
         filter: drop-shadow(2px 2px 5px black);
     }
     article .eventInfo {
-        /*padding: 10px;*/
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
     }
     article .eventInfo .infoText {
-        /*background-color: lightcoral;*/
         width: 98%;
         padding: 0px;
         margin-left: auto;
         margin-right: auto;
-        /*display: flex;*/
     }
     article .eventInfo .infoText h2 {
-        /*margin-bottom: auto;
-        margin-top: auto;*/
         font-size: 45px;
         text-align: center;
         padding: 45px;
         filter: drop-shadow(2px 2px 5px black);
     }
     article .eventInfo .infoText p {
-        /*margin-bottom: auto;
-        margin-top: auto;*/
         font-size: 20px;
         text-align: center;
         padding: 10px;
@@ -1861,23 +2194,93 @@ a:link, a:visited {
   animation-name: fade;
   animation-duration: 1s;
 }
+
+section .soundcloudPlaylists {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 3px ridge;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+.superSwordInfo {
+    margin-bottom: 100px;
+}
+.superSwordSC {
+    display: inline-block;
+    padding: 0px;
+}
+.superSwordSC img {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+.superSwordInfoText {
+    padding: 10px;
+    text-align: center;
+}
+.superSwordInfoText h1 {
+    font-size: 45px;
+}
+.superSwordInfoText p {
+    font-size: 20px;
+}
+.soundcloudEmbedded {
+    padding: 10px;
+}
+
+.medeivalMondaysInfo {
+    margin-top: 100px;
+}
+.medeivalMondaysSC {
+    display: inline-block;
+    padding: 0px;
+}
+.medeivalMondaysSC img {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+.medeivalMondaysInfoText {
+    padding: 10px;
+    text-align: center;
+}
+.medeivalMondaysInfoText h1 {
+    font-size: 45px;
+}
+.medeivalMondaysInfoText p {
+    font-size: 20px;
+}
+
+.aLink {
+    bottom: -1065px;
+    left: 160px;
+}
+
 }
 @media (max-width:320px){
     .logoMobile img {
         display: flex;
         padding: 10px;
-        width: 350px;
-        margin-left: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     #eventFeed {
         /*background-color: brown;*/
         padding: 10px;
     }
     article {
-        /*background-color: lightblue;*/
-        /*background-color: rgba(0,0,0,.3);*/
-        /*padding: 10px;*/
-        background-color: rgba(0,0,0,.3);
         border: 3px ridge;
         border-radius: 3px;
         display: inline-block;
@@ -2023,5 +2426,9 @@ a:link, a:visited {
   animation-duration: 1s;
 }
 
+.aLink {
+    bottom: -1187px;
+    left: 130px;
+}
 
 }

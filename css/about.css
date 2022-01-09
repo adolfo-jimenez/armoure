@@ -80,8 +80,8 @@ Header .nav li a:hover{
     display: flex;
 }
 #aboutInfo img {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     filter: drop-shadow(0px 0px 5px yellow);
     border-radius: 15px;
 }
@@ -105,14 +105,91 @@ aside {
     font-style: italic;
     font-weight: 600;
 }
+.aLink {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -90px;
+    left: 44vw;
+}
+.aLink li a {
+    width: 50px;
+    height: 50px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: 0.2s linear;
+  }
 
+.aLink img {
+    height: 20px;
+    width: 20px;
+}
+
+.aLink li a:hover {
+    background: #ab1026;
+    transform: translateY(-15px);
+}
+
+.aLink li a img {
+    width: 45px;
+    height: 40px;
+    filter: invert(1);
+    transform: scale(.6);
+}
+
+#img1::after,
+#img2::after,
+#img3::after{
+    content: 'soundcloud';
+    color: #fff;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    padding: 1em 3em;
+    white-space: nowrap;
+    transform: scale(0);
+    transition: transform ease-in-out .6s;
+}
+
+#img2::after {
+    content: 'mixcloud';
+}
+
+#img3::after {
+    content: 'twitch';
+}
+
+#img1:hover::after,
+#img2:hover::after,
+#img3:hover::after{
+    transform: scale(1);
+}
 
 
 
 /* custom styling for all icons */
 i.fas,
 i.fab {
-  font-size: 12px;
+  font-size: 25px;
+}
+i.fa-aws {
+    font-size: 12px;
+}
+.fa-soundcloud {
+    color: white;
+
+}
+.fa-mixcloud {
+    color: white;
+    
+}
+.fa-twitch {
+    color: white;
 }
 .brand-rights {
     text-align: center;
