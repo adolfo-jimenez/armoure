@@ -55,42 +55,7 @@
         <div class="eventPageBrief">
             <h1> Live Events</h1>
         </div>
-            <!--digital clock start
-            <h1>Cali Time</h1>
-        <div class="datetime">
-            <div class="date">
-              <span id="dayname">Day</span>,
-              <span id="month">Month</span>
-              <span id="daynum">00</span>,
-              <span id="year">Year</span>
-            </div>
-            <div class="time">
-              <span id="hour">00</span>:
-              <span id="minutes">00</span>:
-              <span id="seconds">00</span>
-              <span id="period">AM</span>
-            </div>
-        </div>
-    
-        <div class="timeZones">
-            <div class="timebox">
-                <h1>West Coast</h1>
-                <h5>(PST)</h5>
-                <p id="pacificTime"></p>
-            </div>
-        
-            <div class="timebox">
-                <h1>East Coast</h1>
-                <h5>(EST)</h5>
-                <p id="atlanticTime"></p>
-            </div>
-        
-            <div class="timebox">
-                <h1>London Time</h1>
-                <h5>(GMT)</h5>
-                <p id="ukTime"></p>
-            </div>
-        </div>-->
+           
     </div>
 
     <section id="eventFeed">
@@ -193,137 +158,11 @@
     <!-- Load our React component. -->
     <script src="./js/like_button.js"></script>
     <script src="./js/nav.js"></script>
-
-    <script type="text/javascript">
-        var counter = 1;
-        setInterval(function() {
-            document.getElementById?('radio' + counter).checked=true;
-            counter++;
-            if(course > 2) {
-                counter = 1;
-            }
-        }, 5000);
     </script>
 
-<script type="text/javascript">
-    function updateClock(){
-      var now = new Date();
-      var dname = now.getDay(),
-          mo = now.getMonth(),
-          dnum = now.getDate(),
-          yr = now.getFullYear(),
-          hou = now.getHours(),
-          min = now.getMinutes(),
-          sec = now.getSeconds(),
-          pe = "AM";
 
-         // East Test 1
-    /*dnameEast = dname;
-          houEast = now.getHours() + 3;
-          dnumEast = dnum,
-          peEast = "AM";*/
-        
-          if(hou >= 12){
-            pe = "PM";
-          }
-          if(hou == 0){
-            hou = 12;
-          }
-          if(hou > 12){
-            hou = hou - 12;
-          }
-          //East Test 1
-          /*if(houEast >= 12){
-           peEast = "PM";
-          }
-          if(houEast > 12){
-            houEast = houEast - 12;
-          }
-          if(houEast > 12){
-            houEast = houEast - 12;
-          }*/
+    
 
-          Number.prototype.pad = function(digits){
-            for(var n = this.toString(); n.length < digits; n = 0 + n);
-            return n;
-          }
-
-          var months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"];
-          var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-          //West Test
-          //var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
-
-          //East Test 1
-          //var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period", "hourEast"];
-          //East Test 2
-          var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
-          /*var idsEast = ["daynameEast", "monthEast", "daynumEast", "yearEast", "hourEast", "minutesEast", "secondsEast", "periodEast"];*/
-          //west Test 1
-          var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
-          //var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe, houEast];
-          /*var valuesEast = [week[dname], months[mo], dnum.pad(2), yr, houEast, min.pad(2), sec.pad(2), pe];*/
-          for(var i = 0; i < ids.length; i++)
-          document.getElementById(ids[i]).firstChild.nodeValue = values[i];
-
-          /*for(var i = 0; i < idsEast.length; i++)
-          document.getElementById(idsEast[i]).firstChild.nodeValue = valuesEast[i];*/
-
-    }
-
-    function initClock(){
-      updateClock();
-      window.setInterval("updateClock()", 1);
-    }
-    </script>
-
-    <script>
-        var getPacificTime = function() {
-            document.getElementById("pacificTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'America/Los_Angeles',timeStyle:'medium', hourCycle:'h12'});
-        }
-        getPacificTime();
-        setInterval(getPacificTime,1000);
-
-        var getAtlanticTime = function() {
-            document.getElementById("atlanticTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'America/New_York',timeStyle:'medium', hourCycle:'h12'});
-        }
-        getAtlanticTime();
-        setInterval(getAtlanticTime,1000);
-
-        var getUkTime = function() {
-            document.getElementById("ukTime").innerHTML = new Date().toLocaleString("en-US",{timeZone:'Europe/London',timeStyle:'medium', hourCycle:'h12'});
-        }
-        getUkTime();
-        setInterval(getUkTime,1000);
-    </script>
-    <script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
 </body>
 
 
