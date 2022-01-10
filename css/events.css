@@ -187,12 +187,19 @@ section .soundcloudPlaylists {
 .superSwordInfoText {
     padding: 30px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 .superSwordInfoText h1 {
-    font-size: 60px;
+    font-size: 40px;
 }
 .superSwordInfoText p {
     font-size: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
 .soundcloudEmbedded {
     padding: 60px;
@@ -205,24 +212,41 @@ section .soundcloudPlaylists {
     display: flex;
     padding: 0px;
 }
-.medeivalMondaysSC img {
-    width: 30%;
-    height: 30%;
+.medeivalMondaysSCImg {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.medeivalMondaysSCImg a img{
     border-radius: 20px;
     filter: drop-shadow(0px 0px 5px white);
+}
+.medeivalMondaysSCImg a p {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 800;
+}
+.medeivalMondaysSCImg a p:hover {
+    color: blue;
+    font-weight: 900;
 }
 .medeivalMondaysInfoText {
     padding: 30px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .medeivalMondaysInfoText h1 {
-    font-size: 60px;
+    font-size: 40px;
 }
 .medeivalMondaysInfoText p {
     font-size: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
 #eventFeed article .calendarBlock {
     /*background-color: indigo;*/
@@ -266,10 +290,26 @@ article .eventInfo .infoText {
     margin-right: auto;
 }
 article .eventInfo .infoText h2 {
-    font-size: 45px;
+    font-size: 40px;
     text-align: center;
     padding: 0px;
     filter: drop-shadow(2px 2px 5px black);
+}
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr:after {
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
 }
 article .eventInfo .infoText p {
     font-size: 20px;
