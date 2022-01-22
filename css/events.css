@@ -103,9 +103,9 @@ section .duskToDawn {
     margin-bottom: 50px;
 }
 section .duskToDawn .eventHeadLineInfo {
-    background-color: #ab1026;
     text-align: center;
     padding: 20px;
+    margin-top: 40px;
 }
 section .duskToDawn .eventHeadLineInfo #headLine{
     padding: 10px;
@@ -144,6 +144,52 @@ section .duskToDawn .eventHeadLineInfo .calendarBlock h3{
     font-size: 30px;
     font-weight: 500;
     filter: drop-shadow(2px 2px 5px black);
+}
+.duskToDawnMedia{
+    display: flex;
+    padding: 30px;
+    text-align: center;
+}
+.duskToDawnPhotos {
+}
+.duskToDawnSC {
+    width: 39%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.duskToDawnPhotos {
+    filter: drop-shadow(2px 2px 3px white);
+}
+.duskToDawnPhotos img {
+    width: 900px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+.mainSlideShow {
+    /*background-color: cornflowerblue;*/
+    padding: 40px;
+    width: 50%;
+}
+.mainSlideShow img {
+    display: flex;
+    width: 900px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.duskToDawnInfoText {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+.duskToDawnInfoText p{
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
 }
 section .soundcloudPlaylists {
     background-color: rgba(0, 0, 0, 0.9);
@@ -411,7 +457,7 @@ article .poster a img {
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .8}
   to {opacity: 1}
 }
 
@@ -898,6 +944,107 @@ a:link, a:visited {
         width: 100%;
         margin-bottom: 50px;
     }
+
+    section .duskToDawn {
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 3px ridge;
+        border-radius: 3px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    section .duskToDawn .eventHeadLineInfo {
+        text-align: center;
+        padding: 20px;
+        margin-top: 0px;
+    }
+    section .duskToDawn .eventHeadLineInfo #headLine{
+        padding: 10px;
+    }
+    section .duskToDawn .eventHeadLineInfo #headLine h2 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock {
+        /*background-color: indigo;*/
+        width: 50%;
+        border: 3px double;
+        border-color: silver;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h5{
+        font-size: 15px;
+        font-weight: 400;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h3{
+        font-size: 30px;
+        font-weight: 500;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .duskToDawnMedia{
+        display: inline-block;
+        padding: 0px;
+        text-align: center;
+    }
+    .duskToDawnPhotos {
+    }
+    .duskToDawnSC {
+        width: 95%;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .duskToDawnPhotos {
+        filter: drop-shadow(0px 0px 1px white);
+    }
+    .duskToDawnPhotos img {
+        width: 100%;
+        border-radius: 10px;
+        filter: drop-shadow(0px 0px 1px white);
+    }
+    .mainSlideShow {
+        /*background-color: cornflowerblue;*/
+        padding: 0px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .mainSlideShow img {
+        display: flex;
+        width: 1100px;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+    .duskToDawnInfoText {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    .duskToDawnInfoText p{
+        font-size: 20px;
+        width: 90%;
+        text-align: center;
+    }
+
     /* Next & previous buttons */
     .prev, .next {
       cursor: pointer;
@@ -1152,6 +1299,7 @@ a:link, a:visited {
         border-radius: 20px;
         filter: drop-shadow(0px 0px 5px white);
     }
+    
 }
 @media (max-width:1024px){
     .toggle {
@@ -1228,6 +1376,107 @@ a:link, a:visited {
         width: 100%;
         margin-bottom: 50px;
     }
+
+    section .duskToDawn {
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 3px ridge;
+        border-radius: 3px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    section .duskToDawn .eventHeadLineInfo {
+        text-align: center;
+        padding: 20px;
+        margin-top: 0px;
+    }
+    section .duskToDawn .eventHeadLineInfo #headLine{
+        padding: 10px;
+    }
+    section .duskToDawn .eventHeadLineInfo #headLine h2 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock {
+        /*background-color: indigo;*/
+        width: 50%;
+        border: 3px double;
+        border-color: silver;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h5{
+        font-size: 15px;
+        font-weight: 400;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h3{
+        font-size: 30px;
+        font-weight: 500;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .duskToDawnMedia{
+        display: inline-block;
+        padding: 0px;
+        text-align: center;
+    }
+    .duskToDawnPhotos {
+    }
+    .duskToDawnSC {
+        width: 95%;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .duskToDawnPhotos {
+        filter: drop-shadow(0px 0px 1px white);
+    }
+    .duskToDawnPhotos img {
+        width: 100%;
+        border-radius: 10px;
+        filter: drop-shadow(0px 0px 1px white);
+    }
+    .mainSlideShow {
+        /*background-color: cornflowerblue;*/
+        padding: 0px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .mainSlideShow img {
+        display: flex;
+        width: 900px;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+    .duskToDawnInfoText {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    .duskToDawnInfoText p{
+        font-size: 20px;
+        width: 90%;
+        text-align: center;
+    }
+
     /* Next & previous buttons */
     .prev, .next {
       cursor: pointer;
@@ -1426,6 +1675,105 @@ a:link, a:visited {
       border-radius: 0 3px 3px 0;
       user-select: none;
     }
+
+    section .duskToDawn {
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 3px ridge;
+        border-radius: 3px;
+        margin-bottom: 50px;
+    }
+    section .duskToDawn .eventHeadLineInfo {
+        text-align: center;
+        padding: 20px;
+        margin-top: 0px;
+    }
+    section .duskToDawn .eventHeadLineInfo #headLine{
+        padding: 10px;
+    }
+    section .duskToDawn .eventHeadLineInfo #headLine h2 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock {
+        /*background-color: indigo;*/
+        width: 50%;
+        border: 3px double;
+        border-color: silver;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h5{
+        font-size: 15px;
+        font-weight: 400;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h3{
+        font-size: 30px;
+        font-weight: 500;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .duskToDawnMedia{
+        display: inline-block;
+        padding: 0px;
+        text-align: center;
+    }
+    .duskToDawnPhotos {
+    }
+    .duskToDawnSC {
+        width: 95%;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .duskToDawnPhotos {
+        filter: drop-shadow(0px 0px 1px white);
+    }
+    .duskToDawnPhotos img {
+        width: 100%;
+        border-radius: 10px;
+        filter: drop-shadow(0px 0px 1px white);
+    }
+    .mainSlideShow {
+        /*background-color: cornflowerblue;*/
+        padding: 0px;
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .mainSlideShow img {
+        display: flex;
+        width: 90%;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+    .duskToDawnInfoText {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    .duskToDawnInfoText p{
+        font-size: 20px;
+        width: 90%;
+        text-align: center;
+    }
     
     /* Position the "next button" to the right */
     .next {
@@ -1604,6 +1952,105 @@ a:link, a:visited {
         width: 99%;
         border-radius: 20px;
         filter: drop-shadow(0px 0px 5px white);
+    }
+
+    section .duskToDawn {
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 3px ridge;
+        border-radius: 3px;
+        margin-bottom: 50px;
+    }
+    section .duskToDawn .eventHeadLineInfo {
+        text-align: center;
+        padding: 20px;
+        margin-top: 0px;
+    }
+    section .duskToDawn .eventHeadLineInfo #headLine{
+        padding: 10px;
+    }
+    section .duskToDawn .eventHeadLineInfo #headLine h2 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock {
+        /*background-color: indigo;*/
+        width: 50%;
+        border: 3px double;
+        border-color: silver;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h5{
+        font-size: 15px;
+        font-weight: 400;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h3{
+        font-size: 30px;
+        font-weight: 500;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .duskToDawnMedia{
+        display: inline-block;
+        padding: 0px;
+        text-align: center;
+    }
+    .duskToDawnPhotos {
+    }
+    .duskToDawnSC {
+        width: 95%;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .duskToDawnPhotos {
+        filter: drop-shadow(0px 0px 1px white);
+    }
+    .duskToDawnPhotos img {
+        width: 100%;
+        border-radius: 10px;
+        filter: drop-shadow(0px 0px 1px white);
+    }
+    .mainSlideShow {
+        /*background-color: cornflowerblue;*/
+        padding: 0px;
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .mainSlideShow img {
+        display: flex;
+        width: 90%;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+    .duskToDawnInfoText {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    .duskToDawnInfoText p{
+        font-size: 20px;
+        width: 90%;
+        text-align: center;
     }
 
     * {box-sizing:border-box}
@@ -1861,6 +2308,104 @@ i.fab {
         margin-right: auto;
     }
 
+    section .duskToDawn {
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 3px ridge;
+        border-radius: 3px;
+        margin-bottom: 50px;
+    }
+    section .duskToDawn .eventHeadLineInfo {
+        text-align: center;
+        padding: 20px;
+        margin-top: 0px;
+    }
+    section .duskToDawn .eventHeadLineInfo #headLine{
+        padding: 10px;
+    }
+    section .duskToDawn .eventHeadLineInfo #headLine h2 {
+        font-size: 40px;
+        text-align: center;
+        padding: 0px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock {
+        /*background-color: indigo;*/
+        width: 50%;
+        border: 3px double;
+        border-color: silver;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h5{
+        font-size: 15px;
+        font-weight: 400;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    section .duskToDawn .eventHeadLineInfo .calendarBlock h3{
+        font-size: 30px;
+        font-weight: 500;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    .duskToDawnMedia{
+        display: inline-block;
+        padding: 0px;
+        text-align: center;
+    }
+    .duskToDawnPhotos {
+    }
+    .duskToDawnSC {
+        width: 95%;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .duskToDawnPhotos {
+        filter: drop-shadow(0px 0px 1px white);
+    }
+    .duskToDawnPhotos img {
+        width: 100%;
+        border-radius: 10px;
+        filter: drop-shadow(0px 0px 1px white);
+    }
+    .mainSlideShow {
+        /*background-color: cornflowerblue;*/
+        padding: 0px;
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .mainSlideShow img {
+        display: flex;
+        width: 90%;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+    .duskToDawnInfoText {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    .duskToDawnInfoText p{
+        font-size: 20px;
+        width: 90%;
+        text-align: center;
+    }
 
     * {box-sizing:border-box}
 

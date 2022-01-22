@@ -85,11 +85,7 @@
 
         <section class="duskToDawn">
 
-            <div class="duskToDawnPhotos">
-                <div>
-                    
-                </div>
-            </div>
+            
 
             <div class="eventHeadLineInfo">
                 <div class="calendarBlock">
@@ -102,6 +98,47 @@
                     <h2>Halcyon SF: Dusk to Dawn</h2>
                 </div>
             </div>
+
+            <div class="duskToDawnMedia">
+                <div class="duskToDawnPhotos">
+                    <div class="mainSlideShow">
+                        <div class="mySlides fade">
+                            <img src="/event_images/Halcyon/IMG_3382.jpg">
+                        </div>
+                          
+                        <div class="mySlides fade">
+                            <img src="/event_images/Halcyon/2871E1E4-191B-4993-8577-2BD85E34EB8F.jpg">
+                        </div>
+                          
+                        <div class="mySlides fade">
+                            <img src="/event_images/Halcyon/716DCD26-3C99-45A3-83E0-72D887C0103F.jpg">
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <img src="/event_images/Halcyon/A8210312-1BF2-4018-8879-6F22BBAB4CA6.jpg">
+                        </div>
+        
+                        <!-- Number of dots must match number of photos used-->
+                        <div style="text-align:center">
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span>
+                        </div>
+
+                    </div>  
+                </div>
+    
+                <div class="duskToDawnSC">
+                    <iframe width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1191837394&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/armouresounds" title="Armoure" target="_blank" style="color: #cccccc; text-decoration: none;">Armoure</a> · <a href="https://soundcloud.com/armouresounds/halcyon-debut-practice-armoure" title="At Halcyon SF (Opening for Taches) Deep Set" target="_blank" style="color: #cccccc; text-decoration: none;">At Halcyon SF (Opening for Taches) Deep Set</a></div>
+                </div>
+
+            </div>
+
+            <div class="duskToDawnInfoText">
+                <p>And i nevermore entreating then an core aidenn more expressing, a my shadow angels desolate. More ebony one his of all, nightly sitting sad his spoken nodded, sitting form thee hope hauntedtell that the, door friends quaff sad loneliness door forgiveness feather what implore, the footfalls thy distinctly plume. Nightly that beguiling nodded chamber, is napping he the of, i he door moment it napping all, bird chamber explore and.</p>
+            </div>
+            
         </section>
 
         <div class="eventPageBrief">
@@ -171,6 +208,28 @@
     <!-- Load our React component. -->
     <script src="./js/like_button.js"></script>
     <script src="./js/nav.js"></script>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 
 
