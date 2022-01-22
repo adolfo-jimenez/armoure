@@ -45,72 +45,6 @@ body {
     text-align: center;
     filter: drop-shadow(7px 7px 8px black);
 }
-.timeZones {
-    display: flex;
-    justify-content: center;
-}
-.timebox {
-    margin: 25px;
-    text-align: center;
-}
-.datetime{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    color: #fff;
-    /*background: #10101E;*/
-    font-family: "Segoe UI", sans-serif;
-    width: 740px;
-    padding: 15px 10px;
-    /*border: 3px solid #2E94E3;*/
-    border-radius: 5px;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
-    transition: 0.5s;
-    transition-property: background, box-shadow;
-}
-.datetime h1 {
-      padding-top: 0px;
-      padding-bottom: 5px;
-      color:seashell;
-      font-weight: 800;
-      text-align: center;
-}
-  /*.datetime:hover{
-    background: #2E94E3;
-    box-shadow: 0 0 30px #2E94E3;
-  }*/
-.date{
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 3px;
-}
-  
-.time{
-    font-size: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.time span:not(:last-child){
-    position: relative;
-    margin: 0 6px;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 3px;
-}
-  
-.time span:last-child{
-    /*background: #2E94E3;*/
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-top: 10px;
-    padding: 0 5px;
-    border-radius: 3px;
-}
 .logo {
     text-align: center;
     padding: 25px;
@@ -161,6 +95,55 @@ article {
     border-radius: 3px;
     display: inline-block;
     margin-bottom: 100px;
+}
+section .duskToDawn {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 3px ridge;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+section .duskToDawn .eventHeadLineInfo {
+    background-color: #ab1026;
+    text-align: center;
+    padding: 20px;
+}
+section .duskToDawn .eventHeadLineInfo #headLine{
+    padding: 10px;
+}
+section .duskToDawn .eventHeadLineInfo #headLine h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 0px;
+    filter: drop-shadow(2px 2px 5px black);
+}
+section .duskToDawn .eventHeadLineInfo .calendarBlock {
+    /*background-color: indigo;*/
+    width: 15%;
+    border: 3px double;
+    border-color: silver;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+section .duskToDawn .eventHeadLineInfo .calendarBlock h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    filter: drop-shadow(2px 2px 5px black);
+}
+section .duskToDawn .eventHeadLineInfo .calendarBlock h5{
+    font-size: 15px;
+    font-weight: 400;
+    filter: drop-shadow(2px 2px 5px black);
+}
+section .duskToDawn .eventHeadLineInfo .calendarBlock h3{
+    font-size: 30px;
+    font-weight: 500;
+    filter: drop-shadow(2px 2px 5px black);
 }
 section .soundcloudPlaylists {
     background-color: rgba(0, 0, 0, 0.9);
@@ -333,30 +316,6 @@ article .poster a img {
     border-radius: 20px;
     filter: drop-shadow(0px 0px 5px white);
 }
-.slider {
-    width: 800px;
-    height: 630px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.slide {
-    width: 500%;
-    height: 500px;
-    display: flex;
-}
-.slide input {
-    display: none;
-}
-.st {
-    width: 20%;
-    transition: 1.5s;
-}
-.st img {
-    width: 800px;
-    height: 600px;
-    margin-bottom: auto;
-    margin-top: auto;
-}
 .nav-m {
     position: absolute;
     width: 800px;
@@ -423,46 +382,9 @@ article .poster a img {
 
 * {box-sizing:border-box}
 
-.twoDayEventSlides {
-    width: 45%;
-}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 50%;
-  position: relative;
-  margin: auto;
-}
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-.mySlides img {
-  border-radius: 10px;
-  background-color: chocolate;
-  margin-top: 25px;
-  filter: drop-shadow(0px 0px 5px white);
-}
-.mySlides img:hover {
-    filter: drop-shadow(0px 0px 5px gold);
-    transition: 2s;
-  }
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 10px;
-  color:chartreuse;
-  font-weight: bold;
-  font-size: 35px;
-  transition: 0.6s  ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
+
 
 /* Position the "next button" to the right */
 .next {
@@ -473,25 +395,6 @@ article .poster a img {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
-}
-
-
-/* The dots/bullets/indicators */
-.test2 {
-}
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
 }
 
 /* Fading animation */
@@ -816,30 +719,6 @@ a:link, a:visited {
         border-radius: 20px;
         filter: drop-shadow(0px 0px 5px white);
     }
-    .slider {
-        width: 800px;
-        height: 630px;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    .slide {
-        width: 500%;
-        height: 500px;
-        display: flex;
-    }
-    .slide input {
-        display: none;
-    }
-    .st {
-        width: 20%;
-        transition: 1.5s;
-    }
-    .st img {
-        width: 800px;
-        height: 600px;
-        margin-bottom: auto;
-        margin-top: auto;
-    }
     .nav-m {
         position: absolute;
         width: 800px;
@@ -906,31 +785,6 @@ a:link, a:visited {
     
     * {box-sizing:border-box}
     
-    .twoDayEventSlides {
-        width: 45%;
-    }
-    
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 50%;
-      position: relative;
-      margin: auto;
-    }
-    
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-    .mySlides img {
-      border-radius: 10px;
-      background-color: chocolate;
-      margin-top: 25px;
-      filter: drop-shadow(0px 0px 5px white);
-    }
-    .mySlides img:hover {
-        filter: drop-shadow(0px 0px 5px gold);
-        transition: 2s;
-      }
     /* Next & previous buttons */
     .prev, .next {
       cursor: pointer;
@@ -959,23 +813,6 @@ a:link, a:visited {
     }
     
     
-    /* The dots/bullets/indicators */
-    .test2 {
-    }
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-    
-    .active, .dot:hover {
-      background-color: #717171;
-    }
     
     /* Fading animation */
     .fade {
@@ -1011,9 +848,6 @@ a:link, a:visited {
 }
 
 @media (max-width:1440px){
-    .twoDayEventSlides {
-        width: 100%;
-    }
     .eventInfo {
         margin-left: auto;
         margin-right: auto;
@@ -1064,22 +898,6 @@ a:link, a:visited {
         width: 100%;
         margin-bottom: 50px;
     }
-    .twoDayEventSlides {
-    }
-    
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 55%;
-    }
-    
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-    .mySlides img:hover {
-      filter: drop-shadow(0px 0px 5px gold);
-      transition: 2s;
-    }
     /* Next & previous buttons */
     .prev, .next {
       cursor: pointer;
@@ -1108,23 +926,6 @@ a:link, a:visited {
     }
     
     
-    /* The dots/bullets/indicators */
-    .test2 {
-    }
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-    
-    .active, .dot:hover {
-      background-color: #717171;
-    }
     
     /* Fading animation */
     .fade {
@@ -1372,9 +1173,6 @@ a:link, a:visited {
         right: 0px;
         margin-right: 80px;
     }
-    .twoDayEventSlides {
-        width: 100%;
-    }
     .eventInfo {
         margin-left: auto;
         margin-right: auto;
@@ -1430,22 +1228,6 @@ a:link, a:visited {
         width: 100%;
         margin-bottom: 50px;
     }
-    .twoDayEventSlides {
-    }
-    
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 55%;
-    }
-    
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-    .mySlides img:hover {
-      filter: drop-shadow(0px 0px 5px gold);
-      transition: 2s;
-    }
     /* Next & previous buttons */
     .prev, .next {
       cursor: pointer;
@@ -1474,23 +1256,6 @@ a:link, a:visited {
     }
     
     
-    /* The dots/bullets/indicators */
-    .test2 {
-    }
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-    
-    .active, .dot:hover {
-      background-color: #717171;
-    }
     
     /* Fading animation */
     .fade {
@@ -1589,9 +1354,6 @@ a:link, a:visited {
         right: 0px;
         margin-right: 80px;
     }
-    .twoDayEventSlides {
-        width: 100%;
-    }
     .eventInfo {
         margin-left: auto;
         margin-right: auto;
@@ -1649,22 +1411,6 @@ a:link, a:visited {
         width: 100%;
         margin-bottom: 50px;
     }
-    .twoDayEventSlides {
-    }
-    
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 55%;
-    }
-    
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-    .mySlides img:hover {
-      filter: drop-shadow(0px 0px 5px gold);
-      transition: 2s;
-    }
     /* Next & previous buttons */
     .prev, .next {
       cursor: pointer;
@@ -1690,25 +1436,6 @@ a:link, a:visited {
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover, .next:hover {
       background-color: rgba(0,0,0,0.8);
-    }
-    
-    
-    /* The dots/bullets/indicators */
-    .test2 {
-    }
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-    
-    .active, .dot:hover {
-      background-color: #717171;
     }
     
     /* Fading animation */
@@ -1881,19 +1608,6 @@ a:link, a:visited {
 
     * {box-sizing:border-box}
 
-.twoDayEventSlides {
-    width: 100%;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 95%;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -1923,23 +1637,6 @@ a:link, a:visited {
 }
 
 
-/* The dots/bullets/indicators */
-.test2 {
-}
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
 
 /* Fading animation */
 .fade {
@@ -2167,20 +1864,6 @@ i.fab {
 
     * {box-sizing:border-box}
 
-.twoDayEventSlides {
-    width: 100%;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 95%;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -2209,23 +1892,6 @@ i.fab {
 }
 
 
-/* The dots/bullets/indicators */
-.test2 {
-}
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
 
 /* Fading animation */
 .fade {
@@ -2398,35 +2064,7 @@ section .soundcloudPlaylists {
 
     * {box-sizing:border-box}
 
-.twoDayEventSlides {
-    width: 100%;
-}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 95%;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 10px;
-  color:chartreuse;
-  font-weight: bold;
-  font-size: 35px;
-  transition: 0.6s  ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
 
 /* Position the "next button" to the right */
 .next {
@@ -2439,24 +2077,6 @@ section .soundcloudPlaylists {
   background-color: rgba(0,0,0,0.8);
 }
 
-
-/* The dots/bullets/indicators */
-.test2 {
-}
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
 
 /* Fading animation */
 .fade {
