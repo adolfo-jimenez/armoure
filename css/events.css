@@ -100,7 +100,7 @@ section .duskToDawn {
     background-color: rgba(0, 0, 0, 0.9);
     border: 3px ridge;
     border-radius: 3px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 section .duskToDawn .eventHeadLineInfo {
     text-align: center;
@@ -1139,7 +1139,7 @@ a:link, a:visited {
         border-radius: 3px;
     }
     section {
-        padding: 150px 0px;
+        padding: 0px 0px;
     }
     header {
         padding: 40px;
@@ -1583,7 +1583,7 @@ a:link, a:visited {
         bottom: -1220px;
     }
 }
-@media (max-width:768px){
+@media (max-width:968px){
     .toggle {
         width: 35px;
         height: 30px;
