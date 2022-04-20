@@ -79,6 +79,59 @@
 
         </article>-->
 
+        <section class="superSwords_11">
+
+            
+
+            <div class="eventHeadLineInfo">
+                <div class="calendarBlock">
+                    <h1>Jan</h1>
+                    <h5>14th</h5>
+                    <h3>2022</h3>
+                </div>
+
+                <div id="headLine">
+                    <h2>Super Sword Sessions 11: Raid Train</h2>
+                </div>
+            </div>
+
+            <div class="superSwords_11_Media">
+                <div class="superSwords_11_Photos">
+                    <div class="mainSlideShow_ss_11">
+                        <div class="ss_11_slides fade">
+                            <img src="/event_images/Halcyon/IMG_3382.jpg">
+                        </div>
+                          
+                        <div class="ss_11_slides fade">
+                            <img src="/event_images/Halcyon/2871E1E4-191B-4993-8577-2BD85E34EB8F.jpg">
+                        </div>
+                          
+                        <div class="ss_11_slides fade">
+                            <img src="/event_images/Halcyon/716DCD26-3C99-45A3-83E0-72D887C0103F.jpg">
+                        </div>
+        
+                        <div class="ss_11_slides fade">
+                            <img src="/event_images/Halcyon/A8210312-1BF2-4018-8879-6F22BBAB4CA6.jpg">
+                        </div>
+        
+                        <!-- Number of dots must match number of photos used-->
+                        <div style="text-align:center">
+                            <span class="dot_ss_11"></span> 
+                            <span class="dot_ss_11"></span> 
+                            <span class="dot_ss_11"></span>
+                        </div>
+
+                    </div>  
+                </div>
+
+            </div>
+
+            <div class="superSwords_11_InfoText">
+                <p><i>"It was truly an honor to play at a gorgeous and legendary venue such as Halcyon SF. Thank you so much to Polaris Radio and Halcyon SF for the opportunity! Shout out to Anjundeep and TÂCHES, who I was able to support and open for his debut at Halcyon!"</i> - Armoure</p>
+            </div>
+            
+        </section>
+
         <section class="duskToDawn">
 
             
@@ -170,7 +223,7 @@
 
                     <div class="medeivalMondaysInfoText">
                         <h1>Medieval Mondays</h1>
-                        <p>Medieval Mondays is another one of Amoure’s flagship events that occur every Monday at 4pm Pacific time only on Twitch!<br><br>Armoure has also put together a playlist of his latest tracks from the most recent Medieval Monday’s events.</p>
+                        <p>Medieval Mondays is another one of Amoure’s flagship events that occur every Monday on Twitch!<br><br>Armoure has also put together a playlist of his latest tracks from the most recent Medieval Monday’s events.</p>
 
                         <div class="soundcloudEmbedded">
                             <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1371723295&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/armouresounds" title="Armoure" target="_blank" style="color: #cccccc; text-decoration: none;">Armoure</a> · <a href="https://soundcloud.com/armouresounds/sets/medieval-mondays-series-sets" title="Medieval Mondays Series Sets" target="_blank" style="color: #cccccc; text-decoration: none;">Medieval Mondays Series Sets</a></div>
@@ -234,6 +287,29 @@
           setTimeout(showSlides, 5000); // Change image every 2 seconds
         }
     </script>
+
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("ss_11_slides");
+      var dots = document.getElementsByClassName("dot_ss_11");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+</script>
 
 </body>
 

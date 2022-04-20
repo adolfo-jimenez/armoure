@@ -96,6 +96,94 @@ article {
     display: inline-block;
     margin-bottom: 100px;
 }
+section .superSwords_11 {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 3px ridge;
+    border-radius: 3px;
+    margin-bottom: 150px;
+}
+section .superSwords_11 .eventHeadLineInfo {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+section .superSwords_11 .eventHeadLineInfo #headLine{
+    padding: 10px;
+}
+section .superSwords_11 .eventHeadLineInfo #headLine h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 0px;
+    filter: drop-shadow(2px 2px 5px black);
+}
+section .superSwords_11 .eventHeadLineInfo .calendarBlock {
+    /*background-color: indigo;*/
+    width: 15%;
+    border: 3px double;
+    border-color: silver;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+section .superSwords_11 .eventHeadLineInfo .calendarBlock h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    filter: drop-shadow(2px 2px 5px black);
+}
+section .superSwords_11 .eventHeadLineInfo .calendarBlock h5{
+    font-size: 15px;
+    font-weight: 400;
+    filter: drop-shadow(2px 2px 5px black);
+}
+section .superSwords_11 .eventHeadLineInfo .calendarBlock h3{
+    font-size: 30px;
+    font-weight: 500;
+    filter: drop-shadow(2px 2px 5px black);
+}
+.superSwords_11_Media{
+    display: flex;
+    padding: 30px;
+    text-align: center;
+}
+.superSwords_11_Photos {
+}
+.superSwords_11_Photos {
+    filter: drop-shadow(2px 2px 3px white);
+}
+.superSwords_11_Photos img {
+    width: 900px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+.mainSlideShow_ss_11 {
+    /*background-color: cornflowerblue;*/
+    padding: 40px;
+    width: 50%;
+}
+.mainSlideShow_ss_11 img {
+    display: flex;
+    width: 900px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.superSwords_11_InfoText {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+.superSwords_11_InfoText p{
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+}
 section .duskToDawn {
     background-color: rgba(0, 0, 0, 0.9);
     border: 3px ridge;
@@ -905,6 +993,22 @@ a:link, a:visited {
         from {opacity: .4}
         to {opacity: 1}
       }
+
+      .fade2 {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1s;
+      }
+      @-webkit-keyframes fade2 {
+          from {opacity: .1}
+          to {opacity: 1}
+        }
+        
+        @keyframes fade2 {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
       
       
       /* custom styling for all icons */
