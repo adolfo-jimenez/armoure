@@ -167,11 +167,20 @@ section .superSwords_11 .eventHeadLineInfo .calendarBlock h3{
 }
 .mainSlideShow_ss_11 img {
     display: flex;
+    width: 100%;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.mainSlideShow_ss_11 a {
+    display: flex;
     width: 35%;
     padding: 0px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+    background-color: #ab1026;
 }
 .superSwords_11_InfoText {
     display: flex;
@@ -1719,12 +1728,21 @@ a:link, a:visited {
 @media (max-width:968px){
     .mainSlideShow_ss_11 img {
         display: flex;
-        width: 70%;
+        width: 100%;
         padding: 0px;
-        margin-top: 10px;
+        margin-top: 0px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 10px;
+    }
+    .mainSlideShow_ss_11 a {
+        display: flex;
+        width: 70%;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        background-color: #ab1026;
     }
     .superSwords_11_InfoText p {
         width: 90%;
@@ -2102,7 +2120,7 @@ a:link, a:visited {
         display: flex;
         width: 100%;
         padding: 0px;
-        margin-top: 10px;
+        margin-top: 0px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 10px;
@@ -2110,8 +2128,17 @@ a:link, a:visited {
     .superSwords_11_InfoText p {
         width: 80%;
     }
-    .superSwords_11 .eventHeadLineInfo {
-        display: none;
+    section .superSwords_11 .eventHeadLineInfo .calendarBlock {
+        width: 50%;
+        border: 3px double;
+        border-color: silver;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     section .duskToDawn {
         background-color: rgba(0, 0, 0, 0.9);
@@ -2470,7 +2497,7 @@ i.fab {
         display: flex;
         width: 100%;
         padding: 0px;
-        margin-top: 10px;
+        margin-top: 0px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 10px;
@@ -2478,8 +2505,18 @@ i.fab {
     .superSwords_11_InfoText p {
         width: 100%;
     }
-    .superSwords_11 .eventHeadLineInfo {
-        display: none;
+    section .superSwords_11 .eventHeadLineInfo .calendarBlock {
+        /*background-color: indigo;*/
+        width: 50%;
+        border: 3px double;
+        border-color: silver;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     section .duskToDawn {
         background-color: rgba(0, 0, 0, 0.9);
