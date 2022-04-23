@@ -186,6 +186,88 @@ header .nav li a:hover{
   filter: opacity(0.8);
 }
 
+#services-main {
+    width: 100%;
+    min-height: 100vh;
+    background-image: unset;
+    background-color: blueviolet;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+.services {
+    display: flex;
+}
+.services-text {
+    width: 30%;
+    background-color: mediumslateblue;
+}
+.services-form {
+    width: 60%;
+    background-color: darkgreen;
+}
+form {
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form h3 {
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+form input, form textarea, select {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+form, button {
+    padding: 15px;
+    background: rgb(101, 7, 138);
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+select {
+    width: 50%;
+    padding: 8px;
+    background: rgb(255, 255, 255);
+    color: black;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+#message {
+    resize: none;
+}
+button {
+    width: 20%;
+    background-color: rgb(4, 30, 145);
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* custom styling for all icons */
 i.fas,
 i.fab {
@@ -320,11 +402,11 @@ i.fa-pause {
 .brand-rights a:link, .brand-rights a:visited {
     color:white;
     text-decoration: none;
-  }
-  .container a:link, .container a:visited {
+}
+.container a:link, .container a:visited {
     color:white;
     text-decoration: none;
-  }
+}
 
 /* Optional glow effect */
 
