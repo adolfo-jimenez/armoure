@@ -24,7 +24,7 @@ section {
 header {
     width: 100%;
     /*position: absolute;*/
-    background-color: black;
+    background-color: rgb(3, 0, 14);
     top: 0;
     left: 0;
     display: flex;
@@ -57,16 +57,17 @@ header .logo {
 header .nav {
     display: flex;
     position: relative;
-    font-size: 16px;
+    font-size: 20px;
 }
 header .nav li a {
     display: inline-block;
     color: #fff;
     margin-left: 40px;
-    font-weight: 450;
+    font-weight: 500;
 }
 header .nav li a:hover{
-    font-weight: 500;
+    color: rgb(250, 179, 1);
+    filter: drop-shadow(0px 0px 1px black);
 }
 .services {
     background-color: rgba(86, 13, 114, 0.1);
@@ -288,7 +289,8 @@ i.fa-pause {
 .brand-rights {
     text-align: center;
     color: white;
-    background-color: rgba(86, 13, 114, 1);
+    background-color: rgb(3, 0, 14);
+    padding: 15px;
     
 }
 .brand-rights a:link, .brand-rights a:visited {
@@ -866,6 +868,16 @@ small {
     }
     .services-form form{
         width: 100%;
+    }
+    button {
+        width: 25%;
+        height: 30px;
+        background-color: rgb(4, 30, 145);
+        border-radius: 10px;
+        margin: 10px;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .aLink {
         bottom: 20px;
