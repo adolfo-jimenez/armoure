@@ -31,6 +31,8 @@ const form = document.querySelector("form");
             .then((response) => {
             document.getElementById("result-text").innerText =
                 "Email sent successfully!";
+            
+            document.querySelector("form").reset();
             })
             .catch((error) => {
             document.getElementById("result-text").innerText =
