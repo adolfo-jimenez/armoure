@@ -7,7 +7,7 @@ const form = document.querySelector("form");
 
             // Use your API endpoint URL you copied from the previous step
         const endpoint =
-            "https://c8cpkhjiq6.execute-api.us-west-1.amazonaws.com/armoure-stage/sendContactEmail";
+            "https://0hcg46czj6.execute-api.us-west-1.amazonaws.com/armoure_prod/armoure_sendEmail";
         // We use JSON.stringify here so the data can be sent as a string via HTTP
             const body = JSON.stringify({
             senderName: name.value,
