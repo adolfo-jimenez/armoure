@@ -110,7 +110,6 @@ header .nav li a:hover{
     background-color: rgba(0, 0, 0, .99);
     width: 90%;
     padding: 20px;
-    display:block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -118,7 +117,6 @@ article {
     background-color: rgba(0, 0, 0, 0.9);
     border: 3px ridge;
     border-radius: 3px;
-    display: inline-block;
     margin-bottom: 100px;
 }
 section .header-event {
@@ -1947,6 +1945,9 @@ a:link, a:visited {
     }
 }
 @media (max-width:425px){
+    .music-links-social {
+        padding: 100px;
+    }
     #eventFeed {
         /*background-color: brown;*/
         padding: 10px;
@@ -2058,7 +2059,7 @@ a:link, a:visited {
     }
     section .pastShow-temp-1 {
         background-color: rgba(0, 0, 0, 0.9);
-        border: 3px ridge;
+        border: none;
         border-radius: 3px;
         margin-bottom: 50px;
     }
@@ -2197,16 +2198,15 @@ a:link, a:visited {
 
 section .double-media-block-module {
     background-color: rgba(0, 0, 0, 0.9);
-    border: 3px ridge;
+    border: none;
     border-radius: 3px;
     margin-bottom: 50px;
-}
-.superSwordInfo {
-    margin-bottom: 100px;
+    display: unset;
 }
 .media-block {
     display: inline-block;
     padding: 0px;
+    width: 90%;
 }
 .media-block img {
     display: flex;
@@ -2267,7 +2267,15 @@ i.fas,
 i.fab {
   font-size: 13px;
 }
-
+i.fa-soundcloud {
+    font-size: 70px;
+}
+i.fa-twitch {
+    font-size: 70px;
+}
+i.fa-discord {
+    font-size: 70px;
+} 
 }
 @media (max-width:375px){
     .toggle {
