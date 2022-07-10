@@ -14,91 +14,94 @@ body {
     min-height: 100vh;
     background-image: linear-gradient(green, rgb(32, 53, 241));
 }
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-  }
-/*section {
+header {
     width: 100%;
-    background-image: url("../images/image0.jpg");
-    background-color: teal;
-    background-image: linear-gradient(green, rgb(32, 53, 241));
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 100px;
-    position: relative;
-    justify-content: space-around;
-    align-items: center;
-}*/
-.logo {
-    text-align: center;
-    padding: 25px;
-}
-.logoMobile {
-    display: none;
-}
-.logo img{
-    height: 100px;
-    width: 500px;
-    filter: drop-shadow(0px 0px 5px white);
-}
-.logo img:hover {
-    filter: drop-shadow(6px 6px 7px rgb(32, 53, 241));
-    transition: 2s;
-}
-Header {
-    width: 100%;
+    /*position: absolute;*/
+    background-color: rgb(3, 0, 14);
     top: 0;
-    right: 0;
-    /*display: flex;*/
+    left: 0;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 10px;
+    z-index: 2;
 }
-Header .nav {
+header img {
+    height: 100px;
+    width: 500px;
+    padding-left: 50px;
+    filter: drop-shadow(2px 2px 5px white);
+}
+header img:hover {
+    filter: drop-shadow(6px 6px 7px green);
+    transition: 2s;
+}
+header .logo {
+    min-width: 60px;
+    height: 60px;
+    color: #fff;
+    position: relative;
+    font-family: 'Faster One', cursive;
+    font-size: 60px;
+    word-spacing: -.2em;
+    letter-spacing: 2.5px;
+    text-shadow: #297c08 1px 2.5px;
+}
+header .nav {
     display: flex;
     position: relative;
-    font-size: 16px;
-    justify-content: center;
+    font-size: 20px;
 }
-Header .nav li a {
+header .nav li a {
     display: inline-block;
     color: #fff;
     margin-left: 40px;
-    font-weight: 450;
-}
-Header .nav li a:hover{
     font-weight: 500;
-    transition: .1s ease-in-out;
 }
-#aboutInfo {
+header .nav li a:hover{
+    color: rgb(250, 179, 1);
+    filter: drop-shadow(0px 0px 1px black);
+}
+.aboutInfo {
+    padding: 0px;
+    margin: 0px;
+}
+.bio-content-MAIN {
     display: flex;
 }
-#aboutInfo img {
-    width: 500px;
-    height: 500px;
-    filter: drop-shadow(0px 0px 5px yellow);
-    border-radius: 15px;
+.amoure-photo {
+    /* background-color: #00ff66; */
+    width: 50%;
+    padding: 20px;
 }
-#aboutInfo main {
+.amoure-photo img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.bio-text {
+    width: 50%;
+    /* background-color: red; */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.bio-text article {
+}
+.bio-text main {
     color: white;
     padding: 30px;
 }
-#aboutInfo h1 {
+.bio-text h1 {
     text-align: center;
     font-size: 55px;
     padding: 15px;
     filter: drop-shadow(0px 0px 2px black);
 }
-#aboutInfo p {
+.bio-text p {
     filter: drop-shadow(0px 0px 1px black);
 }
-aside {
+.bio-text aside {
     color: white;
     padding: 0px;
     text-align: center;
@@ -194,7 +197,9 @@ i.fa-aws {
 .brand-rights {
     text-align: center;
     color: white;
-    background-color:black;
+    background-color: rgb(3, 0, 14);
+    padding: 15px;
+    
 }
 .brand-rights a:link, .brand-rights a:visited {
     color:white;
@@ -235,9 +240,6 @@ i.fa-aws {
         text-align: center;
         padding: 25px;
     }
-    .logoMobile {
-        display: none;
-    }
     .logo img{
         width: 1175px;
         height: 225px;
@@ -277,36 +279,30 @@ i.fa-aws {
         border-left: none;
         transition: .1s ease-in-out;
     }
-    #aboutInfo {
+    .aboutInfo {
         display: flex;
     }
-    #aboutInfo img {
-        width: 1900px;
-        height: 1900px;
-        filter: drop-shadow(5px 5px 20px yellow);
-        border-radius: 100px;
-        margin: 200px;
-    }
-    #aboutInfo article {
+    .bio-text article {
+        display: flex;
         margin-top: auto;
         margin-bottom: auto;
         padding: 60px;
     }
-    #aboutInfo main {
+    .bio-text main {
         color: white;
         padding: 30px;
     }
-    #aboutInfo h1 {
+    .bio-text h1 {
         text-align: center;
         font-size: 59px;
         padding: 15px;
         filter: drop-shadow(0px 0px 2px black);
     }
-    #aboutInfo p {
+    .bio-text p {
         filter: drop-shadow(0px 0px 1px black);
         font-size: 45px;
     }
-    aside {
+    .bio-text .bio-text aside {
         color: white;
         padding: 0px;
         text-align: center;
@@ -403,26 +399,20 @@ i.fa-aws {
 }
 
 @media (max-width:1350px){
-    #aboutInfo img {
-        width: 800px;
-        height: 400px;
-        filter: drop-shadow(0px 0px 5px yellow);
-        border-radius: 15px;
-    }
-    #aboutInfo {
+    .aboutInfo {
         color: white;
         padding: 10px;
         margin: 0px;
         align-items: center;
     }
-    #aboutInfo h1 {
+    .bio-text h1 {
         font-size: 35px;
     }
-    #aboutInfo p {
+    .bio-text p {
         font-size: 15px;
         padding: 25px;
     }
-    #aboutInfo aside {
+    .aboutInfo .bio-text aside {
         margin-bottom: 100px;
     }
 }
@@ -445,21 +435,6 @@ i.fa-aws {
     header .logo {
         font-size: 20px;
         display: none;
-    }
-    .logoMobile {
-        display: flex;
-        
-    }
-    .logoMobile img {
-        width: 600px;
-        height: 150px;
-        margin-left: auto;
-        margin-right: auto;
-        filter: drop-shadow(0px 0px 5px white);
-    }
-    .logoMobile img:hover {
-        filter: drop-shadow(0px 0px 5px rgb(32, 53, 241));
-        transition: 2s;
     }
     header .logo img {
         width: 275px;
@@ -506,34 +481,26 @@ i.fa-aws {
         filter: invert(0);
         right: 0px;
     }
-    #aboutInfo {
+    .aboutInfo {
         display: grid;
         margin-top: 100px;
     }
-    #aboutInfo img {
-        width: 80%;
-        height: 100%;
-        filter: drop-shadow(0px 0px 5px yellow);
-        border-radius: 15px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #aboutInfo main {
+    .bio-text main {
         color: white;
         padding: 30px;
     }
-    #aboutInfo h1 {
+    .bio-text h1 {
         text-align: center;
         font-size: 45px;
         padding: 15px;
         filter: drop-shadow(0px 0px 2px black);
     }
-    #aboutInfo p {
+    .bio-text p {
         filter: drop-shadow(0px 0px 1px black);
         font-size: 15px;
         margin-top: 25px;
     }
-    aside {
+    .bio-text aside {
         color: white;
         padding: 0px;
         margin-top: 100px;
@@ -563,21 +530,6 @@ i.fa-aws {
         font-size: 20px;
         display: none;
     }
-    .logoMobile {
-        display: flex;
-        
-    }
-    .logoMobile img {
-        width: 600px;
-        height: 150px;
-        margin-left: auto;
-        margin-right: auto;
-        filter: drop-shadow(0px 0px 5px white);
-    }
-    .logoMobile img:hover {
-        filter: drop-shadow(0px 0px 5px rgb(32, 53, 241));
-        transition: 2s;
-    }
     header .logo img {
         width: 275px;
         height: 70px;
@@ -623,34 +575,26 @@ i.fa-aws {
         filter: invert(0);
         right: 0px;
     }
-    #aboutInfo {
+    .aboutInfo {
         display: grid;
         margin-top: 100px;
     }
-    #aboutInfo img {
-        width: 80%;
-        height: 100%;
-        filter: drop-shadow(0px 0px 5px yellow);
-        border-radius: 15px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #aboutInfo main {
+    .bio-text main {
         color: white;
         padding: 30px;
     }
-    #aboutInfo h1 {
+    .bio-text h1 {
         text-align: center;
         font-size: 45px;
         padding: 15px;
         filter: drop-shadow(0px 0px 2px black);
     }
-    #aboutInfo p {
+    .bio-text p {
         filter: drop-shadow(0px 0px 1px black);
         font-size: 15px;
         margin-top: 25px;
     }
-    aside {
+    .bio-text aside {
         color: white;
         padding: 0px;
         margin-top: 100px;
@@ -679,21 +623,6 @@ i.fa-aws {
         font-size: 20px;
         display: none;
     }
-    .logoMobile {
-        display: flex;
-        
-    }
-    .logoMobile img {
-        width: 300px;
-        height: 75px;
-        margin-left: auto;
-        margin-right: auto;
-        filter: drop-shadow(0px 0px 2px white);
-    }
-    .logoMobile img:hover {
-        filter: drop-shadow(0px 0px 2px rgb(32, 53, 241));
-        transition: 2s;
-    }
     header .logo img {
         width: 275px;
         height: 70px;
@@ -739,31 +668,25 @@ i.fa-aws {
         filter: invert(0);
         right: 0px;
     }
-    #aboutInfo {
+    .aboutInfo {
         display: grid;
     }
-    #aboutInfo img {
-        width: 100%;
-        height: 100%;
-        filter: drop-shadow(0px 0px 5px yellow);
-        border-radius: 15px;
-    }
-    #aboutInfo main {
+    .bio-text main {
         color: white;
         padding: 30px;
     }
-    #aboutInfo h1 {
+    .bio-text h1 {
         text-align: center;
         font-size: 45px;
         padding: 15px;
         filter: drop-shadow(0px 0px 2px black);
     }
-    #aboutInfo p {
+    .bio-text p {
         filter: drop-shadow(0px 0px 1px black);
         font-size: 15px;
         margin-top: 25px;
     }
-    aside {
+    .bio-text aside {
         color: white;
         padding: 0px;
         margin-top: 100px;
@@ -794,21 +717,6 @@ i.fa-aws {
         font-size: 20px;
         display: none;
     }
-    .logoMobile {
-        display: flex;
-        
-    }
-    .logoMobile img {
-        width: 300px;
-        height: 75px;
-        margin-left: auto;
-        margin-right: auto;
-        filter: drop-shadow(0px 0px 2px white);
-    }
-    .logoMobile img:hover {
-        filter: drop-shadow(0px 0px 2px rgb(32, 53, 241));
-        transition: 2s;
-    }
     header .logo img {
         width: 275px;
         height: 70px;
@@ -854,33 +762,27 @@ i.fa-aws {
         filter: invert(0);
         right: 0px;
     }
-    #aboutInfo {
+    .aboutInfo {
         display: grid;
         margin-top: 60px;
         padding: 0px;
     }
-    #aboutInfo img {
-        width: 100%;
-        height: 100%;
-        filter: drop-shadow(0px 0px 5px yellow);
-        border-radius: 15px;
-    }
-    #aboutInfo main {
+    .bio-text main {
         color: white;
         padding: 30px;
     }
-    #aboutInfo h1 {
+    .bio-text h1 {
         text-align: center;
         font-size: 45px;
         padding: 15px;
         filter: drop-shadow(0px 0px 2px black);
     }
-    #aboutInfo p {
+    .bio-text p {
         filter: drop-shadow(0px 0px 1px black);
         font-size: 15px;
         margin-top: 25px;
     }
-    aside {
+    .bio-text aside {
         color: white;
         padding: 0px;
         margin-top: 100px;
@@ -910,17 +812,6 @@ i.fa-aws {
         font-size: 20px;
         display: none;
     }
-    .logoMobile {
-        display: flex;
-        
-    }
-    .logoMobile img {
-        width: 300px;
-        height: 75px;
-        margin-left: auto;
-        margin-right: auto;
-        filter: drop-shadow(0px 0px 2px white);
-    }
     header .logo img {
         width: 275px;
         height: 70px;
@@ -966,31 +857,25 @@ i.fa-aws {
         filter: invert(0);
         right: 0px;
     }
-    #aboutInfo {
+    .aboutInfo {
         display: grid;
     }
-    #aboutInfo img {
-        width: 100%;
-        height: 100%;
-        filter: drop-shadow(0px 0px 5px yellow);
-        border-radius: 15px;
-    }
-    #aboutInfo main {
+    .bio-text main {
         color: white;
         padding: 30px;
     }
-    #aboutInfo h1 {
+    .bio-text h1 {
         text-align: center;
         font-size: 45px;
         padding: 15px;
         filter: drop-shadow(0px 0px 2px black);
     }
-    #aboutInfo p {
+    .bio-text p {
         filter: drop-shadow(0px 0px 1px black);
         font-size: 15px;
         margin-top: 25px;
     }
-    aside {
+    .bio-text aside {
         color: white;
         padding: 0px;
         margin-top: 100px;

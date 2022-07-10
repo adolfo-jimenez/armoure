@@ -17,49 +17,44 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 100px;
-    position: relative;
     justify-content: space-around;
     align-items: center;
 }
-section .logo {
-    text-align: center;
-}
-section .logo img{
-    height: 100px;
-    width: 500px;
-    filter: drop-shadow(0px 0px 5px white);
-}
-section .logo img:hover {
-    filter: drop-shadow(6px 6px 7px rgb(32, 53, 241));
-    transition: 2s;
-}
 header {
     width: 100%;
-    position: absolute;
     top: 0;
-    right: 0;
-    /*display: flex;*/
+    left: 0;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 10px;
+    /* background-color: #19032e; */
+    background-color: rgb(3, 0, 14);
 }
-
+header img {
+    height: 100px;
+    width: 500px;
+    padding-left: 50px;
+    filter: drop-shadow(2px 2px 5px white);
+}
+header img:hover {
+    filter: drop-shadow(6px 6px 7px green);
+    transition: 2s;
+}
 header .nav {
     display: flex;
     position: relative;
-    font-size: 16px;
-    justify-content: center;
+    font-size: 20px;
 }
-
 header .nav li a {
     display: inline-block;
     color: #fff;
     margin-left: 40px;
-    font-weight: 450;
+    font-weight: 500;
 }
 header .nav li a:hover{
-    font-weight: 500;
-    transition: .1s ease-in-out;
+    color: rgb(250, 179, 1);
+    filter: drop-shadow(0px 0px 1px black);
 }
 .linksImg {
     display: flex;
@@ -71,7 +66,7 @@ header .nav li a:hover{
     width: 30%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50% !important;
+    border-radius: 80% !important;
     filter: drop-shadow(0px 0px 10px black);
 }
 .links-infobooth {
@@ -81,7 +76,7 @@ header .nav li a:hover{
 .links-infobooth img{
     height: 25%;
     width: 25%;
-    border-radius: 50% !important;
+    border-radius: 42% !important;
     filter: drop-shadow(0px 0px 8px white);
 }
 .links-infobooth h2 {
@@ -93,6 +88,7 @@ header .nav li a:hover{
     margin-top: 50px;
 }
 .links-infobooth .link-list li {
+    color:white;
     font-size: 33px;
     margin: 25px;
     padding: 2px;
@@ -104,22 +100,22 @@ header .nav li a:hover{
     border-radius: 20px;
     background-color:rgb(0, 0, 3)
 }
+.links-infobooth .link-list li a {
+    color: white;
+}
 .links-infobooth .link-list li:hover{
-    font-weight: 700;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    transition: .1s ease-in-out;
+    color: darkorange;
+    border-color: darkorange;
 }
 .links-infobooth .link-list li a:hover{
     color: darkorange;
-}
+}/* 
 .links-infobooth .link-list li a, .links-infobooth 
 .link-list li a:link, .links-infobooth .link-list li
  a:visited {
     color:darkorange;
     text-decoration: none;
-  }
+  } */
 /* custom styling for all icons */
 i.fas,
 i.fab {
@@ -128,16 +124,16 @@ i.fab {
 i.fa-aws {
     font-size: 12px;
 }
-
 .brand-rights {
     text-align: center;
     color: white;
-    background-color:black;
+    background-color: rgb(3, 0, 14);
+    padding: 15px;
 }
 .brand-rights a:link, .brand-rights a:visited {
     color:white;
     text-decoration: none;
-  }
+}
 
 /* Optional glow effect */
 
@@ -168,19 +164,6 @@ i.fa-aws {
 
 /* Media Queries*/
 @media (min-width:3600px) and (max-width:5560px) {
-    section .logo {
-        text-align: center;
-    }
-    section .logo img{
-        width: 1175px;
-        height: 225px;
-        filter: drop-shadow(4px 4px 7px white);
-        margin: 50px;
-    }
-    section .logo img:hover {
-        filter: drop-shadow(6px 6px 7px rgb(32, 53, 241));
-        transition: 2s;
-    }
     section .circle {
         width: 100%;
         height: 100%;
@@ -340,9 +323,6 @@ i.fa-aws {
         padding-left: 0px;
         padding-right: 40px;
     }
-    header .logo {
-        font-size: 20px;
-    }
     header .nav {
         display: none;
         position: absolute;
@@ -424,9 +404,6 @@ i.fa-aws {
         padding-left: 0px;
         padding-right: 40px;
     }
-    header .logo {
-        font-size: 20px;
-    }
     header .nav {
         display: none;
         position: absolute;
@@ -494,9 +471,6 @@ i.fa-aws {
         padding-left: 0px;
         padding-right: 40px;
     }
-    header .logo {
-        font-size: 20px;
-    }
     header .nav {
         display: none;
         position: absolute;
@@ -554,9 +528,6 @@ i.fa-aws {
         width: 550px;
         padding-left: 0px;
         padding-right: 40px;
-    }
-    header .logo {
-        font-size: 20px;
     }
     header .nav {
         display: none;
@@ -632,16 +603,6 @@ i.fa-aws {
     header {
         padding: 40px;
         display: flex;
-    }
-    section .logo img{
-        height: 65px;
-        width: 300px;
-        padding-left: 0px;
-        padding-right: 10px;
-    }
-    section .logo img:hover {
-        filter: drop-shadow(6px 6px 7px rgb(32, 53, 241));
-        transition: 2s;
     }
     header .nav {
         display: none;
@@ -722,14 +683,6 @@ i.fa-aws {
         padding-left: 0px;
         padding-right: 40px;
     }
-    section .logo img {
-        width: 300px;
-        height: 75px;
-        filter: drop-shadow(0px 0px 2px white);
-    }
-    header .logo {
-        font-size: 20px;
-    }
     header .nav {
         display: none;
         position: absolute;
@@ -789,16 +742,6 @@ i.fa-aws {
     header {
         padding: 40px;
         display: flex;
-    }
-    section .logo img {
-        height: 65px;
-        width: 300px;
-        padding-left: 0px;
-        padding-right: 10px;
-    }
-    section .logo img:hover {
-        filter: drop-shadow(6px 6px 7px rgb(32, 53, 241));
-        transition: 2s;
     }
     header .nav {
         display: none;
