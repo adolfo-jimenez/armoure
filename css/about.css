@@ -396,24 +396,89 @@ i.fa-aws {
         filter: invert(0);
         right: 0px;
     }
+    .bio-content-MAIN {
+        display: unset;
+    }
+    .amoure-photo {
+        width: 100%;
+        padding: 20px;
+    }
+    .amoure-photo img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        width: 50%;
+    }
+    .bio-text {
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .bio-text article {
+    }
+    .bio-text main {
+        color: white;
+        padding: 30px;
+    }
+    .bio-text h1 {
+        text-align: center;
+        font-size: 25px;
+        padding: 15px;
+        filter: drop-shadow(0px 0px 2px black);
+    }
+    .bio-text p {
+        filter: drop-shadow(0px 0px 1px black);
+    }
+    .bio-text aside {
+        color: white;
+        padding: 0px;
+        text-align: center;
+        font-style: italic;
+        font-weight: 600;
+    }
 }
 
 @media (max-width:1350px){
-    .aboutInfo {
+    .bio-content-MAIN {
+        display: unset;
+    }
+    .amoure-photo {
+        width: 100%;
+        padding: 20px;
+    }
+    .amoure-photo img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+    .bio-text {
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .bio-text article {
+    }
+    .bio-text main {
         color: white;
-        padding: 10px;
-        margin: 0px;
-        align-items: center;
+        padding: 30px;
     }
     .bio-text h1 {
-        font-size: 35px;
+        text-align: center;
+        font-size: 25px;
+        padding: 15px;
+        filter: drop-shadow(0px 0px 2px black);
     }
     .bio-text p {
-        font-size: 15px;
-        padding: 25px;
+        filter: drop-shadow(0px 0px 1px black);
     }
-    .aboutInfo .bio-text aside {
-        margin-bottom: 100px;
+    .bio-text aside {
+        color: white;
+        padding: 0px;
+        text-align: center;
+        font-style: italic;
+        font-weight: 600;
     }
 }
 
@@ -481,9 +546,26 @@ i.fa-aws {
         filter: invert(0);
         right: 0px;
     }
-    .aboutInfo {
-        display: grid;
-        margin-top: 100px;
+    .bio-content-MAIN {
+        display: unset;
+    }
+    .amoure-photo {
+        width: 100%;
+        padding: 20px;
+    }
+    .amoure-photo img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        width: 35%;
+    }
+    .bio-text {
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .bio-text article {
     }
     .bio-text main {
         color: white;
@@ -491,23 +573,19 @@ i.fa-aws {
     }
     .bio-text h1 {
         text-align: center;
-        font-size: 45px;
+        font-size: 25px;
         padding: 15px;
         filter: drop-shadow(0px 0px 2px black);
     }
     .bio-text p {
         filter: drop-shadow(0px 0px 1px black);
-        font-size: 15px;
-        margin-top: 25px;
     }
     .bio-text aside {
         color: white;
         padding: 0px;
-        margin-top: 100px;
         text-align: center;
         font-style: italic;
         font-weight: 600;
-        font-size: 20px;
     }
 }
 
@@ -575,9 +653,26 @@ i.fa-aws {
         filter: invert(0);
         right: 0px;
     }
-    .aboutInfo {
-        display: grid;
-        margin-top: 100px;
+    .bio-content-MAIN {
+        display: unset;
+    }
+    .amoure-photo {
+        width: 100%;
+        padding: 20px;
+    }
+    .amoure-photo img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .bio-text {
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .bio-text article {
     }
     .bio-text main {
         color: white;
@@ -585,23 +680,19 @@ i.fa-aws {
     }
     .bio-text h1 {
         text-align: center;
-        font-size: 45px;
+        font-size: 25px;
         padding: 15px;
         filter: drop-shadow(0px 0px 2px black);
     }
     .bio-text p {
         filter: drop-shadow(0px 0px 1px black);
-        font-size: 15px;
-        margin-top: 25px;
     }
     .bio-text aside {
         color: white;
         padding: 0px;
-        margin-top: 100px;
         text-align: center;
         font-style: italic;
         font-weight: 600;
-        font-size: 20px;
     }
 }
 
@@ -668,8 +759,26 @@ i.fa-aws {
         filter: invert(0);
         right: 0px;
     }
-    .aboutInfo {
-        display: grid;
+    .bio-content-MAIN {
+        display: unset;
+    }
+    .amoure-photo {
+        width: 100%;
+        padding: 20px;
+    }
+    .amoure-photo img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .bio-text {
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .bio-text article {
     }
     .bio-text main {
         color: white;
@@ -677,23 +786,19 @@ i.fa-aws {
     }
     .bio-text h1 {
         text-align: center;
-        font-size: 45px;
+        font-size: 25px;
         padding: 15px;
         filter: drop-shadow(0px 0px 2px black);
     }
     .bio-text p {
         filter: drop-shadow(0px 0px 1px black);
-        font-size: 15px;
-        margin-top: 25px;
     }
     .bio-text aside {
         color: white;
         padding: 0px;
-        margin-top: 100px;
         text-align: center;
         font-style: italic;
         font-weight: 600;
-        font-size: 20px;
     }
 }
 
@@ -761,35 +866,6 @@ i.fa-aws {
         background-size: cover;
         filter: invert(0);
         right: 0px;
-    }
-    .aboutInfo {
-        display: grid;
-        margin-top: 60px;
-        padding: 0px;
-    }
-    .bio-text main {
-        color: white;
-        padding: 30px;
-    }
-    .bio-text h1 {
-        text-align: center;
-        font-size: 45px;
-        padding: 15px;
-        filter: drop-shadow(0px 0px 2px black);
-    }
-    .bio-text p {
-        filter: drop-shadow(0px 0px 1px black);
-        font-size: 15px;
-        margin-top: 25px;
-    }
-    .bio-text aside {
-        color: white;
-        padding: 0px;
-        margin-top: 100px;
-        text-align: center;
-        font-style: italic;
-        font-weight: 600;
-        font-size: 20px;
     }
 }
 
