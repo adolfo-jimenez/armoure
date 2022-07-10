@@ -93,6 +93,9 @@ header .nav li a:hover{
     margin-left: auto;
     margin-right: auto;
 }
+#eventFeed h1 {
+    font-size: 45px;
+}
 .header-event {
     /* background-color: rgba(0, 0, 0, 0.9);
     border: 3px ridge;
@@ -1264,13 +1267,15 @@ a:link, a:visited {
         /* border: 3px ridge;
         border-radius: 3px;
         margin-bottom: 50px; */
-        display: flex;
+        display: block;
         padding: 10px;
-        height: 600px;
+        height: 100%;
     }
    .media-block {
        padding: 0px;
-       width: 50%;
+       width: 80%;
+       margin-left: auto;
+       margin-right: auto;
        /* background-color: brown; */
    }
    .media-block img {
@@ -1302,7 +1307,7 @@ a:link, a:visited {
    }
   .inner-text {
       /* background-color: #09ffff; */
-      height: 400px;
+      height: 350px;
       margin-bottom: 0px;
   }
   .inner-media {
@@ -1320,7 +1325,7 @@ a:link, a:visited {
         padding: 100px;
     }
     #eventFeed {
-        background-color: brown;
+        /* background-color: brown; */
         padding: 10px;
     }
     .header-event_Photos a img {
@@ -1500,7 +1505,7 @@ a:link, a:visited {
    padding: 0px;
    width: 100%;
    margin-bottom: 20px;
-   background-color: rgb(0, 238, 255);
+   /* background-color: rgb(0, 238, 255); */
 }
 .media-block img {
    width: 30%;
