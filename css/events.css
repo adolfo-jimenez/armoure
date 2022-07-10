@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-self: auto;
     min-height: 100vh;
-    /*background-image: linear-gradient(rgb(19, 33, 153), green);*/
+    /* background-image: linear-gradient(rgb(19, 33, 153), green); */
     background-image: url(/images/zak-7wBFsHWQDlk-unsplash.jpg);
     background-size: 100% 100%;
     color: white;
@@ -25,32 +25,9 @@ body {
     min-height: 100%;
     z-index: -1;
 }
-.eventPageBrief {
-    padding: 0px;
-}
-.eventPageBrief h1 {
-    text-align: center;
-    font-size: 50px;
-    margin: 20px;
-    filter: drop-shadow(7px 7px 8px black);
-}
-.eventPageBrief p {
-    width: 20%;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.0);
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 20px;
-    text-align: center;
-    filter: drop-shadow(7px 7px 8px black);
-}
 .logo {
     text-align: center;
     padding: 25px;
-}
-.logoMobile {
-    display: none;
 }
 .logo img{
     height: 100px;
@@ -61,62 +38,85 @@ body {
     filter: drop-shadow(6px 6px 7px green);
     transition: 2s;
 }
-Header {
+header {
     width: 100%;
     top: 0;
-    right: 0;
-    /*display: flex;*/
+    left: 0;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 10px;
+    /* background-color: #19032e; */
+    background-color: rgb(3, 0, 14);
 }
-Header .nav {
+header img {
+    height: 100px;
+    width: 500px;
+    padding-left: 50px;
+    filter: drop-shadow(2px 2px 5px white);
+}
+header img:hover {
+    filter: drop-shadow(6px 6px 7px green);
+    transition: 2s;
+}
+header .logo {
+    min-width: 60px;
+    height: 60px;
+    color: #fff;
+    position: relative;
+    font-family: 'Faster One', cursive;
+    font-size: 60px;
+    word-spacing: -.2em;
+    letter-spacing: 2.5px;
+    text-shadow: #297c08 1px 2.5px;
+}
+header .nav {
     display: flex;
     position: relative;
-    font-size: 16px;
-    justify-content: center;
+    font-size: 20px;
 }
-Header .nav li a {
+header .nav li a {
     display: inline-block;
     color: #fff;
     margin-left: 40px;
-    font-weight: 450;
-}
-Header .nav li a:hover{
     font-weight: 500;
 }
+header .nav li a:hover{
+    color: rgb(250, 179, 1);
+    filter: drop-shadow(0px 0px 1px black);
+}
 #eventFeed {
-    /*background-color: brown;*/
+    /* background-color: brown; */
+    background-color: rgba(0, 0, 0, .99);
+    width: 90%;
     padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
-article {
-    background-color: rgba(0, 0, 0, 0.9);
+#eventFeed h1 {
+    font-size: 45px;
+}
+.header-event {
+    /* background-color: rgba(0, 0, 0, 0.9);
     border: 3px ridge;
     border-radius: 3px;
-    display: inline-block;
-    margin-bottom: 100px;
+    margin-bottom: 150px; */
 }
-section .superSwords_11 {
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 3px ridge;
-    border-radius: 3px;
-    margin-bottom: 150px;
-}
-section .superSwords_11 .eventHeadLineInfo {
+.eventHeadLineInfo {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
 }
-section .superSwords_11 .eventHeadLineInfo #headLine{
+#headLine {
     padding: 10px;
 }
-section .superSwords_11 .eventHeadLineInfo #headLine h2 {
+#headLine h2 {
     font-size: 40px;
     text-align: center;
     padding: 0px;
     filter: drop-shadow(2px 2px 5px black);
 }
-section .superSwords_11 .eventHeadLineInfo .calendarBlock {
+.calendarBlock {
     /*background-color: indigo;*/
     width: 15%;
     border: 3px double;
@@ -129,90 +129,69 @@ section .superSwords_11 .eventHeadLineInfo .calendarBlock {
     margin-top: auto;
     margin-bottom: auto;
 }
-section .superSwords_11 .eventHeadLineInfo .calendarBlock h1{
+.calendarBlock h1{
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
     filter: drop-shadow(2px 2px 5px black);
 }
-section .superSwords_11 .eventHeadLineInfo .calendarBlock h5{
+.calendarBlock h5{
     font-size: 15px;
     font-weight: 400;
     filter: drop-shadow(2px 2px 5px black);
 }
-section .superSwords_11 .eventHeadLineInfo .calendarBlock h3{
+.calendarBlock h3{
     font-size: 30px;
     font-weight: 500;
     filter: drop-shadow(2px 2px 5px black);
 }
-.superSwords_11_Media{
+.header-event_Media{
     display: flex;
     padding: 0px;
     text-align: center;
 }
-.superSwords_11_Photos {
-    filter: drop-shadow(2px 2px 3px white);
+.header-event_Photos {
+    /* filter: drop-shadow(1px 1px 1px white); */
     margin-left: auto;
     margin-right: auto;
 }
-.superSwords_11_Photos img {
-    width: 900px;
+.header-event_Photos img {
+    width: 600px;
     border-radius: 10px;
-    filter: drop-shadow(0px 0px 5px white);
+    filter: drop-shadow(1px 1px 3px white);
 }
-.mainSlideShow_ss_11 {
-    /*background-color: cornflowerblue;*/
-    padding: 10px;
-    width: 100%;
-}
-.mainSlideShow_ss_11 img {
-    display: flex;
-    width: 100%;
-    padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-}
-.mainSlideShow_ss_11 a {
-    display: flex;
-    width: 35%;
-    padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-}
-.superSwords_11_InfoText {
+.header-event_InfoText {
     display: flex;
     justify-content: center;
     padding: 20px;
     margin-bottom: 25px;
 }
-.superSwords_11_InfoText p{
+.header-event_InfoText p{
     font-size: 20px;
     width: 90%;
     text-align: center;
 }
-section .duskToDawn {
-    background-color: rgba(0, 0, 0, 0.9);
+.pastShow-temp-1 {
+    /* background-color: rgba(0, 0, 0, 0.9);
     border: 3px ridge;
     border-radius: 3px;
-    margin-bottom: 150px;
+    margin-bottom: 150px; */
 }
-section .duskToDawn .eventHeadLineInfo {
+.pastShow-temp-1 .eventHeadLineInfo {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
 }
-section .duskToDawn .eventHeadLineInfo #headLine{
+.pastShow-temp-1 #headLine {
     padding: 10px;
 }
-section .duskToDawn .eventHeadLineInfo #headLine h2 {
+.pastShow-temp-1 #headLine h2 {
     font-size: 40px;
     text-align: center;
     padding: 0px;
     filter: drop-shadow(2px 2px 5px black);
 }
-section .duskToDawn .eventHeadLineInfo .calendarBlock {
+.pastShow-temp-1 .calendarBlock {
     /*background-color: indigo;*/
     width: 15%;
     border: 3px double;
@@ -225,43 +204,40 @@ section .duskToDawn .eventHeadLineInfo .calendarBlock {
     margin-top: auto;
     margin-bottom: auto;
 }
-section .duskToDawn .eventHeadLineInfo .calendarBlock h1{
+.pastShow-temp-1 .calendarBlock h1{
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
     filter: drop-shadow(2px 2px 5px black);
 }
-section .duskToDawn .eventHeadLineInfo .calendarBlock h5{
+.pastShow-temp-1 .calendarBlock h5{
     font-size: 15px;
     font-weight: 400;
     filter: drop-shadow(2px 2px 5px black);
 }
-section .duskToDawn .eventHeadLineInfo .calendarBlock h3{
+.pastShow-temp-1 .calendarBlock h3{
     font-size: 30px;
     font-weight: 500;
     filter: drop-shadow(2px 2px 5px black);
 }
-.duskToDawnMedia{
+.pastShow-temp-1Media {
     display: flex;
     padding: 30px;
     text-align: center;
 }
-.duskToDawnPhotos {
+.pastShow-temp-1Photos {
 }
-.duskToDawnSC {
+.pastShow-temp-1SC {
     width: 39%;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
 }
-.duskToDawnPhotos {
-    filter: drop-shadow(2px 2px 3px white);
-}
-.duskToDawnPhotos img {
+.pastShow-temp-1Photos img {
     width: 900px;
     border-radius: 10px;
-    filter: drop-shadow(0px 0px 5px white);
+    filter: drop-shadow(1px 1px 2px white);
 }
 .mainSlideShow {
     /*background-color: cornflowerblue;*/
@@ -276,31 +252,43 @@ section .duskToDawn .eventHeadLineInfo .calendarBlock h3{
     margin-right: auto;
     border-radius: 10px;
 }
-.duskToDawnInfoText {
+.pastShow-temp-1InfoText {
     display: flex;
     justify-content: center;
     padding: 20px;
     margin-bottom: 25px;
 }
-.duskToDawnInfoText p{
+.pastShow-temp-1InfoText p{
     font-size: 20px;
     width: 90%;
     text-align: center;
 }
-section .soundcloudPlaylists {
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 3px ridge;
-    border-radius: 3px;
-    margin-bottom: 50px;
-}
-.superSwordInfo {
+.media-block-MAIN {
 
 }
-.superSwordSC {
-    display: flex;
-    padding: 0px;
+.media-block-MAIN h1{
+    font-size: 45px;
 }
-.superSwordSC img {
+.music-links-social {
+    display: flex;
+    background-color: #13094e;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+.double-media-block-module {
+   /*  background-color: rgba(0, 0, 0, 0.9);
+    border: 3px ridge;
+    border-radius: 3px;
+    margin-bottom: 50px; */
+    display: flex;
+    padding: 10px;
+    height: 100%;
+}
+.media-block {
+    padding: 0px;
+    width: 50%;
+}
+.media-block img {
     width: 30%;
     height: 30%;
     margin-top: auto;
@@ -309,119 +297,29 @@ section .soundcloudPlaylists {
     border-radius: 20px;
     filter: drop-shadow(0px 0px 5px white);
 }
-.superSwordInfoText {
+.media-block-InfoText {
     padding: 30px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
-.superSwordInfoText h1 {
+.media-block-InfoText h1 {
     font-size: 40px;
 }
-.superSwordInfoText p {
+.media-block-InfoText p {
     font-size: 20px;
     width: 80%;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    padding: 10px;
 }
 .soundcloudEmbedded {
     padding: 60px;
 }
-
-.medeivalMondaysInfo {
-    
-}
-.medeivalMondaysSC {
-    display: flex;
-    padding: 0px;
-}
-.medeivalMondaysSCImg {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-.medeivalMondaysSCImg a img{
-    border-radius: 20px;
-    filter: drop-shadow(0px 0px 5px white);
-}
-.medeivalMondaysSCImg a p {
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 800;
-}
-.medeivalMondaysSCImg a p:hover {
-    color: blue;
-    font-weight: 900;
-}
-.medeivalMondaysInfoText {
-    padding: 30px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.medeivalMondaysInfoText h1 {
-    font-size: 40px;
-}
-.medeivalMondaysInfoText p {
-    font-size: 20px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-}
-#eventFeed article .calendarBlock {
-    /*background-color: indigo;*/
-    width: 15%;
-    border: 3px double;
-    border-color: silver;
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-#eventFeed article .calendarBlock h1{
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    filter: drop-shadow(2px 2px 5px black);
-}
-#eventFeed article .calendarBlock h5{
-    font-size: 15px;
-    font-weight: 400;
-    filter: drop-shadow(2px 2px 5px black);
-}
-#eventFeed article .calendarBlock h3{
-    font-size: 30px;
-    font-weight: 500;
-    filter: drop-shadow(2px 2px 5px black);
-}
-article .eventInfo {
-    margin-top: 20px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-article .eventInfo .infoText {
-    width: 98%;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-article .eventInfo .infoText h2 {
-    font-size: 40px;
-    text-align: center;
-    padding: 0px;
-    filter: drop-shadow(2px 2px 5px black);
-}
-hr {
-    overflow: visible; /* For IE */
+/* hr {
+    overflow: visible; For IE
     padding: 0;
     border: none;
     border-top: medium double #333;
@@ -435,34 +333,7 @@ hr:after {
     font-size: 1.5em;
     padding: 0 0.25em;
     background: white;
-}
-article .eventInfo .infoText p {
-    font-size: 20px;
-    text-align: center;
-    padding: 5px;
-    filter: drop-shadow(2px 2px 5px black);
-}
-article .poster {
-    justify-content: center;
-    padding: 30px;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-article .poster img {
-    border-radius: 20px;
-    filter: drop-shadow(0px 0px 5px white);
-}
-article .poster a img {
-    width: 500px;
-    border-radius: 20px;
-    filter: drop-shadow(0px 0px 5px white);
-}
-article .poster a img {
-    width: 500px;
-    border-radius: 20px;
-    filter: drop-shadow(0px 0px 5px white);
-}
+} */
 .slider {
     width: 800px;
     height: 630px;
@@ -597,11 +468,18 @@ i.fa-aws {
 }
 .fa-soundcloud {
     color: white;
-
 }
+i.fa-soundcloud {
+    font-size: 100px;
+}
+i.fa-twitch {
+    font-size: 100px;
+}
+i.fa-discord {
+    font-size: 100px;
+}  
 .fa-mixcloud {
     color: white;
-    
 }
 .fa-twitch {
     color: white;
@@ -673,7 +551,12 @@ i.fa-aws {
 .brand-rights {
     text-align: center;
     color: white;
-    background-color:black;
+    background-color: rgb(3, 0, 14);
+    padding: 15px;
+}
+.brand-rights a:link, .brand-rights a:visited {
+    color:white;
+    text-decoration: none;
 }
 a:link, a:visited {
     color:white;
@@ -695,344 +578,6 @@ a:link, a:visited {
 
 /* Media Queries*/
 
-@media (min-width:3600px) and (max-width:5560px) {
-    .eventPageBrief {
-        padding: 0px;
-    }
-    .eventPageBrief h1 {
-        text-align: center;
-        font-size: 70px;
-        margin: 20px;
-        filter: drop-shadow(7px 7px 8px black);
-    }
-    .timeZones {
-        display: flex;
-        justify-content: center;
-    }
-    .timeZones h1 {
-        font-size: 45px;
-    }
-    .timebox {
-        margin: 25px;
-        text-align: center;
-    }
-    .datetime{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        margin-bottom: 45px;
-        color: #fff;
-        /*background: #10101E;*/
-        font-family: "Segoe UI", sans-serif;
-        width: 740px;
-        padding: 2px 10px;
-        /*border: 3px solid #2E94E3;*/
-        border-radius: 5px;
-        -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
-        transition: 0.5s;
-        transition-property: background, box-shadow;
-    }
-    .datetime h1 {
-          padding-top: 0px;
-          padding-bottom: 5px;
-          color:seashell;
-          font-weight: 800;
-          text-align: center;
-    }
-      /*.datetime:hover{
-        background: #2E94E3;
-        box-shadow: 0 0 30px #2E94E3;
-      }*/
-    .date{
-        font-size: 45px;
-        font-weight: 600;
-        text-align: center;
-        letter-spacing: 3px;
-    }
-      
-    .time{
-        font-size: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-      
-    .time span:not(:last-child){
-        position: relative;
-        margin: 0 6px;
-        font-weight: 600;
-        text-align: center;
-        letter-spacing: 3px;
-    }
-      
-    .time span:last-child{
-        /*background: #2E94E3;*/
-        font-size: 30px;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-top: 10px;
-        padding: 0 5px;
-        border-radius: 3px;
-    }
-    .logo {
-        text-align: center;
-        padding: 25px;
-    }
-    .logoMobile {
-        display: none;
-    }
-    .logo img{
-        width: 1175px;
-        height: 225px;
-        filter: drop-shadow(4px 4px 7px white);
-        margin: 50px;
-    }
-    .logo img:hover {
-        filter: drop-shadow(6px 6px 7px green);
-        transition: 2s;
-    }
-    Header {
-        width: 100%;
-        top: 0;
-        right: 0;
-        /*display: flex;*/
-        justify-content: space-between;
-        align-items: center;
-        padding: 40px 10px;
-    }
-    Header .nav {
-        display: flex;
-        position: relative;
-        font-size: 40px;
-        justify-content: center;
-    }
-    Header .nav li a {
-        display: inline-block;
-        color: #fff;
-        margin-left: 40px;
-        font-weight: 450;
-    }
-    Header .nav li a:hover{
-        font-weight: 500;
-    }
-    #eventFeed {
-        /*background-color: brown;*/
-        padding: 20px;
-    }
-    article {
-        border: 3px ridge;
-        border-radius: 3px;
-        display: flex;
-        margin-bottom: 100px;
-    }
-    #eventFeed article .calendarBlock {
-        /*background-color: indigo;*/
-        width: 15%;
-        border: 3px double;
-        border-color: silver;
-        border-radius: 10px;
-        text-align: center;
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    #eventFeed article .calendarBlock h1{
-        font-size: 59px;
-        font-weight: 700;
-        text-transform: uppercase;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    #eventFeed article .calendarBlock h5{
-        font-size: 30px;
-        font-weight: 400;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    #eventFeed article .calendarBlock h3{
-        font-size: 50px;
-        font-weight: 500;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    article .eventInfo {
-        margin-top: 100px;
-        width: 60%;
-    }
-    article .eventInfo .infoText {
-        width: 98%;
-        padding: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    article .eventInfo .infoText h2 {
-        font-size: 59px;
-        text-align: center;
-        padding: 65px;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    article .eventInfo .infoText p {
-        font-size: 45px;
-        text-align: center;
-        padding: 5px;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    article .poster {
-        display: flex;
-        justify-content: center;
-        padding: 25px;
-        width: 50%;
-        text-align: center;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    article .poster img {
-        width: 500px;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-    }
-    .nav-m {
-        position: absolute;
-        width: 800px;
-        margin-top: 70px;
-        justify-content: center;
-        display: flex;
-    }
-    .m-btn {
-        border: 2px solid #09ffff;
-        padding: 5px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 1s;
-    }
-    .m-btn:not(:last-child) {
-        margin-right: 30px;
-    }
-    .m-btn:hover {
-        background-color: #09ffff;
-    }
-    #radio1:checked ~.first {
-        margin-left: 0;
-    }
-    #radio2:checked ~.first {
-        margin-left: -20%;
-    }
-    #radio3:checked ~.first {
-        margin-left: -40%;
-    }
-    #radio4:checked ~.first {
-        margin-left: -60%;
-    }
-    
-    .nav-auto {
-        position: absolute;
-        width: 800px;
-        margin-top: 460px;
-        display: flex;
-        justify-content: center;
-    }
-    .nav-auto div {
-        border: 2px solid red;
-        padding: 5px;
-        border-radius: 10px;
-        transition: 1s;
-    }
-    .nav-auto div:not(:last-child) {
-        margin-right: 30px;
-        justify-content: center;
-    }
-    
-    #radio1:checked ~ .nav-auto .a-b1 {
-        background-color: saddlebrown;
-    }
-    #radio2:checked ~ .nav-auto .a-b2 {
-        background-color: saddlebrown;
-    }
-    #radio3:checked ~ .nav-auto .a-b3 {
-        background-color: saddlebrown;
-    }
-    #radio4:checked ~ .nav-auto .a-b4 {
-        background-color: saddlebrown;
-    }
-    
-    * {box-sizing:border-box}
-    
-    /* Next & previous buttons */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      margin-top: -22px;
-      padding: 10px;
-      color:chartreuse;
-      font-weight: bold;
-      font-size: 35px;
-      transition: 0.6s  ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-    
-    
-    
-    /* Fading animation */
-    .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1s;
-    }
-    @-webkit-keyframes fade {
-        from {opacity: .1}
-        to {opacity: 1}
-      }
-      
-      @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-      }
-
-      .fade2 {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1s;
-      }
-      @-webkit-keyframes fade2 {
-          from {opacity: .1}
-          to {opacity: 1}
-        }
-        
-        @keyframes fade2 {
-          from {opacity: .4}
-          to {opacity: 1}
-        }
-      
-      
-      /* custom styling for all icons */
-      i.fas,
-      i.fab {
-        font-size: 30px;
-      }
-      .brand-rights {
-          text-align: center;
-          color: white;
-          background-color:black;
-      }
-      small {
-        font-size: 30px;
-    }
-}
 
 @media (max-width:1440px){
     .eventInfo {
@@ -1046,68 +591,28 @@ a:link, a:visited {
     .eventsPageIntro {
         width: 100%;
     }
-    #eventFeed article .calendarBlock {
-        width: 25%;
-    }
-    .datetime .date {
-        font-size: 30px;
-    }
-    .timebox {
-        font-size: 13px;
-    }
-    .eventPageBrief p {
-        width: 50%;
-    }
-    .logoMobile img {
-        width: 500px;
-        height: 115px;
-    }
-    .logoMobile img:hover {
-        filter: drop-shadow(0px 0px 2px green);
-        transition: 2s;
-    }
-    article {
-        padding: 0px;
-    }
-    article .poster {
-        /*background-color: #09ffff;*/
-        width: 100%;
-        text-align: center;
-    }
-    article .poster img {
-        width: 400px;
-        margin-top: 50px;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-    
-    }
-    article .eventInfo .infoText {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
-    section .duskToDawn {
-        background-color: rgba(0, 0, 0, 0.9);
+    .pastShow-temp-1 {
+        /* background-color: rgba(0, 0, 0, 0.9);
         border: 3px ridge;
         border-radius: 3px;
         margin-bottom: 50px;
-        text-align: center;
+        text-align: center; */
     }
-    section .duskToDawn .eventHeadLineInfo {
+    .pastShow-temp-1 .eventHeadLineInfo {
         text-align: center;
         padding: 20px;
         margin-top: 0px;
     }
-    section .duskToDawn .eventHeadLineInfo #headLine{
+    .pastShow-temp-1 #headLine {
         padding: 10px;
     }
-    section .duskToDawn .eventHeadLineInfo #headLine h2 {
+    .pastShow-temp-1 #headLine h2 {
         font-size: 40px;
         text-align: center;
         padding: 0px;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock {
+    .pastShow-temp-1 .calendarBlock {
         /*background-color: indigo;*/
         width: 50%;
         border: 3px double;
@@ -1120,39 +625,40 @@ a:link, a:visited {
         margin-top: auto;
         margin-bottom: auto;
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h1{
+    .pastShow-temp-1 .calendarBlock h1{
         font-size: 40px;
         font-weight: 700;
         text-transform: uppercase;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h5{
+    .pastShow-temp-1 .calendarBlock h5{
         font-size: 15px;
         font-weight: 400;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h3{
+    .pastShow-temp-1 .calendarBlock h3{
         font-size: 30px;
         font-weight: 500;
         filter: drop-shadow(2px 2px 5px black);
     }
-    .duskToDawnMedia{
-        display: inline-block;
+    .pastShow-temp-1Media {
+        display: block;
         padding: 0px;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .duskToDawnPhotos {
+    .pastShow-temp-1Photos {
     }
-    .duskToDawnSC {
+    .pastShow-temp-1SC {
         width: 95%;
         margin: 0px;
         margin-left: auto;
         margin-right: auto;
     }
-    .duskToDawnPhotos {
+    .pastShow-temp-1Photos {
         filter: drop-shadow(0px 0px 1px white);
     }
-    .duskToDawnPhotos img {
+    .pastShow-temp-1Photos img {
         width: 100%;
         border-radius: 10px;
         filter: drop-shadow(0px 0px 1px white);
@@ -1174,13 +680,13 @@ a:link, a:visited {
         margin-right: auto;
         border-radius: 10px;
     }
-    .duskToDawnInfoText {
+    .pastShow-temp-1InfoText {
         display: flex;
         justify-content: center;
         padding: 20px;
         margin-bottom: 25px;
     }
-    .duskToDawnInfoText p{
+    .pastShow-temp-1InfoText p{
         font-size: 20px;
         width: 90%;
         text-align: center;
@@ -1212,9 +718,54 @@ a:link, a:visited {
     .prev:hover, .next:hover {
       background-color: rgba(0,0,0,0.8);
     }
-    
-    
-    
+    .double-media-block-module {
+        /*  background-color: rgba(0, 0, 0, 0.9);
+         border: 3px ridge;
+         border-radius: 3px;
+         margin-bottom: 50px; */
+         display: flex;
+         padding: 10px;
+         height: 100%;
+     }
+     .media-block {
+         padding: 0px;
+         width: 50%;
+         /* background-color: brown; */
+     }
+     .media-block img {
+         width: 30%;
+         height: 30%;
+         margin-top: auto;
+         margin-bottom: auto;
+         margin-left: 40px;
+         border-radius: 20px;
+         filter: drop-shadow(0px 0px 5px white);
+     }
+     .media-block-InfoText {
+         padding: 0px;
+         text-align: center;
+         margin-left: auto;
+         margin-right: auto;
+         width: 100%;
+     }
+     .media-block-InfoText h1 {
+         font-size: 40px;
+     }
+     .media-block-InfoText p {
+         font-size: 20px;
+         width: 80%;
+         height: 200px;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 10px;
+     }
+    .inner-text {
+        /* background-color: #09ffff; */
+        margin-bottom: 40px;
+    }
+    .inner-media {
+        margin-bottom: 40px;
+    }
     /* Fading animation */
     .fade {
       -webkit-animation-name: fade;
@@ -1224,60 +775,10 @@ a:link, a:visited {
     }
 }
 
-
-
 @media (max-width:1100px){
-    article .poster a img {
-        width: 99%;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-    }
     body {
         width: 100%;
         padding: 0px;
-    }
-    .datetime {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 50px;
-        color: #fff;
-        /*background: #10101E;*/
-        font-family: "Segoe UI", sans-serif;
-        width: 100%;
-        padding: 10px;
-        /*border: 3px solid #2E94E3;*/
-        border-radius: 5px;
-        -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
-        transition: 0.5s;
-        transition-property: background, box-shadow;
-    }
-    .date{
-        font-size: 15px;
-        font-weight: 600;
-        text-align: center;
-        letter-spacing: 3px;
-    }
-    .time{
-        font-size: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .time span:not(:last-child){
-        position: relative;
-        margin: 0 6px;
-        font-weight: 600;
-        text-align: center;
-        letter-spacing: 3px;
-    }
-    .time span:last-child{
-        /*background: #2E94E3;*/
-        font-size: 20px;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-top: 7px;
-        padding: 0 5px;
-        border-radius: 3px;
     }
     section {
         padding: 0px 0px;
@@ -1295,21 +796,6 @@ a:link, a:visited {
     header .logo {
         font-size: 20px;
         display: none;
-    }
-    .logoMobile {
-        display: flex;
-        filter: drop-shadow(0px 0px 3px white);
-    }
-    .logoMobile img {
-        width: 300px;
-        height: 75px;
-        margin-left: auto;
-        margin-right: auto;
-        filter: drop-shadow(0px 0px 2px white);
-    }
-    .logoMobile img:hover {
-        filter: drop-shadow(0px 0px 2px green);
-        transition: 2s;
     }
     header .logo img {
         width: 275px;
@@ -1356,92 +842,76 @@ a:link, a:visited {
         filter: invert(0);
         right: 0px;
     }
-    #pageHeader {
-        text-align: center;
-        font-size: 55px;
-        margin-top: 50px;
-        margin-bottom: 25px;
-        filter: drop-shadow(0px 0px 10px black);
-    }
     #eventFeed {
         /*background-color: brown;*/
         padding: 0px;
     }
-    article {
-        border: 1px double;
-        border-radius: 3px;
-        display: block;
-        margin-bottom: 100px;
-    }
-    #eventFeed article .calendarBlock {
-        /*background-color: indigo;*/
-        width: 50%;
-        border: 3px double;
-        border-color: silver;
-        border-radius: 10px;
-        text-align: center;
-        padding: 10px;
+    .mainSlideShow {
+        /*background-color: cornflowerblue;*/
+        padding: 0px;
+        width: 99%;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .mainSlideShow img {
+        display: flex;
+        width: 600px;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+    .double-media-block-module {
+         background-color: rgba(0, 0, 0, 0.9);
+         /* border: 3px ridge;
+         border-radius: 3px;
+         margin-bottom: 50px; */
+         display: flex;
+         padding: 10px;
+     }
+    .media-block {
+        padding: 0px;
+        width: 50%;
+        /* background-color: brown; */
+    }
+    .media-block img {
+        width: 30%;
+        height: 30%;
         margin-top: auto;
         margin-bottom: auto;
-    }
-    #eventFeed article .calendarBlock h1{
-        font-size: 40px;
-        font-weight: 700;
-        text-transform: uppercase;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    #eventFeed article .calendarBlock h5{
-        font-size: 15px;
-        font-weight: 400;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    #eventFeed article .calendarBlock h3{
-        font-size: 30px;
-        font-weight: 500;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    article .eventInfo {
-        /*background-color:saddlebrown;
-        padding: 10px;*/
-        margin-top: 100px;
-    }
-    article .eventInfo .infoText {
-        /*background-color: lightcoral;*/
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        /*display: flex;*/
-    }
-    article .eventInfo .infoText h2 {
-        /*margin-bottom: auto;
-        margin-top: auto;*/
-        font-size: 45px;
-        text-align: center;
-        padding: 65px;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    article .eventInfo .infoText p {
-        /*margin-bottom: auto;
-        margin-top: auto;*/
-        font-size: 20px;
-        text-align: left;
-        padding: 25px;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    article .poster {
-        /*background-color: darkgreen;*/
-        padding: 25px;
-        width: 30%;
-    }
-    article .poster img {
-        width: 320px;
+        margin-left: 40px;
         border-radius: 20px;
         filter: drop-shadow(0px 0px 5px white);
     }
-    
-}
+    .media-block-InfoText {
+        padding: 0px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .media-block-InfoText h1 {
+        font-size: 40px;
+    }
+    .media-block-InfoText p {
+        font-size: 20px;
+        width: 80%;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+   .inner-text {
+       /* background-color: #09ffff; */
+       height: 400px;
+       margin-bottom: 0px;
+   }
+   .inner-media {
+       margin-bottom: 0px;
+   }
+}  
 @media (max-width:1024px){
     .toggle {
         width: 35px;
@@ -1473,73 +943,38 @@ a:link, a:visited {
     .eventsPageIntro {
         width: 100%;
     }
-    #eventFeed article .calendarBlock {
-        width: 25%;
-    }
-    .datetime .date {
-        font-size: 30px;
-    }
-    .timebox {
-        font-size: 13px;
-    }
-    .eventPageBrief p {
-        width: 50%;
-    }
-    .logoMobile img {
+    .header-event_Photos a img {
         width: 500px;
-        height: 115px;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
     }
-    .logoMobile img:hover {
-        filter: drop-shadow(0px 0px 2px green);
-        transition: 2s;
-    }
-    article {
-        padding: 0px;
-    }
-    article .poster {
-        /*background-color: #09ffff;*/
-        width: 100%;
-        text-align: center;
-    }
-    article .poster img {
+    .header-event_Photos img {
         width: 400px;
         margin-top: 50px;
         border-radius: 20px;
         filter: drop-shadow(0px 0px 5px white);
-    
     }
-    article .poster a img {
-        width: 500px;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-    }
-    article .eventInfo .infoText {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
-    section .duskToDawn {
-        background-color: rgba(0, 0, 0, 0.9);
-        border: 3px ridge;
+    .pastShow-temp-1 {
+        /* border: 3px ridge;
         border-radius: 3px;
         margin-bottom: 50px;
-        text-align: center;
+        text-align: center; */
     }
-    section .duskToDawn .eventHeadLineInfo {
+    .pastShow-temp-1 .eventHeadLineInfo {
         text-align: center;
         padding: 20px;
         margin-top: 0px;
     }
-    section .duskToDawn .eventHeadLineInfo #headLine{
+    .pastShow-temp-1 #headLine {
         padding: 10px;
     }
-    section .duskToDawn .eventHeadLineInfo #headLine h2 {
+    .pastShow-temp-1 #headLine h2 {
         font-size: 40px;
         text-align: center;
         padding: 0px;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock {
+    .pastShow-temp-1 .calendarBlock {
         /*background-color: indigo;*/
         width: 50%;
         border: 3px double;
@@ -1552,39 +987,41 @@ a:link, a:visited {
         margin-top: auto;
         margin-bottom: auto;
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h1{
+    .pastShow-temp-1 .calendarBlock h1{
         font-size: 40px;
         font-weight: 700;
         text-transform: uppercase;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h5{
+    .pastShow-temp-1 .calendarBlock h5{
         font-size: 15px;
         font-weight: 400;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h3{
+    .pastShow-temp-1 .calendarBlock h3{
         font-size: 30px;
         font-weight: 500;
         filter: drop-shadow(2px 2px 5px black);
     }
-    .duskToDawnMedia{
-        display: inline-block;
+    .pastShow-temp-1Media {
         padding: 0px;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
-    .duskToDawnPhotos {
+    .pastShow-temp-1Photos {
     }
-    .duskToDawnSC {
+    .pastShow-temp-1SC {
         width: 95%;
         margin: 0px;
         margin-left: auto;
         margin-right: auto;
     }
-    .duskToDawnPhotos {
+    .pastShow-temp-1Photos {
         filter: drop-shadow(0px 0px 1px white);
     }
-    .duskToDawnPhotos img {
+    .pastShow-temp-1Photos img {
         width: 100%;
         border-radius: 10px;
         filter: drop-shadow(0px 0px 1px white);
@@ -1592,7 +1029,7 @@ a:link, a:visited {
     .mainSlideShow {
         /*background-color: cornflowerblue;*/
         padding: 0px;
-        width: 100%;
+        width: 99%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
@@ -1600,19 +1037,19 @@ a:link, a:visited {
     }
     .mainSlideShow img {
         display: flex;
-        width: 900px;
+        width: 90%;
         padding: 0px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 10px;
     }
-    .duskToDawnInfoText {
+    .pastShow-temp-1InfoText {
         display: flex;
         justify-content: center;
         padding: 20px;
         margin-bottom: 25px;
     }
-    .duskToDawnInfoText p{
+    .pastShow-temp-1InfoText p{
         font-size: 20px;
         width: 90%;
         text-align: center;
@@ -1645,105 +1082,9 @@ a:link, a:visited {
       background-color: rgba(0,0,0,0.8);
     }
     
-    
-    
-    /* Fading animation */
-    .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1s;
-    }
-    section .soundcloudPlaylists {
-        background-color: rgba(0, 0, 0, 0.9);
-        border: 3px ridge;
-        border-radius: 3px;
-        margin-bottom: 50px;
-    }
-    .superSwordInfo {
-        margin-bottom: 100px;
-    }
-    .superSwordSC {
-        display: inline-block;
-        padding: 0px;
-    }
-    .superSwordSC img {
-        display: flex;
-        width: 50%;
-        height: 50%;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-    }
-    .superSwordInfoText {
-        padding: 10px;
-        text-align: center;
-    }
-    .superSwordInfoText h1 {
-        font-size: 45px;
-    }
-    .superSwordInfoText p {
-        font-size: 20px;
-    }
-    .soundcloudEmbedded {
-        padding: 10px;
-    }
-    
-    .medeivalMondaysInfo {
-        margin-top: 100px;
-    }
-    .medeivalMondaysSC {
-        display: inline-block;
-        padding: 0px;
-    }
-    .medeivalMondaysSC img {
-        display: flex;
-        width: 50%;
-        height: 50%;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-    }
-    .medeivalMondaysInfoText {
-        padding: 10px;
-        text-align: center;
-    }
-    .medeivalMondaysInfoText h1 {
-        font-size: 45px;
-    }
-    .medeivalMondaysInfoText p {
-        font-size: 20px;
-    }
-    .aLink {
-        bottom: -1220px;
-    }
 }
 @media (max-width:968px){
-    .mainSlideShow_ss_11 img {
-        display: flex;
-        width: 100%;
-        padding: 0px;
-        margin-top: 0px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px;
-    }
-    .mainSlideShow_ss_11 a {
-        display: flex;
-        width: 70%;
-        padding: 0px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px;
-        background-color: #ab1026;
-    }
-    .superSwords_11_InfoText p {
+    .header-event_InfoText p {
         width: 90%;
     }
     .toggle {
@@ -1776,51 +1117,16 @@ a:link, a:visited {
     .eventsPageIntro {
         width: 100%;
     }
-    #eventFeed article .calendarBlock {
-        width: 25%;
-    }
-    .datetime .date {
-        font-size: 30px;
-    }
-    .timebox {
-        font-size: 13px;
-    }
-    .eventPageBrief p {
-        width: 50%;
-    }
-    .logoMobile img {
-        height: 100px;
+    .header-event_Photos a img {
         width: 500px;
+        border-radius: 20px;
         filter: drop-shadow(0px 0px 5px white);
-        margin-bottom: 100px;
     }
-    .logoMobile img:hover {
-        filter: drop-shadow(0px 0px 2px green);
-        transition: 2s;
-    }
-    article {
-        padding: 0px;
-    }
-    article .poster {
-        /*background-color: #09ffff;*/
-        width: 100%;
-        text-align: center;
-    }
-    article .poster img {
+    .header-event_Photos img {
         width: 400px;
         margin-top: 50px;
         border-radius: 20px;
         filter: drop-shadow(0px 0px 5px white);
-    
-    }
-    article .poster a img {
-        width: 500px;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-    }
-    article .eventInfo .infoText {
-        width: 100%;
-        margin-bottom: 50px;
     }
     /* Next & previous buttons */
     .prev, .next {
@@ -1838,27 +1144,27 @@ a:link, a:visited {
       user-select: none;
     }
 
-    section .duskToDawn {
-        background-color: rgba(0, 0, 0, 0.9);
+    .pastShow-temp-1 {
+        /* background-color: rgba(0, 0, 0, 0.9);
         border: 3px ridge;
         border-radius: 3px;
-        margin-bottom: 50px;
+        margin-bottom: 50px; */
     }
-    section .duskToDawn .eventHeadLineInfo {
+    .pastShow-temp-1 .eventHeadLineInfo {
         text-align: center;
         padding: 20px;
         margin-top: 0px;
     }
-    section .duskToDawn .eventHeadLineInfo #headLine{
+    .pastShow-temp-1 #headLine {
         padding: 10px;
     }
-    section .duskToDawn .eventHeadLineInfo #headLine h2 {
+    .pastShow-temp-1 #headLine h2 {
         font-size: 40px;
         text-align: center;
         padding: 0px;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock {
+    .pastShow-temp-1 .calendarBlock {
         /*background-color: indigo;*/
         width: 50%;
         border: 3px double;
@@ -1871,39 +1177,39 @@ a:link, a:visited {
         margin-top: auto;
         margin-bottom: auto;
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h1{
+    .pastShow-temp-1 .calendarBlock h1{
         font-size: 40px;
         font-weight: 700;
         text-transform: uppercase;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h5{
+    .pastShow-temp-1 .calendarBlock h5{
         font-size: 15px;
         font-weight: 400;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h3{
+    .pastShow-temp-1 .calendarBlock h3{
         font-size: 30px;
         font-weight: 500;
         filter: drop-shadow(2px 2px 5px black);
     }
-    .duskToDawnMedia{
+    .pastShow-temp-1Media {
         display: inline-block;
         padding: 0px;
         text-align: center;
     }
-    .duskToDawnPhotos {
+    .pastShow-temp-1Photos {
     }
-    .duskToDawnSC {
+    .pastShow-temp-1SC {
         width: 95%;
         margin: 0px;
         margin-left: auto;
         margin-right: auto;
     }
-    .duskToDawnPhotos {
+    .pastShow-temp-1Photos {
         filter: drop-shadow(0px 0px 1px white);
     }
-    .duskToDawnPhotos img {
+    .pastShow-temp-1Photos img {
         width: 100%;
         border-radius: 10px;
         filter: drop-shadow(0px 0px 1px white);
@@ -1925,13 +1231,13 @@ a:link, a:visited {
         margin-right: auto;
         border-radius: 10px;
     }
-    .duskToDawnInfoText {
+    .pastShow-temp-1InfoText {
         display: flex;
         justify-content: center;
         padding: 20px;
         margin-bottom: 25px;
     }
-    .duskToDawnInfoText p{
+    .pastShow-temp-1InfoText p{
         font-size: 20px;
         width: 90%;
         text-align: center;
@@ -1955,179 +1261,89 @@ a:link, a:visited {
       animation-name: fade;
       animation-duration: 1s;
     }
-    section .soundcloudPlaylists {
-        background-color: rgba(0, 0, 0, 0.9);
-        border: 3px ridge;
+    .double-media-block-module {
+        /* background-color: #297c08; */
+        /* background-color: rgba(0, 0, 0, 0.9); */
+        /* border: 3px ridge;
         border-radius: 3px;
-        margin-bottom: 50px;
-    }
-    .superSwordInfo {
-        margin-bottom: 100px;
-    }
-    .superSwordSC {
-        display: inline-block;
-        padding: 0px;
-    }
-    .superSwordSC img {
-        display: flex;
-        width: 90%;
-        height: 90%;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-    }
-    .superSwordInfoText {
+        margin-bottom: 50px; */
+        display: block;
         padding: 10px;
-        text-align: center;
+        height: 100%;
     }
-    .superSwordInfoText h1 {
-        font-size: 45px;
-    }
-    .superSwordInfoText p {
-        font-size: 20px;
-    }
+   .media-block {
+       padding: 0px;
+       width: 80%;
+       margin-left: auto;
+       margin-right: auto;
+       /* background-color: brown; */
+   }
+   .media-block img {
+       width: 30%;
+       height: 30%;
+       margin-top: auto;
+       margin-bottom: auto;
+       margin-left: 40px;
+       border-radius: 20px;
+       filter: drop-shadow(0px 0px 5px white);
+   }
+   .media-block-InfoText {
+       padding: 0px;
+       text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+       width: 100%;
+   }
+   .media-block-InfoText h1 {
+       font-size: 40px;
+   }
+   .media-block-InfoText p {
+       font-size: 20px;
+       width: 80%;
+       height: 200px;
+       margin-left: auto;
+       margin-right: auto;
+       padding: 10px;
+   }
+  .inner-text {
+      /* background-color: #09ffff; */
+      height: 350px;
+      margin-bottom: 0px;
+  }
+  .inner-media {
+      margin-bottom: 0px;
+  }
     .soundcloudEmbedded {
         padding: 10px;
-    }
-    
-    .medeivalMondaysInfo {
-        margin-top: 100px;
-    }
-    .medeivalMondaysSC {
-        display: inline-block;
-        padding: 0px;
-    }
-    .medeivalMondaysSC img {
-        display: flex;
-        width: 90%;
-        height: 90%;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-    }
-    .medeivalMondaysInfoText {
-        padding: 10px;
-        text-align: center;
-    }
-    .medeivalMondaysInfoText h1 {
-        font-size: 45px;
-    }
-    .medeivalMondaysInfoText p {
-        font-size: 20px;
     }
     .aLink {
         bottom: -1450px;
     }
 }
-@media (max-width:425px){
-    .logoMobile img {
-        display: flex;
-        padding: 10px;
-        width: 450px;
-        margin-left: 0px;
+@media (max-width:768px){
+    .music-links-social {
+        padding: 100px;
     }
     #eventFeed {
-        /*background-color: brown;*/
+        /* background-color: brown; */
         padding: 10px;
     }
-    article {
-        border: 3px ridge;
-        border-radius: 3px;
-        display: inline-block;
-        margin-bottom: 50px;
+    .header-event_Photos a img {
+        width: 99%;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px white);
     }
-    #eventFeed article .calendarBlock {
-        /*background-color: indigo;*/
-        width: 45%;
-        border: 3px double;
-        border-color: silver;
-        border-radius: 10px;
-        text-align: center;
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    #eventFeed article .calendarBlock h1{
-        font-size: 40px;
-        font-weight: 700;
-        text-transform: uppercase;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    #eventFeed article .calendarBlock h5{
-        font-size: 15px;
-        font-weight: 400;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    #eventFeed article .calendarBlock h3{
-        font-size: 30px;
-        font-weight: 500;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    article .eventInfo {
-        /*padding: 10px;*/
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-    }
-    article .eventInfo .infoText {
-        /*background-color: lightcoral;*/
-        width: 98%;
-        padding: 0px;
-        margin-left: auto;
-        margin-right: auto;
-        /*display: flex;*/
-    }
-    article .eventInfo .infoText h2 {
-        /*margin-bottom: auto;
-        margin-top: auto;*/
-        font-size: 45px;
-        text-align: center;
-        padding: 45px;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    article .eventInfo .infoText p {
-        /*margin-bottom: auto;
-        margin-top: auto;*/
-        font-size: 20px;
-        text-align: center;
-        padding: 10px;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    
-    article .poster img {
+    .header-event_Photos img {
         width: 270px;
         border-radius: 20px;
         filter: drop-shadow(0px 0px 5px white);
         margin-left: auto;
         margin-right: auto;
     }
-    article .poster a img {
-        width: 99%;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-    }
-    .mainSlideShow_ss_11 img {
-        display: flex;
-        width: 100%;
-        padding: 0px;
-        margin-top: 0px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px;
-    }
-    .superSwords_11_InfoText p {
+    .header-event_InfoText p {
         width: 80%;
     }
-    section .superSwords_11 .eventHeadLineInfo .calendarBlock {
+    .calendarBlock {
         width: 50%;
         border: 3px double;
         border-color: silver;
@@ -2139,27 +1355,27 @@ a:link, a:visited {
         margin-top: auto;
         margin-bottom: auto;
     }
-    section .duskToDawn {
-        background-color: rgba(0, 0, 0, 0.9);
-        border: 3px ridge;
+    .pastShow-temp-1 {
+        /* background-color: rgba(0, 0, 0, 0.9);
+        border: none;
         border-radius: 3px;
-        margin-bottom: 50px;
+        margin-bottom: 50px; */
     }
-    section .duskToDawn .eventHeadLineInfo {
+    .pastShow-temp-1 .eventHeadLineInfo {
         text-align: center;
         padding: 20px;
         margin-top: 0px;
     }
-    section .duskToDawn .eventHeadLineInfo #headLine{
+    .pastShow-temp-1 #headLine {
         padding: 10px;
     }
-    section .duskToDawn .eventHeadLineInfo #headLine h2 {
+    .pastShow-temp-1 #headLine h2 {
         font-size: 40px;
         text-align: center;
         padding: 0px;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock {
+    .pastShow-temp-1 .calendarBlock {
         /*background-color: indigo;*/
         width: 50%;
         border: 3px double;
@@ -2172,39 +1388,39 @@ a:link, a:visited {
         margin-top: auto;
         margin-bottom: auto;
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h1{
+    .pastShow-temp-1 .calendarBlock h1{
         font-size: 40px;
         font-weight: 700;
         text-transform: uppercase;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h5{
+    .pastShow-temp-1 .calendarBlock h5{
         font-size: 15px;
         font-weight: 400;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h3{
+    .pastShow-temp-1 .calendarBlock h3{
         font-size: 30px;
         font-weight: 500;
         filter: drop-shadow(2px 2px 5px black);
     }
-    .duskToDawnMedia{
+    .pastShow-temp-1Media {
         display: inline-block;
         padding: 0px;
         text-align: center;
     }
-    .duskToDawnPhotos {
+    .pastShow-temp-1Photos {
     }
-    .duskToDawnSC {
+    .pastShow-temp-1SC {
         width: 95%;
         margin: 0px;
         margin-left: auto;
         margin-right: auto;
     }
-    .duskToDawnPhotos {
+    .pastShow-temp-1Photos {
         filter: drop-shadow(0px 0px 1px white);
     }
-    .duskToDawnPhotos img {
+    .pastShow-temp-1Photos img {
         width: 100%;
         border-radius: 10px;
         filter: drop-shadow(0px 0px 1px white);
@@ -2226,13 +1442,13 @@ a:link, a:visited {
         margin-right: auto;
         border-radius: 10px;
     }
-    .duskToDawnInfoText {
+    .pastShow-temp-1InfoText {
         display: flex;
         justify-content: center;
         padding: 20px;
         margin-bottom: 25px;
     }
-    .duskToDawnInfoText p{
+    .pastShow-temp-1InfoText p{
         font-size: 20px;
         width: 90%;
         text-align: center;
@@ -2277,121 +1493,75 @@ a:link, a:visited {
   animation-name: fade;
   animation-duration: 1s;
 }
-
-section .soundcloudPlaylists {
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 3px ridge;
+.double-media-block-module {
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    /* border: 3px ridge;
     border-radius: 3px;
-    margin-bottom: 50px;
-}
-.superSwordInfo {
-    margin-bottom: 100px;
-}
-.superSwordSC {
-    display: inline-block;
-    padding: 0px;
-}
-.superSwordSC img {
-    display: flex;
-    width: 90%;
-    height: 90%;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    filter: drop-shadow(0px 0px 5px white);
-}
-.superSwordInfoText {
+    margin-bottom: 50px; */
+    display: block;
     padding: 10px;
-    text-align: center;
 }
-.superSwordInfoText h1 {
-    font-size: 45px;
+.media-block {
+   padding: 0px;
+   width: 100%;
+   margin-bottom: 20px;
+   /* background-color: rgb(0, 238, 255); */
 }
-.superSwordInfoText p {
-    font-size: 20px;
+.media-block img {
+   width: 30%;
+   height: 30%;
+   margin-top: auto;
+   margin-bottom: auto;
+   margin-left: 40px;
+   border-radius: 20px;
+   filter: drop-shadow(0px 0px 5px white);
+}
+.media-block-InfoText {
+   padding: 0px;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   /* background-color: rgb(218, 4, 218); */
+}
+.media-block-InfoText h1 {
+   font-size: 40px;
+}
+.media-block-InfoText p {
+   font-size: 20px;
+   width: 80%;
+   height: 200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px;
+}
+.inner-text {
+  /* background-color: #09ffff; */
+  height: 100%;
+  margin-bottom: 0px;
+  width: 100%;
+}
+.inner-media {
+  margin-bottom: 20px;
 }
 .soundcloudEmbedded {
     padding: 10px;
-}
-
-.medeivalMondaysInfo {
-    margin-top: 100px;
-}
-.medeivalMondaysSC {
-    display: inline-block;
-    padding: 0px;
-}
-.medeivalMondaysSC img {
-    display: flex;
-    width: 90%;
-    height: 90%;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    filter: drop-shadow(0px 0px 5px white);
-}
-.medeivalMondaysInfoText {
-    padding: 10px;
-    text-align: center;
-}
-.medeivalMondaysInfoText h1 {
-    font-size: 45px;
-}
-.medeivalMondaysInfoText p {
-    font-size: 20px;
-}
-
-.aLink {
-    bottom: -1090px;
-    left: 144px;
-}
-.aLink li a {
-    width: 30px;
-    height: 30px;
-    background: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-left: 10px;
-    transition: 0.2s linear;
-  }
-
-.aLink img {
-    height: 20px;
-    width: 20px;
-}
-
-.aLink li a:hover {
-    background: #ab1026;
-    transform: translateY(-15px);
-}
-
-.aLink li a img {
-    width: 45px;
-    height: 40px;
-    filter: invert(1);
-    transform: scale(.6);
 }
 i.fas,
 i.fab {
   font-size: 13px;
 }
-
+i.fa-soundcloud {
+    font-size: 70px;
+}
+i.fa-twitch {
+    font-size: 70px;
+}
+i.fa-discord {
+    font-size: 70px;
+} 
 }
 @media (max-width:375px){
-    .logoMobile {
-    }
-    .logoMobile img {
-        display: flex;
-        padding: 10px;
-        width: 90%;
-        margin-left: 30px;
-    }
     .toggle {
         width: 35px;
         height: 30px;
@@ -2415,13 +1585,6 @@ i.fab {
         /*background-color: brown;*/
         padding: 10px;
     }
-    article {
-        border: 3px ridge;
-        border-radius: 3px;
-        display: inline-block;
-        margin-bottom: 50px;
-        width: 100%;
-    }
     header {
         
     }
@@ -2431,80 +1594,17 @@ i.fab {
     .eventsPageIntro {
         width: 100%;
     }
-    #eventFeed article .calendarBlock {
-        /*background-color: indigo;*/
-        width: 45%;
-        border: 3px double;
-        border-color: silver;
-        border-radius: 10px;
-        text-align: center;
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    #eventFeed article .calendarBlock h1{
-        font-size: 40px;
-        font-weight: 700;
-        text-transform: uppercase;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    #eventFeed article .calendarBlock h5{
-        font-size: 15px;
-        font-weight: 400;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    #eventFeed article .calendarBlock h3{
-        font-size: 30px;
-        font-weight: 500;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    article .eventInfo {
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-    }
-    article .eventInfo .infoText {
-        width: 98%;
-        padding: 0px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    article .eventInfo .infoText h2 {
-        font-size: 45px;
-        text-align: center;
-        padding: 45px;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    article .eventInfo .infoText p {
-        font-size: 20px;
-        text-align: center;
-        padding: 10px;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    
-    article .poster img {
+    .header-event_Photos img {
         width: 270px;
         border-radius: 20px;
         filter: drop-shadow(0px 0px 5px white);
         margin-left: auto;
         margin-right: auto;
     }
-    .mainSlideShow_ss_11 img {
-        display: flex;
-        width: 100%;
-        padding: 0px;
-        margin-top: 0px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px;
-    }
-    .superSwords_11_InfoText p {
+    .header-event_InfoText p {
         width: 100%;
     }
-    section .superSwords_11 .eventHeadLineInfo .calendarBlock {
+    .calendarBlock {
         /*background-color: indigo;*/
         width: 50%;
         border: 3px double;
@@ -2517,27 +1617,27 @@ i.fab {
         margin-top: auto;
         margin-bottom: auto;
     }
-    section .duskToDawn {
-        background-color: rgba(0, 0, 0, 0.9);
+    .pastShow-temp-1 {
+        /* background-color: rgba(0, 0, 0, 0.9);
         border: 3px ridge;
         border-radius: 3px;
-        margin-bottom: 50px;
+        margin-bottom: 50px; */
     }
-    section .duskToDawn .eventHeadLineInfo {
+    .pastShow-temp-1 .eventHeadLineInfo {
         text-align: center;
         padding: 20px;
         margin-top: 0px;
     }
-    section .duskToDawn .eventHeadLineInfo #headLine{
+    .pastShow-temp-1 #headLine {
         padding: 10px;
     }
-    section .duskToDawn .eventHeadLineInfo #headLine h2 {
+    .pastShow-temp-1 #headLine h2 {
         font-size: 40px;
         text-align: center;
         padding: 0px;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock {
+    .pastShow-temp-1 .calendarBlock {
         /*background-color: indigo;*/
         width: 50%;
         border: 3px double;
@@ -2550,39 +1650,39 @@ i.fab {
         margin-top: auto;
         margin-bottom: auto;
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h1{
+    .pastShow-temp-1 .calendarBlock h1{
         font-size: 40px;
         font-weight: 700;
         text-transform: uppercase;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h5{
+    .pastShow-temp-1 .calendarBlock h5{
         font-size: 15px;
         font-weight: 400;
         filter: drop-shadow(2px 2px 5px black);
     }
-    section .duskToDawn .eventHeadLineInfo .calendarBlock h3{
+    .pastShow-temp-1 .calendarBlock h3{
         font-size: 30px;
         font-weight: 500;
         filter: drop-shadow(2px 2px 5px black);
     }
-    .duskToDawnMedia{
+    .pastShow-temp-1Media {
         display: inline-block;
         padding: 0px;
         text-align: center;
     }
-    .duskToDawnPhotos {
+    .pastShow-temp-1Photos {
     }
-    .duskToDawnSC {
+    .pastShow-temp-1SC {
         width: 95%;
         margin: 0px;
         margin-left: auto;
         margin-right: auto;
     }
-    .duskToDawnPhotos {
+    .pastShow-temp-1Photos {
         filter: drop-shadow(0px 0px 1px white);
     }
-    .duskToDawnPhotos img {
+    .pastShow-temp-1Photos img {
         width: 100%;
         border-radius: 10px;
         filter: drop-shadow(0px 0px 1px white);
@@ -2604,13 +1704,13 @@ i.fab {
         margin-right: auto;
         border-radius: 10px;
     }
-    .duskToDawnInfoText {
+    .pastShow-temp-1InfoText {
         display: flex;
         justify-content: center;
         padding: 20px;
         margin-bottom: 25px;
     }
-    .duskToDawnInfoText p{
+    .pastShow-temp-1InfoText p{
         font-size: 20px;
         width: 90%;
         text-align: center;
@@ -2662,97 +1762,11 @@ i.fab {
 
 }
 @media (max-width:320px){
-    .logoMobile img {
-        display: flex;
-        padding: 10px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
     #eventFeed {
         /*background-color: brown;*/
         padding: 10px;
     }
-    article {
-        border: 3px ridge;
-        border-radius: 3px;
-        display: inline-block;
-        margin-bottom: 50px;
-    }
-    #eventFeed article .calendarBlock {
-        /*background-color: indigo;*/
-        width: 45%;
-        border: 3px double;
-        border-color: silver;
-        border-radius: 10px;
-        text-align: center;
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    #eventFeed article .calendarBlock h1{
-        font-size: 40px;
-        font-weight: 700;
-        text-transform: uppercase;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    #eventFeed article .calendarBlock h5{
-        font-size: 15px;
-        font-weight: 400;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    #eventFeed article .calendarBlock h3{
-        font-size: 30px;
-        font-weight: 500;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    article .eventInfo {
-        /*padding: 10px;*/
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-    }
-    article .eventInfo .infoText {
-        /*background-color: lightcoral;*/
-        width: 98%;
-        padding: 0px;
-        margin-left: auto;
-        margin-right: auto;
-        /*display: flex;*/
-    }
-    article .eventInfo .infoText h2 {
-        /*margin-bottom: auto;
-        margin-top: auto;*/
-        font-size: 45px;
-        text-align: center;
-        padding: 45px;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    article .eventInfo .infoText p {
-        /*margin-bottom: auto;
-        margin-top: auto;*/
-        font-size: 20px;
-        text-align: center;
-        padding: 10px;
-        filter: drop-shadow(2px 2px 5px black);
-    }
-    
-    article .poster img {
-        width: 270px;
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 5px white);
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
     * {box-sizing:border-box}
-
-
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
