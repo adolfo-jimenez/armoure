@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;*/
+    background-image: url("/images/erfan-afshari-RmxvrWf77MU-unsplash.jpg");
 }
 header {
     width: 100%;
@@ -65,7 +66,7 @@ section {
 }
 .main {
     width: 100%;
-    background-image: url("../images/erfan-afshari-RmxvrWf77MU-unsplash.jpg");
+    background-image: url("/images/erfan-afshari-RmxvrWf77MU-unsplash.jpg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -568,6 +569,9 @@ i.fa-pause {
 }
 
 @media (max-width:1100px){
+    .text-container h2 {
+        display: none;
+    }
     .main {
         display: inline;
     }
